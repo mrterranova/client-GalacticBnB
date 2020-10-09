@@ -1,0 +1,5 @@
+<ul>
+    <li class="hostcommunicationdata" *ngIf="hostData.communication!=null">Language: {{hostData.communication}}</li>
+    <li class="hostcommunicationdata" *ngIf="hostData.responserate!=null">Response rate: {{hostData.responserate}}%</li>
+    <li class="hostcommunicationdata" *ngIf="hostData.responsetime!=null">Response time: within {{hostData.responsetime}} hour(s)</li>
+</ul>

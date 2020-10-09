@@ -1,0 +1,14 @@
+    <p *ngIf="show">
+        {{stringShortener(hostData.biography,stringShortLength)}}
+        <button (click)="show = !show" *ngIf="show&&hostData.biography.length>stringShortLength">{{show ? '' : ''}}read more</button>
+        <p 
+            *ngIf="!show"
+        >
+            {{hostData.biography}} 
+        </p>
+        <app-hostcohost
+            *ngIf="true"
+            [hostdata]="hostData" 
+        ></app-hostcohost>
+
+                    

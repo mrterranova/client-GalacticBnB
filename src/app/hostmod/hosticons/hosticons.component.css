@@ -1,0 +1,35 @@
+.hostIconSection{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0px -12px 24px;
+    width: auto;
+}
+.hostIconSectionDiv{
+    padding: 0px 12px;
+    display: flex;
+    flex-direction: row;
+}
+.hostIconSectionRight{
+    margin: 0px 0px 0px 8px;
+    white-space: nowrap;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+img{
+    width: 16px;
+    height: 24px;
+    object-fit: contain;
+}
+
+/* breakpoint743 */
+@media only screen and (max-width: 743px) {
+    .hostIconSection{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 12px;
+    }
+    .hostIconSectionDiv{
+        margin-bottom: 12px;
+    }
+  }

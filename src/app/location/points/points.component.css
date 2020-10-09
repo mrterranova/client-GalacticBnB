@@ -1,0 +1,12 @@
+.icon {
+  width: 25px;
+  height: 25px;
+}
+
+.poi {
+  font-weight: bold;
+}
+
+#pointsContainer {
+  width: 550px;
+}

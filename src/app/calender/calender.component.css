@@ -1,0 +1,174 @@
+.calendar {
+    top: 36px;
+    padding: 2px 0 0;
+    width: 500px;
+    background-color: #fff;
+    border-radius: 4px;
+    z-index: 0;
+}
+.calendar__wrapper {
+    margin-bottom: 17px;
+    width: 500px;
+
+}
+.calendar__input-wrapper {
+    width: 500px;
+    height: 36px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+}
+.calendar__input {
+    width: 424px;
+    height: 100%;
+    outline: none;
+    border: 2px solid #ddd;
+    border-radius: 2px;
+    padding: 0 12px;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif  ;
+    font-size: 13px;
+    color: #101820;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.calendar__input:focus, .calendar__input:active {
+    border-color: #fff;
+}
+.calendar__navs {
+    background-color: #fff;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.calendar__nav-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: #000;
+}
+.calendar__nav-btn[disabled] {
+    color: transparent;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+.calendar__month-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: #000;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+}
+.calendar__month-nav span {
+    line-height: 1;
+}
+.calendar__year-nav {
+    height: 100%;
+    font-size: 10px;
+    padding: 3px 40px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #fff;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif  ;
+}
+.calendar__day-names {
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border-top: 1px solid #fff;
+    padding: 0 5px;
+}
+.calendar__day-name {
+    color: #000;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif  ;
+    font-size: 11px;
+}
+.calendar__weeks {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    background-color: #fff;
+}
+.calendar__week {
+    display: flex;
+    flex-direction: row;
+}
+.calendar__date, .calendar__day-name {
+    text-align: center;
+    padding: 3px;
+    width: 14.29%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calendar__date {
+    height: 30px;
+}
+.calendar__date:after {
+    content: '';
+    height: 27px;
+    width: 27px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: all 1s;
+    z-index: 1;
+}
+.calendar__date:hover {
+    cursor: pointer;
+    color: #000;
+}
+.calendar__date:hover:after {
+    background-color: #fff;
+    color: red;
+    border:  1px solid rgb(0, 0, 0);
+    position: relative;
+    left: -7px;
+    top: 13px;
+}
+.calendar__date.disabled {
+    pointer-events: none;
+    color: #e0e0e0;
+    text-decoration: line-through;
+}
+.calendar__date.selected {
+    color: #fff;
+}
+.calendar__date.selected:after {
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    left: -6.5px;
+    top: 13px;
+}
+.calendar__date.selected:hover:after {
+    opacity: 1;
+}
+.calendar__date.today {
+    font-weight: bold;
+}
+.calendar__number {
+    z-index: 10;
+    font-size: 12px;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif  ;
+}
+.icon_calendar {
+
+    width: 17px;
+    height: 20px;
+}
+.calendar2 {
+    background: blue;
+}
+.dualCalenderHolder{
+    display: flex;
+    flex-direction: row; 
+    width: 100%;
+    height: auto;
+}

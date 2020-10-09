@@ -1,0 +1,140 @@
+<div class="container">
+  <div class="header">
+    <h3>Amenities</h3>
+  </div>
+  <div class="amenityRow" style="width:100%;">
+    <div class="iconamenitites">
+      <svg viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display:block; height: 24px; width:24px; fill: currentcolor; float:left;">
+        <path d="M25 2a5 5 0 0 1 4.995 4.783L30 7v18a5 5 0 0 1-4.783 4.995L25 30H7a5 5 0 0 1-4.995-4.783L2 25V7a5 5 0 0 1 4.783-4.995L7 2zm0 2H7a3 3 0 0 0-2.995 2.824L4 7v18a3 3 0 0 0 2.824 2.995L7 28h18a3 3 0 0 0 2.995-2.824L28 25V7a3 3 0 0 0-2.824-2.995zM11.1 17a5.006 5.006 0 0 0 3.9 3.9v2.03A7.005 7.005 0 0 1 9.071 17zm9.8 0l2.029.001a7.005 7.005 0 0 1-5.928 5.928v-2.03A5.006 5.006 0 0 0 20.9 17zM16 13a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm1.001-5.929A7.005 7.005 0 0 1 22.929 15H20.9A5.006 5.006 0 0 0 17 11.1zm-2.001 0v2.03A5.006 5.006 0 0 0 11.1 15H9.07A7.005 7.005 0 0 1 15 9.07zM23 8a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
+      </svg>
+      <span *ngIf="carbonMonoxideAlarm" style="margin-left: 2rem;">Carbon monoxide alarm</span>
+      <span *ngIf="!carbonMonoxideAlarm" style="margin-left: 2rem;"><s>Carbon monoxide alarm</s></span>
+    </div>
+    <div class="iconamenitites">
+      <svg viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display:block; height: 24px; width:24px; fill: currentcolor; float:left;">
+        <path d="M9 29v-2h2v-2H6a5 5 0 0 1-4.995-4.783L1 20V8a5 5 0 0 1 4.783-4.995L6 3h20a5 5 0 0 1 4.995 4.783L31 8v12a5 5 0 0 1-4.783 4.995L26 25h-5v2h2v2zm10-4h-6v2h6zm7-20H6a3 3 0 0 0-2.995 2.824L3 8v12a3 3 0 0 0 2.824 2.995L6 23h20a3 3 0 0 0 2.995-2.824L29 20V8a3 3 0 0 0-2.824-2.995z"></path>
+      </svg>
+      <span *ngIf="tv" style="margin-left: 2rem;">TV</span>
+      <span *ngIf="!tv" style="margin-left: 2rem;"><s>TV</s></span>
+    </div>
+    <div class="iconamenitites">
+      <svg viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display:block; height: 24px; width:24px; fill: currentcolor; float:left;">
+        <path d="M25 1a2 2 0 0 1 1.995 1.85L27 3l-.001 26H29v2H3v-2h1.999L5 3a2 2 0 0 1 1.85-1.995L7 1zm0 2H7l-.001 26h18zm-3 12a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
+      </svg>
+      <span *ngIf="privateEntrance" style="margin-left: 2rem;">Private entrance</span>
+      <span *ngIf="!privateEntrance" style="margin-left: 2rem;"><s>Private entrance</s></span>
+    </div>
+    <div class="iconamenitites">
+      <svg viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display:block; height: 24px; width:24px; fill: currentcolor; float:left;">
+        <path d="M16 1c8.284 0 15 6.716 15 15 0 8.284-6.716 15-15 15-8.284 0-15-6.716-15-15C1 7.716 7.716 1 16 1zm0 2C8.82 3 3 8.82 3 16s5.82 13 13 13 13-5.82 13-13S23.18 3 16 3zm2 5a5 5 0 0 1 .217 9.995L18 18h-5v6h-2V8zm0 2h-5v6h5a3 3 0 0 0 .176-5.995z"></path>
+      </svg>
+      <span *ngIf="freeParking" style="margin-left: 2rem;">Free parking</span>
+      <span  *ngIf="!freeParking" style="margin-left: 2rem;"><s>Free parking</s></span>
+    </div>
+    <div class="iconamenitites">
+      <svg viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display:block; height: 24px; width:24px; fill: currentcolor; float:left;">
+        <path d="M16 0a5 5 0 0 1 4.995 4.783L21 5l.001 12.756.26.217a7.984 7.984 0 0 1 2.717 5.43l.017.304L24 24a8 8 0 1 1-13.251-6.036l.25-.209L11 5A5 5 0 0 1 15.563.019l.22-.014zm0 2a3 3 0 0 0-2.995 2.824L13 5v13.777l-.428.298a6 6 0 1 0 7.062.15l-.205-.15-.428-.298L19 11h-4V9h4V7h-4V5h4a3 3 0 0 0-3-3zm1 11v7.126A4.002 4.002 0 0 1 16 28a4 4 0 0 1-1-7.874V13zm-1 9a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"></path>
+      </svg>
+      <span *ngIf="heating" style="margin-left: 2rem;">Heating</span>
+      <span *ngIf="!heating" style="margin-left: 2rem;"><s>Heating</s></span>
+    </div>
+    <div class="iconamenitites">
+      <svg viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display:block; height: 24px; width:24px; fill: currentcolor; float:left;">
+        <path d="M17 1v4.03l4.026-2.324 1 1.732L17 7.339v6.928l6-3.464V5h2v4.648l3.49-2.014 1 1.732L26 11.381l4.026 2.325-1 1.732L24 12.535l-6 3.464 6 3.465 5.026-2.902 1 1.732L26 20.618l3.49 2.016-1 1.732L25 22.351V27h-2v-5.804l-6-3.465v6.929l5.026 2.902-1 1.732L17 26.97V31h-2v-4.031l-4.026 2.325-1-1.732L15 24.66v-6.929l-6 3.464V27H7v-4.65l-3.49 2.016-1-1.732 3.489-2.016-4.025-2.324 1-1.732 5.025 2.901 6-3.464-6-3.464-5.025 2.903-1-1.732L6 11.38 2.51 9.366l1-1.732L7 9.648V5h2v5.803l6 3.464V7.339L9.974 4.438l1-1.732L15 5.03V1z"></path>
+      </svg>
+      <span *ngIf="airconditioning" style="margin-left: 2rem;">Air-conditioning</span>
+      <span *ngIf="!airconditioning" style="margin-left: 2rem;"><s>Air-conditioning</s></span>
+    </div>
+    <div class="iconamenitites">
+      <svg viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display:block; height: 24px; width:24px; fill: currentcolor; float:left;">
+        <path d="M11 1v7l1.898 20.819.007.174c-.025 1.069-.804 1.907-1.818 1.999a2 2 0 0 1-.181.008h-7.81l-.174-.008C1.86 30.87 1.096 30.018 1.096 29l.002-.09 1.907-21L3.001 1zm6 0l.15.005a2 2 0 0 1 1.844 1.838L19 3v7.123l-2 8V31h-2V18.123l.007-.163.02-.162.033-.16L16.719 11H13V1zm11 0a2 2 0 0 1 1.995 1.85L30 3v26a2 2 0 0 1-1.85 1.995L28 31h-7v-2h7v-2h-7v-2h7v-2h-7v-2h7v-2h-7v-2h7v-2h-7v-2h7v-2h-7V9h7V7h-7V5h7V3h-7V1zM9.088 9h-4.18L3.096 29l.058.002L10.906 29l-.004-.058zM17 3h-2v6h2zM9.002 3H5L5 7h4.004z"></path>
+      </svg>
+      <span *ngIf="essentials" style="margin-left: 2rem;">Essentials</span>
+      <span *ngIf="!essentials" style="margin-left: 2rem;"><s>Essentials</s></span>
+    </div> 
+    <div class="iconamenitites">
+      <svg viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display:block; height: 24px; width:24px; fill: currentcolor; float:left;">
+        <path d="M7 28H5V15c0-4.997 3.356-9.304 8.061-10.603A3 3 0 0 1 17.69 2.52l2.66-2.28 1.302 1.52L19.036 4H23v2h-4.17A3.008 3.008 0 0 1 17 7.83l.001.242a7.007 7.007 0 0 1 5.982 6.446l.013.24L23 15v15a2 2 0 0 1-1.85 1.995L21 32H11a2 2 0 0 1-1.995-1.85L9 30v-6H7zm9-18c-2.617 0-4.775 2.014-4.983 4.573l-.013.22L11 15v15h10V15.018l-.003-.206A5 5 0 0 0 16 10zm-2.654-3.6a9.002 9.002 0 0 0-6.342 8.327L7 15v7h2v-7.018l.005-.244A7.001 7.001 0 0 1 15 8.071v-.242a3.01 3.01 0 0 1-1.654-1.43zM16 4a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"></path>
+      </svg>
+      <span *ngIf="fireExtinguisher" style="margin-left: 2rem;">Fire extinguisher</span>
+      <span *ngIf="!fireExtinguisher" style="margin-left: 2rem;"><s>Fire extinguisher</s></span>
+    </div> 
+  </div>
+<!-- Large modal -->
+<button type="button" class="btn" data-toggle="modal" data-target=".bd-example-modal-lg" style="border:1px solid black; padding:20px; letter-spacing: 1.1px;font-weight: bold;">Show all amenities</button>
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" style="padding: 50px;">
+      <h3>Amenities</h3>
+      <h5>Basic</h5>
+      <div>
+        <span class="amenitiesfeat" *ngIf="essentials">Essentials</span>
+        <div>
+        <span class="amenitiesdesc" *ngIf="essentials">{{essentialstext}}<hr/></span>
+        </div>
+        <span class="amenitiesfeat" *ngIf="heating">Heating</span>
+        <div>
+        <span class="amenitiesdesc" *ngIf="heating">{{heatingtext}}<hr/></span>
+      </div>
+        <span class="amenitiesfeat" *ngIf="airconditioning">Air-conditioning<hr style="width:70%"/></span>
+        <span class="amenitiesfeat" *ngIf="tv">TV<hr/></span>
+        <span class="amenitiesfeat" *ngIf="hotwater">Hot water<hr/></span>
+        <span class="amenitiesfeat" *ngIf="laptopFriendly">Laptop-friendly space<hr/></span>
+        <span class="amenitiesfeat" *ngIf="wifi">WiFi<hr/></span>
+        <span class="amenitiesfeat" *ngIf="cableTv">Cable TV<hr/></span>
+      </div>
+      <h5>Facilities</h5>
+      <div>
+        <span class="amenitiesfeat" *ngIf="longTermStaysAllowed">Long Term Stays Allowed</span>
+        <br/>
+        <span class="amenitiesfeat" *ngIf="freeParking">Free parking on premises<hr/></span>
+        <span class="amenitiesfeat" *ngIf="!freeParking"><hr/></span>
+      </div>
+      <h5>Dining</h5>
+      <div>
+        <span class="amenitiesfeat" *ngIf="refrigerator">Refrigerator<hr/></span>
+        <span class="amenitiesfeat" *ngIf="coffeeMaker">Coffee maker<hr/></span>
+        <span class="amenitiesfeat" *ngIf="microwave">Microwave<hr/></span>
+        <span class="amenitiesfeat">Cooking</span>
+        <br/>
+        <span class="amenitiesdesc">{{cookingtext}}<hr/></span>
+        <span class="amenitiesfeat" *ngIf="grill"><hr/></span>
+      </div>
+      <h5>Guest access</h5>
+      <div *ngIf="privateEntrance">
+        <span class="amenitiesfeat" *ngIf="privateEntrance">Private entrance</span>
+        <span  class="amenitiesfeat" *ngIf="privateEntrance">{{privatetext}}<hr/></span>
+      </div>
+      <h5>Bed and bath</h5>
+      <div>
+        <span class="amenitiesfeat" *ngIf="shampoo">Shampoo<hr/></span>
+        <span class="amenitiesfeat" *ngIf="hairDryer">Hairdryer<hr/></span>
+        <span class="amenitiesfeat" *ngIf="hotWater">Hottub<hr/></span>
+        <span class="amenitiesfeat" *ngIf="hanger">Hangers<hr/></span>
+      </div>
+      <h5 *ngIf="spa || swimArea">Outdoors</h5>
+      <div>
+        <span class="amenitiesfeat" *ngIf="spa">Spa<hr/></span>
+        <span class="amenitiesfeat" *ngIf="swimArea">Swimming pool<hr/></span>
+      </div>
+      <h5 *ngIf="fireExtinguisher || lockBox || lockOnBedroomDoor || smokeAlarm || carbonMonoxideAlarm">Safety features</h5>
+        <span class="amenitiesfeat" *ngIf="fireExtinguisher">Fire extinguisher<hr/></span>
+        <span class="amenitiesfeat" *ngIf="lockOnBedroomDoor">Lock on bedroom door<hr/></span>
+        <span class="amenitiesfeat" *ngIf="smokeAlarm">Smoke alarm<hr/></span>
+        <span class="amenitiesfeat" *ngIf="carbonMonoxideAlarm">Carbon monoxide alarm<hr/></span>
+        <span class="amenitiesfeat" *ngIf="lockBox">Lock box<hr/></span>
+      <h5>Not included</h5>
+          <span class="amenitiesfeat" *ngIf="!essentials"><s>Essentials</s></span>
+          <span class="amenitiesfeat" *ngIf="!heating"><s>Heating</s></span>
+          <span class="amenitiesfeat" *ngIf="!airconditioning"><s>Air-conditioning</s><hr style="width:70%"/></span>
+          <span class="amenitiesfeat" *ngIf="!fireExtinguisher"><s>Fire extinguisher</s><hr/></span>
+          <span class="amenitiesfeat" *ngIf="!lockOnBedroomDoor"><s>Lock on bedroom door</s><hr/></span>
+          <span class="amenitiesfeat" *ngIf="!smokeAlarm"><s>Smoke alarm</s><hr/></span>
+          <span class="amenitiesfeat" *ngIf="!carbonMonoxideAlarm"><s>Carbon monoxide alarm</s><hr/></span>
+          <span class="amenitiesfeat" *ngIf="!lockBox"><s>Lock box</s><hr/></span>
+    </div>
+  </div>
+</div>
+
+

@@ -1,0 +1,106 @@
+.other-options-header {
+  margin-bottom: 2rem;
+}
+
+.footer-container {
+   padding: 0 0 4em 0;
+}
+
+.footer-container a {
+  color: dimgrey;
+}
+
+.same-state-links-container {
+  margin-top: 2em;
+}
+
+.flex-on-these-fools {
+  display: flex;
+  flex-direction: row;
+}
+
+.same-state-link {
+  padding-right: 4em;
+}
+
+.state-span:hover {
+  cursor: pointer;
+  color: dimgrey;
+}
+
+.join-family {
+  color: dimgrey;
+  text-decoration: underline;
+}
+
+.join-family:hover {
+  cursor: pointer;
+  color: dodgerblue;
+}
+
+.housing-options {
+  color: dimgrey;
+  text-decoration: none;
+}
+
+.housing-options:hover {
+  cursor: pointer;
+}
+
+.footer-table1 {
+    width:100vw;
+}
+
+.footer-table1 td {
+  color: dimgrey;
+  text-decoration: none;
+}
+
+.footer-table1 td:hover {
+  cursor: pointer;
+}
+
+.container {
+    margin-top: 100px;
+}
+.footer-table2 {
+    width:90vw;
+}
+
+.footer-table2 td:hover {
+  color: dimgrey;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.footer-tag-left {
+    float: left;
+    display: flex;
+}
+
+.footer-tag-right {
+    float:right;
+    width:50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-tag-right> * {
+    flex: 1;
+    padding:.2em;
+}
+
+.globe-english-us {
+  flex: 2;
+  padding: 10px;
+}
+
+.english-us-words {
+  text-decoration: underline;
+}
+
+.footer-money {
+    text-decoration: underline;
+}
+
+

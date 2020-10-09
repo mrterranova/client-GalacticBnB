@@ -1,0 +1,16 @@
+<div class="hostIconSection">
+    <!-- add logic for > zero review -->
+    <!-- add count of host reviews -->
+    <div class="hostIconSectionDiv" *ngIf="1>0"> 
+        <img class="hostIconSectionLeft" src="/assets/img/imageshost/star.png">
+        <span class="hostIconSectionRight">{{mptsdata.numberofratings}} Reviews</span> 
+    </div>
+    <div class="hostIconSectionDiv" *ngIf="hostData.idverifieded">
+        <img class="hostIconSectionLeft"  src="/assets/img/imageshost/sheild.png">
+        <span class="hostIconSectionRight">Identity Verified</span> 
+    </div>
+    <div class="hostIconSectionDiv" *ngIf="mptsdata.superhost">
+        <img class="hostIconSectionLeft"  src="/assets/img/imageshost/shmedal.png">
+        <span class="hostIconSectionRight">Superhost</span> 
+    </div>
+</div>

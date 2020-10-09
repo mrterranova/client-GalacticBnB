@@ -1,0 +1,45 @@
+p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    word-break: break-word;
+    margin: 0px 0px 24px 0px;
+}
+button{
+    font-size: inherit ;
+    font-family: inherit ;
+    font-style: inherit ;
+    font-variant: inherit ;
+    line-height: inherit ;
+    appearance: none ;
+    background: transparent ;
+    border: 0px ;
+    cursor: pointer ;
+    margin: 0px ;
+    padding: 0px ;
+    user-select: auto ;
+    color: rgb(34, 34, 34) ;
+    text-decoration: underline ;
+    border-radius: 4px ;
+    font-weight: 600 ;
+    outline: none ;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    word-break: break-word ;
+    background-color: #fff;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
+button:hover{
+    cursor: pointer !important;
+    color: rgb(0, 0, 0) !important;
+    text-decoration: underline !important;
+}

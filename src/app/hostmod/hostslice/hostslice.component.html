@@ -1,0 +1,22 @@
+<div class="hostOuterContainer">
+    <div class="hostInnerContainer">
+        <app-hostheader class="hostHeaderHolder"
+            [hostdata]="hostdata"
+            [mptsdata]="mptsdata"
+        >
+        </app-hostheader>
+        <div class="hostBodyHolder">
+            <app-lefthostbody 
+                [hostdata]="hostdata"
+                [mptsdata]="mptsdata"
+            >
+            </app-lefthostbody>
+            <app-righthostbody 
+                [hostdata]="hostdata"
+                [mptsdata]="mptsdata"
+            >
+
+            </app-righthostbody>
+        </div>
+    </div>
+</div>

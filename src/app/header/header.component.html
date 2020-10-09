@@ -1,0 +1,507 @@
+<div class="_siy8gh">
+  <div class="_1gw6tte" style="">
+    <header class="_kg17g8e">
+      <div class="_eqf9j0">
+        <div (click)="search = false" class="_otdka">
+          <a class="_o6689fn" aria-label="Earthbnb homepage" href="/">
+            <div class="_1grlqto">
+              <!-- <svg width="102" height="32" fill="currentcolor" style="display: block;"> -->
+              <img src="../assets/img/favicon/favicon.ico" alt="Icon" />
+              <div class="title">
+                <img
+                  src="../assets/img/title.JPG"
+                  alt="Earthbnb"
+                  height="48px"
+                />
+              </div>
+              <!-- </svg> -->
+            </div>
+          </a>
+        </div>
+        <div class="_1c0ocmt">
+          <div *ngIf="!search" class="_1i5xg6by">
+            <div
+              class="_ljad0a"
+              role="search"
+              data-testid="little-search"
+              aria-labelledby="littleSearchLabel"
+            >
+              <button (click)="search = true" class="_b2fxuo" type="button">
+                <div class="_1g5ss3l" id="littleSearchLabel">
+                  Start your search
+                </div>
+                <div class="greenbubble">
+                  <div
+                    class="_i8zuk7"
+                    data-testid="little-search-icon"
+                  ></div>
+                </div>
+              </button>
+            </div>
+          </div>
+          <div *ngIf="search" class="_2zv2f70">
+            <div data-nosnippet="true">
+              <div class="_1lveqk8">
+                <div>
+                  <form
+                    class="_1keztfl"
+                    action="/s/all"
+                    method="get"
+                    role="search"
+                  >
+                    <fieldset class="_d206yy">
+                      <div
+                        class="_17fy1ix"
+                        role="tablist"
+                        aria-label="What can we help you find?"
+                      >
+                        <div>
+                          <label
+                            for="search-block-tab-false-STAYS"
+                            class="_3hmsj"
+                          >
+                            <input
+                              (click)="exp = false"
+                              class="_1ai7zse"
+                              type="radio"
+                              id="search-block-tab-false-STAYS"
+                              data-testid="radio-tab-search-block-tab-false-STAYS"
+                              name="refinement_paths[]"
+                              role="tab"
+                              aria-selected="true"
+                              value="/homes"
+                              checked=""
+                            />
+                            <span class="_17gwvodj" data-text="true">
+                              Places to stay
+                            </span>
+                          </label>
+                        </div>
+                        <div>
+                          <label
+                            for="search-block-tab-false-EXPERIENCES"
+                            class="_3hmsj"
+                          >
+                            <input
+                              (click)="exp = true"
+                              class="_1ai7zse"
+                              type="radio"
+                              id="search-block-tab-false-EXPERIENCES"
+                              data-testid="radio-tab-search-block-tab-false-EXPERIENCES"
+                              name="refinement_paths[]"
+                              role="tab"
+                              aria-selected="false"
+                              value="/experiences"
+                            />
+                            <span class="_17gwvodj" data-text="true"
+                              >Experiences</span
+                            >
+                          </label>
+                        </div>
+                      </div>
+                    </fieldset>
+                    <div class="_urq7mym" data-panel-bounds="true">
+                      <div *ngIf="!exp" class="_1c7nvmy">
+                        <div class="_13b3a37">
+                          <div class="_43mycv"></div>
+                          <div class="_j8gg2a">
+                            <div
+                              role="button"
+                              tabindex="0"
+                              class="_dk4a5kc"
+                              aria-expanded="false"
+                              data-testid="structured-search-input-field-split-dates-1"
+                            >
+                              <div class="_seuyf">
+                                <div class="_wtz1co">Location</div>
+                                <div class="_uh2dzp">Where are you going?</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="_43mycv"></div>
+                        <div class="_13b3a37">
+                          <div class="_j8gg2a">
+                            <div
+                              role="button"
+                              tabindex="0"
+                              class="_dk4a5kc"
+                              aria-expanded="false"
+                              data-testid="structured-search-input-field-split-dates-0"
+                            >
+                              <div class="_seuyf">
+                                <div class="_wtz1co">Check in</div>
+                                <div class="_uh2dzp">Add dates</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="_43mycv"></div>
+                          <div class="_j8gg2a">
+                            <div
+                              role="button"
+                              tabindex="0"
+                              class="_dk4a5kc"
+                              aria-expanded="false"
+                              data-testid="structured-search-input-field-split-dates-1"
+                            >
+                              <div class="_seuyf">
+                                <div class="_wtz1co">Check out</div>
+                                <div class="_uh2dzp">Add dates</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="_43mycv"></div>
+                        <div class="_1yulsurh">
+                          <div
+                            role="button"
+                            tabindex="0"
+                            class="_1omae7o6"
+                            aria-expanded="false"
+                            data-testid="structured-search-input-field-guests-button"
+                          >
+                            <div class="_seuyf">
+                              <div class="_wtz1co">Guests</div>
+                              <div class="_uh2dzp">Add guests</div>
+                            </div>
+                          </div>
+                          <div class="_w64aej">
+                            <button
+                              class="_sxfp92z"
+                              aria-expanded="false"
+                              type="button"
+                            >
+                              <div class="_1hb5o3s">
+                                <div class="greenbubble">
+                                  <div
+                                    class="_i8zuk7"
+                                    data-testid="little-search-icon"
+                                  ></div>
+                                </div>
+                              </div>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div *ngIf="exp" class="_1c7nvmy">
+                        <div class="_13b3a37">
+                          <div class="_43mycv"></div>
+                          <div class="_j8gg2a">
+                            <div
+                              role="button"
+                              tabindex="0"
+                              class="_dk4a5kc"
+                              aria-expanded="false"
+                              data-testid="structured-search-input-field-split-dates-1"
+                            >
+                              <div class="_seuyf">
+                                <div class="_wtz1co">Location</div>
+                                <div class="_uh2dzp">Where are you going?</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="_13b3a37">
+                          <div class="_43mycv"></div>
+                          <div class="_j8gg2a">
+                            <div
+                              role="button"
+                              tabindex="0"
+                              class="_dk4a5kc"
+                              aria-expanded="false"
+                              data-testid="structured-search-input-field-split-dates-1"
+                            >
+                              <div class="_seuyf">
+                                <div class="_wtz1co">Date</div>
+                                <div class="_uh2dzp">
+                                  Add when you want to go
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="_w64aej">
+                          <button
+                            class="_sxfp92z"
+                            aria-expanded="false"
+                            type="button"
+                          >
+                            <div class="_1hb5o3s">
+                              <div class="greenbubble">
+                                <div
+                                  class="_i8zuk7"
+                                  data-testid="little-search-icon"
+                                ></div>
+                              </div>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div (click)="search = false" class="_19h9w7f">
+          <nav class="_vuzcgs" aria-label="Main">
+            <div class="_w2q1b8">
+              <a class="_1x6o0b9n" href="/host/homes">
+                <div class="_iglww7">Become a host</div>
+              </a>
+              <div class="_1ubw29">
+                <button
+                  type="button"
+                  class="_1x6o0b9n"
+                  aria-expanded="false"
+                  aria-label="Language and currency"
+                >
+                  <div class="_iglww7">
+                    <div class="_z5mecy" >
+                      <div class="_xpkakx">
+                        <svg
+                          viewBox="0 0 16 16"
+                          xmlns="http://www.w3.org/2000/svg"
+                          role="presentation"
+                          focusable="false"
+                          style="
+                            display: block;
+                            height: 16px;
+                            width: 16px;
+                            fill: currentcolor;
+                          "
+                        >
+                          <path
+                            d="m8.002.25a7.77 7.77 0 0 1 7.748 7.776 7.75 7.75 0 0 1 -7.521 7.72l-.246.004a7.75 7.75 0 0 1 -7.73-7.513l-.003-.245a7.75 7.75 0 0 1 7.752-7.742zm1.949 8.5h-3.903c.155 2.897 1.176 5.343 1.886 5.493l.068.007c.68-.002 1.72-2.365 1.932-5.23zm4.255 0h-2.752c-.091 1.96-.53 3.783-1.188 5.076a6.257 6.257 0 0 0 3.905-4.829zm-9.661 0h-2.75a6.257 6.257 0 0 0 3.934 5.075c-.615-1.208-1.036-2.875-1.162-4.686l-.022-.39zm1.188-6.576-.115.046a6.257 6.257 0 0 0 -3.823 5.03h2.75c.085-1.83.471-3.54 1.059-4.81zm2.262-.424c-.702.002-1.784 2.512-1.947 5.5h3.904c-.156-2.903-1.178-5.343-1.892-5.494l-.065-.007zm2.28.432.023.05c.643 1.288 1.069 3.084 1.157 5.018h2.748a6.275 6.275 0 0 0 -3.929-5.068z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <div class="_5hc72">
+                        <svg
+                          width="9"
+                          height="6"
+                          viewBox="0 0 9 6"
+                          fill="none"
+                          style="display: block"
+                        >
+                          <path
+                            d="M1 1L4.5 4.5L8 1"
+                            stroke="currentcolor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div>
+              <div class="_167wsvl">
+                <button
+                  type="button"
+                  class="_1usxwsg6"
+                  aria-expanded="false"
+                  id="field-guide-toggle"
+                  data-testid="cypress-headernav-profile"
+                >
+                  <div class="nav" aria-label="Main navigation menu">
+                    <svg
+                      viewBox="0 0 32 32"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      role="presentation"
+                      focusable="false"
+                      style="
+                        display: block;
+                        fill: none;
+                        height: 16px;
+                        width: 16px;
+                        stroke: currentcolor;
+                        stroke-width: 3;
+                        overflow: visible;
+                      "
+                    >
+                      <g fill="none" fill-rule="nonzero">
+                        <path d="m2 16h28"></path>
+                        <path d="m2 24h28"></path>
+                        <path d="m2 8h28"></path>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="_1sfnwgq" aria-hidden="true">
+                    <img class="_1wzp0xs" src="../assets/img/user.png" alt="" />
+                  </div>
+                  <!-- <div class="_nyj4ph4" aria-label="1 notification">1</div> -->
+                </button>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="_qkr85q"></div>
+  </div>
+</div>
+<header>
+  <div *ngIf="scrollTop > 1100" class="_1f68da7">
+    <div class="_zcn96s">
+      <div class="_4i7tcd" style="max-width: 1120px">
+        <div class="_dmn8hc">
+          <div class="_1gw6tte">
+            <div
+              data-plugin-in-point-id="NAV_DEFAULT"
+              data-section-id="NAV_DEFAULT"
+            >
+              <div class="_j9w1n7">
+                <div class="_yauuy6">
+                  <div class="_14f4nnk">
+                    <button type="button" class="_p4ul2ts">
+                      <div class="_11g6x33">Photos</div>
+                    </button>
+                  </div>
+                  <div class="_14f4nnk">
+                    <button type="button" class="_p4ul2ts">
+                      <div class="_11g6x33">Amenities</div>
+                    </button>
+                  </div>
+                  <div class="_14f4nnk">
+                    <button type="button" class="_p4ul2ts">
+                      <div class="_11g6x33">Reviews</div>
+                    </button>
+                  </div>
+                  <div class="_14f4nnk">
+                    <button type="button" class="_p4ul2ts">
+                      <div class="_11g6x33">Location</div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="_1gw6tte">
+            <div
+              data-plugin-in-point-id="BOOK_IT_NAV"
+              data-section-id="BOOK_IT_NAV"
+            >
+              <div class="_180ip0oz">
+                <div class="_eto04d">
+                  <div class="_1ewvwfo">
+                    <div class="_cuaxqwg" data-testid="book-it-default">
+                      <div class="_13vog1a">
+                        <div class="_3r2zp5v">
+                          <span class="_krjbj">$52 per night</span>
+                          <div class="_1t8wo4cs">
+                            <div class="_1b3och5f">
+                              <span
+                                ><span class="_pgfqnw" aria-hidden="true"
+                                  >$52</span
+                                ><span class="_9juhlry" aria-hidden="true"
+                                  >/ night</span
+                                ></span
+                              >
+                            </div>
+                          </div>
+                          <div class="_176k0ns">
+                            <span class="_1pg77l15"
+                              ><span class="_9qqdp4" style="font-size: 12px"
+                                ><span class="_8tbpu3" aria-hidden="true"
+                                  >󰀄</span
+                                ></span
+                              ><button
+                                aria-label="Rated 4.87 out of 5 from 150 reviews."
+                                tabindex="-1"
+                                type="button"
+                                class="_z75ovys"
+                              >
+                                <span class="_12si43g">4.87</span
+                                ><span class="_bq6krt">(150)</span>
+                              </button></span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="_fz3zdn">
+                        <form
+                          action="/payments/book?hosting_id=36207587"
+                          method="post"
+                        >
+                          <input
+                            type="hidden"
+                            name="s"
+                            value="undefined"
+                          /><input
+                            type="hidden"
+                            name="hosting_id"
+                            value="36207587"
+                          /><input
+                            type="hidden"
+                            name="guest_currency"
+                            value="USD"
+                          /><input
+                            type="hidden"
+                            name="checkin"
+                            value="2020-10-30"
+                          /><input
+                            type="hidden"
+                            name="checkout"
+                            value="2020-10-31"
+                          /><input
+                            type="hidden"
+                            name="number_of_guests"
+                            value="1"
+                          /><input
+                            type="hidden"
+                            name="number_of_adults"
+                            value="1"
+                          /><input
+                            type="hidden"
+                            name="number_of_children"
+                            value="0"
+                          /><input
+                            type="hidden"
+                            name="number_of_infants"
+                            value="0"
+                          /><input
+                            type="hidden"
+                            name="selected_cancellation_policy_id"
+                            value="undefined"
+                          /><input
+                            type="hidden"
+                            name="is_work_trip"
+                            value="false"
+                          /><button
+                            data-testid="homes-pdp-cta-btn"
+                            type="submit"
+                            class="_1501mvw9"
+                          >
+                            <span class="_163rr5i"
+                              ><span
+                                class="_19di23v"
+                                style="
+                                  background-position: calc(
+                                      (100 - var(--mouse-x, 0)) * 1%
+                                    )
+                                    calc((100 - var(--mouse-y, 0)) * 1%);
+                                  --mouse-x: 15.1094;
+                                  --mouse-y: 97.9167;
+                                "
+                              ></span></span
+                            ><span class="_tcp689">Reserve </span>
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

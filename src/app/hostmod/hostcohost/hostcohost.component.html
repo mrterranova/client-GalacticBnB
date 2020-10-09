@@ -1,0 +1,13 @@
+<div class="hostSubtitle" *ngIf="cohostData1.nameone">
+    Co-hosts
+</div>
+<ul class="cohostWrapper" *ngIf="cohostData1.nameone">
+    <li class="cohostItem" *ngIf="cohostData1.nameone">
+        <img class="hostProfilePicImage" src="{{cohostData1.imageurlone}}">
+        <p>{{cohostData1.nameone}}</p> 
+    </li>
+    <li class="cohostItem" *ngIf="cohostData1.nametwo">
+        <img class="hostProfilePicImage" src="{{cohostData1.imageurltwo}}">
+        <p>{{cohostData1.nametwo}}</p>
+    </li>
+</ul>

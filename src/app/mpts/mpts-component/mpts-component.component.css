@@ -1,0 +1,62 @@
+.mpts-container {
+  background-color: rgb(247, 247, 247);
+  padding: 0 50px;
+  margin-top: 60px;
+  scroll-behavior: smooth;
+  
+}
+.mpts-header {
+  padding-bottom: 5px;
+  padding-top: 50px;
+}
+.mpts-pagination-container {
+  float: right;
+}
+.mpts-page-count {
+  margin-right: 1em;
+}
+.mpts-pg-btn {
+  -webkit-box-pack: center !important;
+  -webkit-box-align: center;
+  appearance: none;
+  display: inline-flex;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  outline: 0px !important;
+  color: rgb(34, 34, 34) !important;
+  background-color: rgba(255, 255, 255, 0.9);
+  cursor: pointer !important;
+  touch-action: manipulation !important;
+  align-items: center !important;
+  justify-content: center;
+  background-clip: padding-box;
+  box-shadow: transparent 0px 0px 0px 1px, transparent 0px 0px 0px 4px,
+    rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  width: 32px;
+  height: 32px;
+  transition: box-shadow 0.2s ease 0s, -ms-transform 0.25s ease 0s,
+    -webkit-transform 0.25s ease 0s, transform 0.25s ease 0s !important;
+}
+.mpts-pg-btn:hover {
+  box-shadow: transparent 0px 0px 0px 1px, transparent 0px 0px 0px 4px,
+    rgba(0, 0, 0, 0.12) 0px 6px 16px !important;
+  color: rgb(0, 0, 0) !important;
+  transform: scale(1.04) !important;
+}
+.mpts-pg-btn-left {
+  margin-right: 1em;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+#pag-mpts-clickable{
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 700px) {
+  .mpts-pagination-container {
+    display: none;
+  }
+}

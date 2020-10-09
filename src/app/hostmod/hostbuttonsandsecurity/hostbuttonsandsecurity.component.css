@@ -1,0 +1,56 @@
+button{
+    margin-top: 32px;
+    display: inline;
+    font-weight: 600;
+    border: 1px solid #222222;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 13px 23px;
+    width: 150px;
+    height: 48px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+}
+button:hover{
+    background-color: rgba(247,247,247,1);
+    border-color: #000;
+}
+.hostLowerDiv{
+    margin: 24px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+}
+.sheildEarth{
+    width: 24px;
+    height: 24px;
+    background-color: cyan;
+    margin-right: 16px
+}
+p{
+    margin: 0px;
+    margin-right: 16px;
+    color: rgb(34, 34, 34);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+img{
+    width: 22px;
+    height: 22px;
+    object-fit: cover;
+}
+.svgdiv{
+    height: 24px;
+    width: 24px;
+    margin-right: 16px;
+    display: flex;
+    align-self: center;
+}
+/* breakpoint743 */
+@media only screen and (max-width: 743px) {
+    button, .hostLowerDiv {
+        width: 100%;
+    }
+  }

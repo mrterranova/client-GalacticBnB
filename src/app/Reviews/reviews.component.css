@@ -1,0 +1,137 @@
+.container > * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  box-sizing: border-box;
+  /* background: #eeeeee !important; */
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+/* .container > *:nth-child(odd) {
+  background: rgb(182, 230, 198);
+} */
+
+hr {
+  border: none;
+  height: 2px;
+  color: #59ff59; /* old IE */
+  background-color: #59ff59; /* Modern Browsers */
+  margin-bottom: 5px !important;
+}
+
+.review-panel-main {
+  display: grid;
+  overflow-y: scroll;
+  grid-template-columns: repeat(2, minmax(auto, 50%));
+  height: 455px;
+  min-height: 0;
+  min-width: 0;
+  gap: 0.5em;
+  scrollbar-width: thin;
+  scrollbar-color: #6d8d78 #b6e6c6;
+}
+.review-panel-main::-webkit-scrollbar {
+  width: 0px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+/* .review-panel-main > * :nth-child(even) {
+  background: rgb(130, 190, 150);
+} */
+
+.review-card {
+  border: 2px solid #59ff59;
+  border-radius: 5px;
+  /*   background: #e2e2e2 !important; */
+  position: relative;
+  min-width: 0;
+}
+
+/* .review-card > * {
+  background: rgb(130, 190, 150) !important;
+} */
+
+.review-text p {
+  position: relative;
+  white-space: break-spaces !important;
+  overflow: hidden !important;
+  -webkit-line-clamp: 4 !important; /* number of lines to show */
+}
+.review-text p::-webkit-scrollbar {
+  width: 0px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+.review-text {
+  padding-left: 2%;
+  width: 100%;
+  white-space: nowrap !important;
+  overflow: auto !important;
+  height: 100px;
+  scrollbar-width: thin;
+  scrollbar-color: #b6e6c6 !important;
+}
+
+.profile-link {
+  overflow: hidden;
+  /* word-wrap: break-word; */
+  display: inline-block;
+  max-height: 100%;
+  max-width: 8%;
+}
+
+.name-and-date {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column {
+  /*-webkit-columns: 2;
+  -moz-columns: 2;
+  columns: 2; */
+  list-style-position: inside;
+}
+
+.categories {
+  margin-top: 5px !important;
+  margin-left: 10% !important;
+  margin-right: 10% !important;
+}
+
+.column li {
+  float: left;
+  width: 50%;
+}
+
+.column li > * {
+  display: inline-block;
+}
+
+#cat-cleanliness {
+  list-style-type: "Cleanliness  ";
+}
+#cat-communication {
+  list-style-type: "Communication";
+}
+#cat-location {
+  list-style-type: "Location     ";
+}
+#cat-accuracy {
+  list-style-type: "Accuracy     ";
+}
+#cat-checkin {
+  list-style-type: "Check-in     ";
+}
+#cat-value {
+  list-style-type: "Value          ";
+}

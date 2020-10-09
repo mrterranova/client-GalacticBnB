@@ -1,0 +1,37 @@
+#searchBar {
+  margin-right: 200px;
+}
+
+#topBar {
+  box-shadow: 0px 7px 15px grey;
+}
+
+#cardPhoto {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+#cardsContainer {
+  margin-top: 80px;
+  border-radius: 5px;
+}
+
+#smallText {
+  color: grey;
+}
+#cardText {
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#starShape {
+  display: inline-block;
+}
+
+#starShape2 {
+  float: right;
+}
