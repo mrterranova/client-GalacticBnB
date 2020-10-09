@@ -1,0 +1,175 @@
+<script>
+  $("[rel=tooltip]").tooltip({html:true});
+</script>
+<div *ngIf="location"  class="footer-container container">
+  <h3 class="other-options-header">Explore other options in and around <span rel="tooltip" data-toggle="tooltip" title="There are currently {{ sameArr.length }} other listings in this state!" class="housing-options">{{ state }}</span></h3>
+  <p>More places to stay at EarthBnB:</p>
+  <p class="housing-options">Apartments · Bed and breakfasts · Lofts · Villas · Condominiums</p>
+    <div class="footer-table1 same-state-links-container" *ngIf="sameArr && sameArr.length; else lookingForMore">
+      <div class="footer-t1-row footer-t1-r1 flex-on-these-fools">
+        <div *ngFor="let same of sameArr" rel="tooltip" data-toggle="tooltip" data-html= "true"
+        title='There are currently {{ sameArr.length - 1 }} other listings to choose from in this area!'>
+          <div class="same-state-link"><a href="/rooms/{{ same.id }}">{{ same.city }}</a></div>
+        </div>
+      </div>
+    </div>
+    <ng-template #lookingForMore>
+      <h2 class="looking">
+        We are currently looking for more hosts and locations in this area. Join our <span class="join-family">family</span>!
+      </h2>
+    </ng-template>
+</div>
+<hr />
+<div class="footer-container container">
+  <table class="footer-table2">
+    <tr class="footer-t2-row footer-t1-r1">
+      <th>ABOUT</th>
+      <th>COMMUNITY</th>
+      <th>HOST</th>
+      <!-- <th>SUPPORT</th> -->
+    </tr>
+    <tr class="footer-t2-row footer-t1-r2">
+      <td>How Earthbnb works</td>
+      <td>Diversity & Belonging</td>
+      <td>Host your home</td>
+      <!-- <td>Updates for COVID-19</td> -->
+    </tr>
+    <tr class="footer-t2-row footer-t1-r3">
+      <td>Newsroom</td>
+      <td>Against Discrimination</td>
+      <td>Host an Online Experience</td>
+      <!-- <td>Help Center</td> -->
+    </tr>
+    <tr class="footer-t2-row footer-t1-r4">
+      <td>Earthbnb Plus</td>
+      <td>Accessibility</td>
+      <td>Host an Experience</td>
+      <!-- <td>Cancellation options</td> -->
+    </tr>
+    <tr class="footer-t2-row footer-t2-r5">
+      <td>Earthbnb Luxe</td>
+      <td>Earthbnb Associates</td>
+      <td>Message from CEO Jothi Nedungadi</td>
+      <!-- <td>Neighborhood Support</td> -->
+    </tr>
+    <tr class="footer-t2-row footer-t1-r5">
+      <td>HotelTonight</td>
+      <td>Frontline Stays</td>
+      <td>Responsible hosting</td>
+      <!-- <td>Trust & Safety</td> -->
+    </tr>
+    <tr class="footer-t1-row footer-t1-r5">
+      <td>Earthbnb for Work</td>
+      <td>Invite friends</td>
+      <td>Open Homes</td>
+      <td></td>
+    </tr>
+    <tr class="footer-t1-row footer-t1-r5">
+      <td>Olympics</td>
+      <td>Gift cards</td>
+      <td>Resource Center</td>
+      <td></td>
+    </tr>
+    <tr class="footer-t1-row footer-t1-r5">
+      <td>Careers</td>
+      <td></td>
+      <td>Community Center</td>
+      <td></td>
+    </tr>
+  </table>
+</div>
+<hr />
+<div class="footer-container container bottom-page-row">
+  <div class="footer-tag-left">
+    &copy;Earthbnb, Inc. All rights reserved &#183; Privacy &#183; Terms &#183;
+    Sitemap
+  </div>
+  <div class="footer-tag-right">
+    <div class="globe-english-us">
+      <svg
+      width="1em"
+      height="1em"
+      viewBox="0 0 16 16"
+      class="bi bi-globe"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4H2.255a7.025 7.025 0 0 1 3.072-2.472 6.7 6.7 0 0 0-.597.933c-.247.464-.462.98-.64 1.539zm-.582 3.5h-2.49c.062-.89.291-1.733.656-2.5H3.82a13.652 13.652 0 0 0-.312 2.5zM4.847 5H7.5v2.5H4.51A12.5 12.5 0 0 1 4.846 5zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5H7.5V11H4.847a12.5 12.5 0 0 1-.338-2.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12H7.5v2.923c-.67-.204-1.335-.82-1.887-1.855A7.97 7.97 0 0 1 5.145 12zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11H1.674a6.958 6.958 0 0 1-.656-2.5h2.49c.03.877.138 1.718.312 2.5zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12h2.355a7.967 7.967 0 0 1-.468 1.068c-.552 1.035-1.218 1.65-1.887 1.855V12zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5h-2.49A13.65 13.65 0 0 0 12.18 5h2.146c.365.767.594 1.61.656 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4H8.5V1.077c.67.204 1.335.82 1.887 1.855.173.324.33.682.468 1.068z"
+      />
+      </svg>
+    <span class="english-us-words"> Engish(US)</span>
+    </div>
+    <span class="footer-money">$ USD</span>
+    <span class="footer-facebook">
+      <svg
+        version="1.1"
+        id="Capa_1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        width="96.124px"
+        height="96.123px"
+        viewBox="0 0 96.124 96.123"
+        style="enable-background: new 0 0 96.124 96.123; width:24px; height: 24px;"
+      >
+        <path
+          d="M72.089,0.02L59.624,0C45.62,0,36.57,9.285,36.57,23.656v10.907H24.037c-1.083,0-1.96,0.878-1.96,1.961v15.803
+      c0,1.083,0.878,1.96,1.96,1.96h12.533v39.876c0,1.083,0.877,1.96,1.96,1.96h16.352c1.083,0,1.96-0.878,1.96-1.96V54.287h14.654
+      c1.083,0,1.96-0.877,1.96-1.96l0.006-15.803c0-0.52-0.207-1.018-0.574-1.386c-0.367-0.368-0.867-0.575-1.387-0.575H56.842v-9.246
+      c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z"
+        />
+      </svg>
+    </span>
+    <span class="footer-twitter">
+      <svg
+        version="1.1"
+        id="Capa_1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        viewBox="0 0 512 512"
+        style="enable-background: new 0 0 512 512; width: 24px; height:24px;"
+      >
+        <path
+          d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+              c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+              c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+              c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+              c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+              c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+              C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+              C480.224,136.96,497.728,118.496,512,97.248z"
+        />
+      </svg>
+    </span>
+    <span class="footer-instagram">
+      <svg
+        version="1.1"
+        id="Layer_1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        viewBox="0 0 300 300"
+        style="enable-background: new 0 0 300 300; width: 24px; height: 24px"
+      >
+        <path
+          id="XMLID_505_"
+          d="M38.52,0.012h222.978C282.682,0.012,300,17.336,300,38.52v222.978c0,21.178-17.318,38.49-38.502,38.49
+      H38.52c-21.184,0-38.52-17.313-38.52-38.49V38.52C0,17.336,17.336,0.012,38.52,0.012z M218.546,33.329
+      c-7.438,0-13.505,6.091-13.505,13.525v32.314c0,7.437,6.067,13.514,13.505,13.514h33.903c7.426,0,13.506-6.077,13.506-13.514
+      V46.854c0-7.434-6.08-13.525-13.506-13.525H218.546z M266.084,126.868h-26.396c2.503,8.175,3.86,16.796,3.86,25.759
+      c0,49.882-41.766,90.34-93.266,90.34c-51.487,0-93.254-40.458-93.254-90.34c0-8.963,1.37-17.584,3.861-25.759H33.35v126.732
+      c0,6.563,5.359,11.902,11.916,11.902h208.907c6.563,0,11.911-5.339,11.911-11.902V126.868z M150.283,90.978
+      c-33.26,0-60.24,26.128-60.24,58.388c0,32.227,26.98,58.375,60.24,58.375c33.278,0,60.259-26.148,60.259-58.375
+      C210.542,117.105,183.561,90.978,150.283,90.978z"
+        />
+      </svg>
+    </span>
+  </div>
+</div>
+

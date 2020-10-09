@@ -1,0 +1,117 @@
+.stickydiv{
+    width: 100%;
+    height: 276px;
+    margin: 48px 0px 48px 0px;
+    background: #fff;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 12px; 
+    padding: 24px; 
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.widget{
+    
+}
+.rating{
+    cursor: pointer;
+}
+.inline125{
+    display: flex;
+    flex-direction: row;
+    color:greenyellow;
+}
+.upperWidget{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+}
+.lowerWidget{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid rgb(176, 176, 176);
+    border-radius: 8px;
+    height: 112px;
+    cursor: pointer;
+}
+.checkInOut{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(176, 176, 176);
+    height: 56px;
+}
+.checkIn{
+    border-right: 1px solid rgb(176, 176, 176);
+}
+.checkOut{
+    
+}
+.checkOut, .checkIn{
+    padding: 26px 12px 10px 12px;
+    width: 50%;
+}
+.checkInOutLower{
+    color: rgb(113, 113, 113);
+    font-size: 14px;
+}
+.checkInOutHeading{
+    margin-top: -12px !important;
+    padding: 0px !important;
+    pointer-events: none !important;
+    font-size: 10px !important;
+    line-height: 12px !important;
+    color: rgb(34, 34, 34) !important;
+    text-transform: uppercase !important;
+    font-weight: 800 !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+
+}
+.guests{
+    height: 56px;
+    padding: 26px 36px 10px 12px
+}
+.gradient{
+    background: var(--dls19-brand-gradient, linear-gradient(to right, #25e61e 0%, #44e31c 50%, #04d704 100%)) !important;
+    width: 100%;
+    height: 48px;
+    color: #fff;
+    border-radius: 8px;
+    border: 0px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+}
+.lowerDrop{
+    color: black;
+}
+.underBar{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+.underBarButton{
+    display: flex;
+    flex-direction: row;
+    background: none;
+    border:none;
+    margin: -24px;
+}
+svg{
+    margin-right: 16px;
+}
+p{
+    text-decoration: underline;
+    
+}
+.underBarButton, p{ 
+    color: #717171;
+}

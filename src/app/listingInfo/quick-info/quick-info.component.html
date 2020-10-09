@@ -1,0 +1,56 @@
+<div class="container">
+  <div style="height:80px;">
+    <span style="float: left; padding-right: 1.5rem;">
+      <svg viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display:block; height: 24px; width: 24px; fill: currentColor;">
+        <path d="M17.954 2.781l.175.164 13.072 12.842-1.402 1.426-1.8-1.768L28 29a2 2 0 0 1-1.85 1.994L26 31H6a2 2 0 0 1-1.995-1.85L4 29V15.446l-1.8 1.767-1.4-1.426L13.856 2.958a3 3 0 0 1 4.097-.177zm-2.586 1.503l-.096.088L6 13.48 6 29l5-.001V19a2 2 0 0 1 1.85-1.995L13 17h6a2 2 0 0 1 1.995 1.85L21 19v9.999h5V13.48l-9.3-9.135a1.001 1.001 0 0 0-1.332-.06zM19 19h-6v9.999h6z"></path>
+      </svg>
+    </span>
+    <h5>{{roomspace}}</h5>
+    <span style="padding-left: 3rem;"> {{house}}</span>
+  </div>
+  <div style="height:80px;">
+    <span style="float: left; padding-right: 1.5rem;">
+      <svg viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display:block; height: 24px; width: 24px; fill: currentColor;">
+        <path d="M24 0v6l-3.929.001a6.958 6.958 0 0 0 1.488 3.403l.193.228-1.5 1.324a8.963 8.963 0 0 1-2.18-4.81 3 3 0 0 0-2.066 2.665L16 8.97v3.606l4.484 4.356a5 5 0 0 1 1.49 3.083l.02.25.006.253v8.631a3 3 0 0 1-2.824 2.995L19 32.15l-12.032-.129a3 3 0 0 1-2.963-2.825L4 29.021v-8.364a5 5 0 0 1 1.282-3.344l.182-.192L10 12.584V9.415L5.99 5.404l.016-.653A5 5 0 0 1 10.78.005L11 0zM7.659 21c-.563 0-1.12.066-1.659.197v7.824a1 1 0 0 0 .874.992l.115.008 12 .129.128-.007a1 1 0 0 0 .876-.876L20 29.15v-3.523a8.976 8.976 0 0 1-7.158-2.35l-.236-.227A6.967 6.967 0 0 0 7.659 21zM14 10h-2v3.414l-5.121 5.122a3 3 0 0 0-.432.545A9.046 9.046 0 0 1 7.66 19c2.262 0 4.444.844 6.124 2.407l.237.229A6.979 6.979 0 0 0 20 23.61v-3.092a3 3 0 0 0-.77-2.006l-.14-.145L14 13.423zm4-8h-7c-1.42 0-2.618.99-2.923 2.308l-.035.174-.018.127 3.389 3.39H14.1l.012-.058A5.006 5.006 0 0 1 18 4.1zm12 2a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-3-2a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-5 0h-2v2h2zm8-2a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
+      </svg>
+    </span>
+    <h5>Cleanliness</h5>
+    <span style="padding-left: 3rem;"> {{cleanliness}}</span>
+  </div>
+  <div style="height:80px;" *ngIf="superhost">
+    <span style="float: left; padding-right: 1.5rem;">
+      <svg viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display:block; height: 24px; width: 24px; fill: currentColor;">
+        <path d="M16.996 15.185l3.537-1.987c1.93-1.082 3.8-2.126 5.61-3.132.529-.294.857-.852.857-1.457V2.668C27 1.748 26.254 1 25.333 1H6.667A1.669 1.669 0 0 0 5 2.668v5.94c0 .606.328 1.164.857 1.458l3.323 1.852a1970.5 1970.5 0 0 1 5.827 3.27c.694.39 1.293.39 1.989-.003zm-.981-1.742l-.014.011-.013-.01-3.542-1.99c-1.16-.65-2.298-1.287-3.414-1.91L7 8.414V3.002h18v5.412l-3.155 1.758a2000.26 2000.26 0 0 0-5.83 3.27zM16 17a7 7 0 1 0 0 14 7 7 0 0 0 0-14zm0 2a5 5 0 1 1 0 10 5 5 0 0 1 0-10z"></path>
+      </svg>
+    </span>
+    <h5>{{host}} is Superhost</h5>
+    <span style="padding-left: 3rem;"> {{superhosttext}}</span>
+  </div>
+  <div style="height:80px;">
+    <span style="float: left; padding-right: 1.5rem;">
+      <svg viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display:block; height: 24px; width: 24px; fill: currentColor;">
+        <path d="M12 0v2h8V0h2v2h6a2 2 0 0 1 1.995 1.85L30 4v15.586a2 2 0 0 1-.467 1.284l-.119.13L21 29.414a2 2 0 0 1-1.238.578l-.176.008H7a5 5 0 0 1-4.995-4.783L2 25V4a2 2 0 0 1 1.85-1.995L4 2h6V0zM4 12v13a3 3 0 0 0 2.824 2.995L7 28h11v-5a5 5 0 0 1 4.783-4.995L23 18h5v-6zm23.585 8H23a3 3 0 0 0-2.995 2.824L20 23v4.585zM4 10h24V4h-6v2h-2V4h-8v2h-2V4H4z"></path>
+      </svg>
+    </span>
+    <h5>Cancellation policy</h5>
+    <span style="padding-left: 3rem;"> {{cancellation}}</span>
+  </div>
+  <hr/>
+  <p>{{mainbody}}</p>
+  <h5>The Space</h5>
+  <div>
+    <span>
+        <p>{{truncated}}</p>
+    </span>
+      <span *ngIf="buttonName">....<button style="background: none;border:none;text-decoration: underline;" (click)="toggle()">read more</button></span>
+      <span *ngIf = "other">
+        <span *ngFor="let nottrunc of notTruncated">
+          <p>{{nottrunc}}</p>
+        </span>
+      </span>
+  </div>
+  <span *ngIf="other">
+    <h5>Other things to note</h5>
+    <p>{{othernotes}}</p>
+  </span>
+</div>

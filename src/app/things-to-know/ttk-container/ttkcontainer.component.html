@@ -1,0 +1,26 @@
+<div class="ttkmaincontainer">
+    <div>
+        <div style="padding-bottom: 24px;">
+            <section>
+            <h2 class="container-header"><b>Things To Know</b></h2>
+            </section>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <td><div class="comp-header1"><b>House rules</b></div></td>
+                    <td><div class="health-safety"><b>Health & safety</b></div></td>
+                    <td><div class="cancel-policy"><b>Cancellation policy</b></div></td>
+                </tr>
+                
+
+                <tr>
+                    <td><app-houserules [ttkdata]="ttkdata"></app-houserules></td>
+                    <td><app-healthsafety [ttkdata]="ttkdata"></app-healthsafety></td>
+                    <td><app-cancellation [ttkdata]="ttkdata"></app-cancellation></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+

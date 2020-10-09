@@ -1,0 +1,57 @@
+h2, h3{
+    margin: 0px;
+}
+.hostProfilePicDiv{
+    height: 56px;
+    width: 56px;
+    margin-right: 16px;
+}
+.hostProfilePicImage{
+    height: 56px;
+    width: 56px;
+    border-radius: 100px;
+    object-fit: cover;
+}
+.hostColorfulSuperHostIconDiv{
+    height: 24px;
+    width: 14px;
+    position: relative;
+    right: -48px;
+    bottom: 24px;
+    line-height: 0;
+    pointer-events: none;
+    display: block;
+}
+.hostHeaderParentContainer{
+    display: flex;
+    margin: 0px 0px 24px;
+    height: 56px;;
+}
+h1{
+    color: inherit;
+    font-size: 1em;
+    font-weight: inherit;
+    line-height: inherit;
+    margin: 0px;
+    padding: 0px;
+}
+h3{
+    color: rgb(113, 113, 113);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    padding-top: 8px;
+}
+img{
+    object-fit: cover;
+}
+
+/* breakpoint743 */
+@media only screen and (max-width: 743px) {
+    .hostHeaderParentContainer{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-bottom: 12px;
+    }
+  }

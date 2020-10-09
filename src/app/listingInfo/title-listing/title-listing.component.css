@@ -1,0 +1,26 @@
+.titleContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    align-items: baseline;
+  
+  }
+  .pushRight {
+    margin-left: auto;
+  }
+  
+  .child {
+    padding: 5px;
+    vertical-align: center;
+  }
+  
+  .child > a {
+    color: rgb(110, 110, 110);
+  }
+  
+  .child:first-child {
+    width: 100%;
+    padding: 2px;
+  }
+  

@@ -1,0 +1,31 @@
+.integrationOfListingAndCalender{
+    display: flex;
+    flex-direction: row;
+    margin: 0px 105.5px;
+    padding: 0px 20px;
+
+}
+.leftSideIntegration{
+    display: flex;
+    flex-direction: column;
+    width: 58.333%;
+}
+
+.rightSideIntegration{
+    display: flex;
+    flex-direction: column;
+    width: 33.333%;
+    margin-left: 8.333%;
+}
+app-reservation{
+    position: -webkit-sticky ;
+    position: sticky ;
+    top: 80px ;
+    z-index: 1 ;
+    padding-right: 1px ;
+}
+
+.loveless {
+    padding-left: 10%;
+    padding-right:10%;
+}

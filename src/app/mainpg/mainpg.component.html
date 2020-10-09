@@ -1,0 +1,1000 @@
+<div>
+  <nav
+    class="navbar navbar-expand-lg fixed-top navbar-light"
+    style="background-color: white"
+    id="topBar"
+  >
+    <a class="navbar-brand" href="rooms/1">
+      <img
+        src="https://cdn-images-1.medium.com/max/282/1*aA4QwgsTkdSMSAEhh_qreQ@2x.png"
+        width="30"
+        height="30"
+        class="d-inline-block align-top"
+        alt=""
+      />
+      earthbnb</a
+    >
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <form class="form-inline my-2 my-lg-0 ml-auto" id="searchBar">
+        <input
+          class="form-control mr-sm-2"
+          type="search"
+          placeholder="Start your search"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          <img
+            src="https://www.iconfinder.com/data/icons/political-elections/50/29-512.png"
+            width="30"
+            height="30"
+            class="d-inline-block align-top"
+            alt=""
+          />
+        </button>
+      </form>
+      <span class="navbar-text"> Become a Host </span>
+      <div class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          <img
+            src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/microsoft/58/globe-with-meridians_1f310.png"
+            width="30"
+            height="30"
+            class="d-inline-block align-top"
+            alt=""
+          />
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+      <div class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          <img
+            src="https://www.iconfinder.com/data/icons/users-4-1/24/user-neutral-single-natural-person-human-circle-512.png"
+            width="30"
+            height="30"
+            class="d-inline-block align-top"
+            alt=""
+          />
+          <img
+            src="https://www.iconfinder.com/data/icons/clean-minimal-set/16/open-menu-01-512.png"
+            width="30"
+            height="30"
+            class="d-inline-block align-top"
+            alt=""
+          />
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<div class="container" id="cardsContainer">
+  <a href="/rooms/{{ locations[0].id }}">
+    <div class="card">
+      <div class="card-img-overlay">
+        <div id="cardText">
+          <p class="card-text">
+            <small class="text-muted" id="textCard"
+              >{{ locations[0].roomspace }} in {{ locations[0].city }},
+              {{ locations[0].state_territory }}</small
+            >
+          </p>
+          <h5 class="card-title" id="cardTitle textCard">
+            {{ locations[0].title }}
+          </h5>
+          <p id="smallText">_______</p>
+          <p class="card-text textCard">
+            {{ locations[0].description }}
+          </p>
+          <p class="card-text"></p>
+          <p class="textCard">
+            {{ locations[0].guests }} guests -
+            {{ locations[0].bedrooms }} bedrooms - {{ locations[0].beds }} beds
+            - {{ locations[0].bathrooms }} bathrooms
+          </p>
+          <p id="starShape">
+            <img
+              src="https://toppng.com/uploads/preview/lime-clipart-green-stars-green-star-clipart-11563050785l1dym4bukb.png"
+              width="20"
+              height="20"
+              id="heartShape"
+            />{{ locations[0].rating }}
+          </p>
+          <p id="starShape2">${{ locations[0].price }} / night</p>
+        </div>
+      </div>
+      <img
+        class="card-img-bottom"
+        src="{{ photos[0] }}"
+        alt="Card image cap"
+        id="cardPhoto"
+      />
+    </div>
+  </a>
+</div>
+<div class="container" id="cardsContainer">
+  <a href="/rooms/{{ locations[1].id }}">
+    <div class="card">
+      <div class="card-img-overlay">
+        <div id="cardText">
+          <p class="card-text">
+            <small class="text-muted" id="textCard"
+              >{{ locations[1].roomspace }} in {{ locations[1].city }},
+              {{ locations[1].state_territory }}</small
+            >
+          </p>
+          <h5 class="card-title" id="cardTitle textCard">
+            {{ locations[1].title }}
+          </h5>
+          <p id="smallText">_______</p>
+          <p class="card-text textCard">
+            {{ locations[1].description }}
+          </p>
+          <p class="card-text"></p>
+          <p class="textCard">
+            {{ locations[1].guests }} guests -
+            {{ locations[1].bedrooms }} bedrooms - {{ locations[1].beds }} beds
+            - {{ locations[1].bathrooms }} bathrooms
+          </p>
+          <p id="starShape">
+            <img
+              src="https://toppng.com/uploads/preview/lime-clipart-green-stars-green-star-clipart-11563050785l1dym4bukb.png"
+              width="21"
+              height="21"
+              id="heartShape"
+            />{{ locations[1].rating }}
+          </p>
+          <p id="starShape2">${{ locations[1].price }} / night</p>
+        </div>
+      </div>
+      <img
+        class="card-img-bottom"
+        src="{{ photos[1] }}"
+        alt="Card image cap"
+        id="cardPhoto"
+      />
+    </div>
+  </a>
+</div>
+<div class="container" id="cardsContainer">
+  <a href="/rooms/{{ locations[2].id }}">
+    <div class="card">
+      <div class="card-img-overlay">
+        <div id="cardText">
+          <p class="card-text">
+            <small class="text-muted" id="textCard"
+              >{{ locations[2].roomspace }} in {{ locations[2].city }},
+              {{ locations[2].state_territory }}</small
+            >
+          </p>
+          <h5 class="card-title" id="cardTitle textCard">
+            {{ locations[2].title }}
+          </h5>
+          <p id="smallText">_______</p>
+          <p class="card-text textCard">
+            {{ locations[2].description }}
+          </p>
+          <p class="card-text"></p>
+          <p class="textCard">
+            {{ locations[2].guests }} guests -
+            {{ locations[2].bedrooms }} bedrooms - {{ locations[2].beds }} beds
+            - {{ locations[2].bathrooms }} bathrooms
+          </p>
+          <p id="starShape">
+            <img
+              src="https://toppng.com/uploads/preview/lime-clipart-green-stars-green-star-clipart-11563050785l1dym4bukb.png"
+              width="21"
+              height="21"
+              id="heartShape"
+            />{{ locations[2].rating }}
+          </p>
+          <p id="starShape2">${{ locations[2].price }} / night</p>
+        </div>
+      </div>
+      <img
+        class="card-img-bottom"
+        src="{{ photos[2] }}"
+        alt="Card image cap"
+        id="cardPhoto"
+      />
+    </div>
+  </a>
+</div>
+<div class="container" id="cardsContainer">
+  <a href="/rooms/{{ locations[3].id }}">
+    <div class="card">
+      <div class="card-img-overlay">
+        <div id="cardText">
+          <p class="card-text">
+            <small class="text-muted" id="textCard"
+              >{{ locations[3].roomspace }} in {{ locations[3].city }},
+              {{ locations[3].state_territory }}</small
+            >
+          </p>
+          <h5 class="card-title" id="cardTitle textCard">
+            {{ locations[3].title }}
+          </h5>
+          <p id="smallText">_______</p>
+          <p class="card-text textCard">
+            {{ locations[3].description }}
+          </p>
+          <p class="card-text"></p>
+          <p class="textCard">
+            {{ locations[3].guests }} guests -
+            {{ locations[3].bedrooms }} bedrooms - {{ locations[3].beds }} beds
+            - {{ locations[3].bathrooms }} bathrooms
+          </p>
+          <p id="starShape">
+            <img
+              src="https://toppng.com/uploads/preview/lime-clipart-green-stars-green-star-clipart-11563050785l1dym4bukb.png"
+              width="21"
+              height="21"
+              id="heartShape"
+            />{{ locations[3].rating }}
+          </p>
+          <p id="starShape2">${{ locations[3].price }} / night</p>
+        </div>
+      </div>
+      <img
+        class="card-img-bottom"
+        src="{{ photos[3] }}"
+        alt="Card image cap"
+        id="cardPhoto"
+      />
+    </div>
+  </a>
+</div>
+<div class="container" id="cardsContainer">
+  <a href="/rooms/{{ locations[4].id }}">
+    <div class="card">
+      <div class="card-img-overlay">
+        <div id="cardText">
+          <p class="card-text">
+            <small class="text-muted" id="textCard"
+              >{{ locations[4].roomspace }} in {{ locations[4].city }},
+              {{ locations[4].state_territory }}</small
+            >
+          </p>
+          <h5 class="card-title" id="cardTitle textCard">
+            {{ locations[4].title }}
+          </h5>
+          <p id="smallText">_______</p>
+          <p class="card-text textCard">
+            {{ locations[4].description }}
+          </p>
+          <p class="card-text"></p>
+          <p class="textCard">
+            {{ locations[4].guests }} guests -
+            {{ locations[4].bedrooms }} bedrooms - {{ locations[4].beds }} beds
+            - {{ locations[4].bathrooms }} bathrooms
+          </p>
+          <p id="starShape">
+            <img
+              src="https://toppng.com/uploads/preview/lime-clipart-green-stars-green-star-clipart-11563050785l1dym4bukb.png"
+              width="21"
+              height="21"
+              id="heartShape"
+            />{{ locations[4].rating }}
+          </p>
+          <p id="starShape2">${{ locations[4].price }} / night</p>
+        </div>
+      </div>
+      <img
+        class="card-img-bottom"
+        src="{{ photos[4] }}"
+        alt="Card image cap"
+        id="cardPhoto"
+      />
+    </div>
+  </a>
+</div>
+<div class="container" id="cardsContainer">
+  <a href="/rooms/{{ locations[5].id }}">
+    <div class="card">
+      <div class="card-img-overlay">
+        <div id="cardText">
+          <p class="card-text">
+            <small class="text-muted" id="textCard"
+              >{{ locations[5].roomspace }} in {{ locations[5].city }},
+              {{ locations[5].state_territory }}</small
+            >
+          </p>
+          <h5 class="card-title" id="cardTitle textCard">
+            {{ locations[5].title }}
+          </h5>
+          <p id="smallText">_______</p>
+          <p class="card-text textCard">
+            {{ locations[5].description }}
+          </p>
+          <p class="card-text"></p>
+          <p class="textCard">
+            {{ locations[5].guests }} guests -
+            {{ locations[5].bedrooms }} bedrooms - {{ locations[5].beds }} beds
+            - {{ locations[5].bathrooms }} bathrooms
+          </p>
+          <p id="starShape">
+            <img
+              src="https://toppng.com/uploads/preview/lime-clipart-green-stars-green-star-clipart-11563050785l1dym4bukb.png"
+              width="21"
+              height="21"
+              id="heartShape"
+            />{{ locations[5].rating }}
+          </p>
+          <p id="starShape2">${{ locations[5].price }} / night</p>
+        </div>
+      </div>
+      <img
+        class="card-img-bottom"
+        src="{{ photos[5] }}"
+        alt="Card image cap"
+        id="cardPhoto"
+      />
+    </div>
+  </a>
+</div>
+<div class="container" id="cardsContainer">
+  <a href="/rooms/{{ locations[1].id }}">
+    <div class="card">
+      <div class="card-img-overlay">
+        <div id="cardText">
+          <p class="card-text">
+            <small class="text-muted" id="textCard"
+              >{{ locations[6].roomspace }} in {{ locations[6].city }},
+              {{ locations[6].state_territory }}</small
+            >
+          </p>
+          <h5 class="card-title" id="cardTitle textCard">
+            {{ locations[6].title }}
+          </h5>
+          <p id="smallText">_______</p>
+          <p class="card-text textCard">
+            {{ locations[6].description }}
+          </p>
+          <p class="card-text"></p>
+          <p class="textCard">
+            {{ locations[6].guests }} guests -
+            {{ locations[6].bedrooms }} bedrooms - {{ locations[6].beds }} beds
+            - {{ locations[6].bathrooms }} bathrooms
+          </p>
+          <p id="starShape">
+            <img
+              src="https://toppng.com/uploads/preview/lime-clipart-green-stars-green-star-clipart-11563050785l1dym4bukb.png"
+              width="21"
+              height="21"
+              id="heartShape"
+            />{{ locations[6].rating }}
+          </p>
+          <p id="starShape2">${{ locations[6].price }} / night</p>
+        </div>
+      </div>
+      <img
+        class="card-img-bottom"
+        src="{{ photos[6] }}"
+        alt="Card image cap"
+        id="cardPhoto"
+      />
+    </div>
+  </a>
+</div>
+<div class="container" id="cardsContainer">
+  <a href="/rooms/{{ locations[7].id }}">
+    <div class="card">
+      <div class="card-img-overlay">
+        <div id="cardText">
+          <p class="card-text">
+            <small class="text-muted" id="textCard"
+              >{{ locations[7].roomspace }} in {{ locations[7].city }},
+              {{ locations[7].state_territory }}</small
+            >
+          </p>
+          <h5 class="card-title" id="cardTitle textCard">
+            {{ locations[7].title }}
+          </h5>
+          <p id="smallText">_______</p>
+          <p class="card-text textCard">
+            {{ locations[7].description }}
+          </p>
+          <p class="card-text"></p>
+          <p class="textCard">
+            {{ locations[7].guests }} guests -
+            {{ locations[7].bedrooms }} bedrooms - {{ locations[7].beds }} beds
+            - {{ locations[7].bathrooms }} bathrooms
+          </p>
+          <p id="starShape">
+            <img
+              src="https://toppng.com/uploads/preview/lime-clipart-green-stars-green-star-clipart-11563050785l1dym4bukb.png"
+              width="21"
+              height="21"
+              id="heartShape"
+            />{{ locations[7].rating }}
+          </p>
+          <p id="starShape2">${{ locations[7].price }} / night</p>
+        </div>
+      </div>
+      <img
+        class="card-img-bottom"
+        src="{{ photos[7] }}"
+        alt="Card image cap"
+        id="cardPhoto"
+      />
+    </div>
+  </a>
+</div>
+<div class="container" id="cardsContainer">
+  <a href="/rooms/{{ locations[8].id }}">
+    <div class="card">
+      <div class="card-img-overlay">
+        <div id="cardText">
+          <p class="card-text">
+            <small class="text-muted" id="textCard"
+              >{{ locations[8].roomspace }} in {{ locations[8].city }},
+              {{ locations[8].state_territory }}</small
+            >
+          </p>
+          <h5 class="card-title" id="cardTitle textCard">
+            {{ locations[8].title }}
+          </h5>
+          <p id="smallText">_______</p>
+          <p class="card-text textCard">
+            {{ locations[8].description }}
+          </p>
+          <p class="card-text"></p>
+          <p class="textCard">
+            {{ locations[8].guests }} guests -
+            {{ locations[8].bedrooms }} bedrooms - {{ locations[8].beds }} beds
+            - {{ locations[8].bathrooms }} bathrooms
+          </p>
+          <p id="starShape">
+            <img
+              src="https://toppng.com/uploads/preview/lime-clipart-green-stars-green-star-clipart-11563050785l1dym4bukb.png"
+              width="21"
+              height="21"
+              id="heartShape"
+            />{{ locations[8].rating }}
+          </p>
+          <p id="starShape2">${{ locations[8].price }} / night</p>
+        </div>
+      </div>
+      <img
+        class="card-img-bottom"
+        src="{{ photos[8] }}"
+        alt="Card image cap"
+        id="cardPhoto"
+      />
+    </div>
+  </a>
+</div>
+<div class="container" id="cardsContainer">
+  <a href="/rooms/{{ locations[9].id }}">
+    <div class="card">
+      <div class="card-img-overlay">
+        <div id="cardText">
+          <p class="card-text">
+            <small class="text-muted" id="textCard"
+              >{{ locations[9].roomspace }} in {{ locations[9].city }},
+              {{ locations[9].state_territory }}</small
+            >
+          </p>
+          <h5 class="card-title" id="cardTitle textCard">
+            {{ locations[9].title }}
+          </h5>
+          <p id="smallText">_______</p>
+          <p class="card-text textCard">
+            {{ locations[9].description }}
+          </p>
+          <p class="card-text"></p>
+          <p class="textCard">
+            {{ locations[9].guests }} guests -
+            {{ locations[9].bedrooms }} bedrooms - {{ locations[9].beds }} beds
+            - {{ locations[9].bathrooms }} bathrooms
+          </p>
+          <p id="starShape">
+            <img
+              src="https://toppng.com/uploads/preview/lime-clipart-green-stars-green-star-clipart-11563050785l1dym4bukb.png"
+              width="21"
+              height="21"
+              id="heartShape"
+            />{{ locations[9].rating }}
+          </p>
+          <p id="starShape2">${{ locations[9].price }} / night</p>
+        </div>
+      </div>
+      <img
+        class="card-img-bottom"
+        src="{{ photos[9] }}"
+        alt="Card image cap"
+        id="cardPhoto"
+      />
+    </div>
+  </a>
+</div>
+<div class="container" id="cardsContainer">
+  <a href="/rooms/{{ locations[10].id }}">
+    <div class="card">
+      <div class="card-img-overlay">
+        <div id="cardText">
+          <p class="card-text">
+            <small class="text-muted" id="textCard"
+              >{{ locations[10].roomspace }} in {{ locations[10].city }},
+              {{ locations[10].state_territory }}</small
+            >
+          </p>
+          <h5 class="card-title" id="cardTitle textCard">
+            {{ locations[10].title }}
+          </h5>
+          <p id="smallText">_______</p>
+          <p class="card-text textCard">
+            {{ locations[10].description }}
+          </p>
+          <p class="card-text"></p>
+          <p class="textCard">
+            {{ locations[10].guests }} guests -
+            {{ locations[10].bedrooms }} bedrooms -
+            {{ locations[10].beds }} beds -
+            {{ locations[10].bathrooms }} bathrooms
+          </p>
+          <p id="starShape">
+            <img
+              src="https://toppng.com/uploads/preview/lime-clipart-green-stars-green-star-clipart-11563050785l1dym4bukb.png"
+              width="21"
+              height="21"
+              id="heartShape"
+            />{{ locations[10].rating }}
+          </p>
+          <p id="starShape2">${{ locations[10].price }} / night</p>
+        </div>
+      </div>
+      <img
+        class="card-img-bottom"
+        src="{{ photos[10] }}"
+        alt="Card image cap"
+        id="cardPhoto"
+      />
+    </div>
+  </a>
+</div>
+<div class="container" id="cardsContainer">
+  <a href="/rooms/{{ locations[11].id }}">
+    <div class="card">
+      <div class="card-img-overlay">
+        <div id="cardText">
+          <p class="card-text">
+            <small class="text-muted" id="textCard"
+              >{{ locations[11].roomspace }} in {{ locations[11].city }},
+              {{ locations[11].state_territory }}</small
+            >
+          </p>
+          <h5 class="card-title" id="cardTitle textCard">
+            {{ locations[11].title }}
+          </h5>
+          <p id="smallText">_______</p>
+          <p class="card-text textCard">
+            {{ locations[11].description }}
+          </p>
+          <p class="card-text"></p>
+          <p class="textCard">
+            {{ locations[11].guests }} guests -
+            {{ locations[11].bedrooms }} bedrooms -
+            {{ locations[11].beds }} beds -
+            {{ locations[11].bathrooms }} bathrooms
+          </p>
+          <p id="starShape">
+            <img
+              src="https://toppng.com/uploads/preview/lime-clipart-green-stars-green-star-clipart-11563050785l1dym4bukb.png"
+              width="21"
+              height="21"
+              id="heartShape"
+            />{{ locations[11].rating }}
+          </p>
+          <p id="starShape2">${{ locations[11].price }} / night</p>
+        </div>
+      </div>
+      <img
+        class="card-img-bottom"
+        src="{{ photos[11] }}"
+        alt="Card image cap"
+        id="cardPhoto"
+      />
+    </div>
+  </a>
+</div>
+<div class="container" id="cardsContainer">
+  <a href="/rooms/{{ locations[12].id }}">
+    <div class="card">
+      <div class="card-img-overlay">
+        <div id="cardText">
+          <p class="card-text">
+            <small class="text-muted" id="textCard"
+              >{{ locations[12].roomspace }} in {{ locations[12].city }},
+              {{ locations[12].state_territory }}</small
+            >
+          </p>
+          <h5 class="card-title" id="cardTitle textCard">
+            {{ locations[12].title }}
+          </h5>
+          <p id="smallText">_______</p>
+          <p class="card-text textCard">
+            {{ locations[12].description }}
+          </p>
+          <p class="card-text"></p>
+          <p class="textCard">
+            {{ locations[12].guests }} guests -
+            {{ locations[12].bedrooms }} bedrooms -
+            {{ locations[12].beds }} beds -
+            {{ locations[12].bathrooms }} bathrooms
+          </p>
+          <p id="starShape">
+            <img
+              src="https://toppng.com/uploads/preview/lime-clipart-green-stars-green-star-clipart-11563050785l1dym4bukb.png"
+              width="21"
+              height="21"
+              id="heartShape"
+            />{{ locations[12].rating }}
+          </p>
+          <p id="starShape2">${{ locations[12].price }} / night</p>
+        </div>
+      </div>
+      <img
+        class="card-img-bottom"
+        src="{{ photos[12] }}"
+        alt="Card image cap"
+        id="cardPhoto"
+      />
+    </div>
+  </a>
+</div>
+<div class="container" id="cardsContainer">
+  <a href="/rooms/{{ locations[13].id }}">
+    <div class="card">
+      <div class="card-img-overlay">
+        <div id="cardText">
+          <p class="card-text">
+            <small class="text-muted" id="textCard"
+              >{{ locations[13].roomspace }} in {{ locations[13].city }},
+              {{ locations[13].state_territory }}</small
+            >
+          </p>
+          <h5 class="card-title" id="cardTitle textCard">
+            {{ locations[13].title }}
+          </h5>
+          <p id="smallText">_______</p>
+          <p class="card-text textCard">
+            {{ locations[13].description }}
+          </p>
+          <p class="card-text"></p>
+          <p class="textCard">
+            {{ locations[13].guests }} guests -
+            {{ locations[13].bedrooms }} bedrooms -
+            {{ locations[13].beds }} beds -
+            {{ locations[13].bathrooms }} bathrooms
+          </p>
+          <p id="starShape">
+            <img
+              src="https://toppng.com/uploads/preview/lime-clipart-green-stars-green-star-clipart-11563050785l1dym4bukb.png"
+              width="21"
+              height="21"
+              id="heartShape"
+            />{{ locations[13].rating }}
+          </p>
+          <p id="starShape2">${{ locations[13].price }} / night</p>
+        </div>
+      </div>
+      <img
+        class="card-img-bottom"
+        src="{{ photos[13] }}"
+        alt="Card image cap"
+        id="cardPhoto"
+      />
+    </div>
+  </a>
+</div>
+<div class="container" id="cardsContainer">
+  <a href="/rooms/{{ locations[14].id }}">
+    <div class="card">
+      <div class="card-img-overlay">
+        <div id="cardText">
+          <p class="card-text">
+            <small class="text-muted" id="textCard"
+              >{{ locations[14].roomspace }} in {{ locations[14].city }},
+              {{ locations[14].state_territory }}</small
+            >
+          </p>
+          <h5 class="card-title" id="cardTitle textCard">
+            {{ locations[14].title }}
+          </h5>
+          <p id="smallText">_______</p>
+          <p class="card-text textCard">
+            {{ locations[14].description }}
+          </p>
+          <p class="card-text"></p>
+          <p class="textCard">
+            {{ locations[14].guests }} guests -
+            {{ locations[14].bedrooms }} bedrooms -
+            {{ locations[14].beds }} beds -
+            {{ locations[14].bathrooms }} bathrooms
+          </p>
+          <p id="starShape">
+            <img
+              src="https://toppng.com/uploads/preview/lime-clipart-green-stars-green-star-clipart-11563050785l1dym4bukb.png"
+              width="21"
+              height="21"
+              id="heartShape"
+            />{{ locations[14].rating }}
+          </p>
+          <p id="starShape2">${{ locations[14].price }} / night</p>
+        </div>
+      </div>
+      <img
+        class="card-img-bottom"
+        src="{{ photos[14] }}"
+        alt="Card image cap"
+        id="cardPhoto"
+      />
+    </div>
+  </a>
+</div>
+<div class="container" id="cardsContainer">
+  <a href="/rooms/{{ locations[15].id }}">
+    <div class="card">
+      <div class="card-img-overlay">
+        <div id="cardText">
+          <p class="card-text">
+            <small class="text-muted" id="textCard"
+              >{{ locations[15].roomspace }} in {{ locations[15].city }},
+              {{ locations[15].state_territory }}</small
+            >
+          </p>
+          <h5 class="card-title" id="cardTitle textCard">
+            {{ locations[15].title }}
+          </h5>
+          <p id="smallText">_______</p>
+          <p class="card-text textCard">
+            {{ locations[15].description }}
+          </p>
+          <p class="card-text"></p>
+          <p class="textCard">
+            {{ locations[15].guests }} guests -
+            {{ locations[15].bedrooms }} bedrooms -
+            {{ locations[15].beds }} beds -
+            {{ locations[15].bathrooms }} bathrooms
+          </p>
+          <p id="starShape">
+            <img
+              src="https://toppng.com/uploads/preview/lime-clipart-green-stars-green-star-clipart-11563050785l1dym4bukb.png"
+              width="21"
+              height="21"
+              id="heartShape"
+            />{{ locations[15].rating }}
+          </p>
+          <p id="starShape2">${{ locations[15].price }} / night</p>
+        </div>
+      </div>
+      <img
+        class="card-img-bottom"
+        src="{{ photos[15] }}"
+        alt="Card image cap"
+        id="cardPhoto"
+      />
+    </div>
+  </a>
+</div>
+<div class="container" id="cardsContainer">
+  <a href="/rooms/{{ locations[16].id }}">
+    <div class="card">
+      <div class="card-img-overlay">
+        <div id="cardText">
+          <p class="card-text">
+            <small class="text-muted" id="textCard"
+              >{{ locations[16].roomspace }} in {{ locations[16].city }},
+              {{ locations[16].state_territory }}</small
+            >
+          </p>
+          <h5 class="card-title" id="cardTitle textCard">
+            {{ locations[16].title }}
+          </h5>
+          <p id="smallText">_______</p>
+          <p class="card-text textCard">
+            {{ locations[16].description }}
+          </p>
+          <p class="card-text"></p>
+          <p class="textCard">
+            {{ locations[16].guests }} guests -
+            {{ locations[16].bedrooms }} bedrooms -
+            {{ locations[16].beds }} beds -
+            {{ locations[16].bathrooms }} bathrooms
+          </p>
+          <p id="starShape">
+            <img
+              src="https://toppng.com/uploads/preview/lime-clipart-green-stars-green-star-clipart-11563050785l1dym4bukb.png"
+              width="21"
+              height="21"
+              id="heartShape"
+            />{{ locations[16].rating }}
+          </p>
+          <p id="starShape2">${{ locations[16].price }} / night</p>
+        </div>
+      </div>
+      <img
+        class="card-img-bottom"
+        src="{{ photos[16] }}"
+        alt="Card image cap"
+        id="cardPhoto"
+      />
+    </div>
+  </a>
+</div>
+<div class="container" id="cardsContainer">
+  <a href="/rooms/{{ locations[17].id }}">
+    <div class="card">
+      <div class="card-img-overlay">
+        <div id="cardText">
+          <p class="card-text">
+            <small class="text-muted" id="textCard"
+              >{{ locations[17].roomspace }} in {{ locations[17].city }},
+              {{ locations[17].state_territory }}</small
+            >
+          </p>
+          <h5 class="card-title" id="cardTitle textCard">
+            {{ locations[17].title }}
+          </h5>
+          <p id="smallText">_______</p>
+          <p class="card-text textCard">
+            {{ locations[17].description }}
+          </p>
+          <p class="card-text"></p>
+          <p class="textCard">
+            {{ locations[17].guests }} guests -
+            {{ locations[17].bedrooms }} bedrooms -
+            {{ locations[17].beds }} beds -
+            {{ locations[17].bathrooms }} bathrooms
+          </p>
+          <p id="starShape">
+            <img
+              src="https://toppng.com/uploads/preview/lime-clipart-green-stars-green-star-clipart-11563050785l1dym4bukb.png"
+              width="21"
+              height="21"
+              id="heartShape"
+            />{{ locations[17].rating }}
+          </p>
+          <p id="starShape2">${{ locations[17].price }} / night</p>
+        </div>
+      </div>
+      <img
+        class="card-img-bottom"
+        src="{{ photos[17] }}"
+        alt="Card image cap"
+        id="cardPhoto"
+      />
+    </div>
+  </a>
+</div>
+<div class="container" id="cardsContainer">
+  <a href="/rooms/{{ locations[18].id }}">
+    <div class="card">
+      <div class="card-img-overlay">
+        <div id="cardText">
+          <p class="card-text">
+            <small class="text-muted" id="textCard"
+              >{{ locations[18].roomspace }} in {{ locations[18].city }},
+              {{ locations[18].state_territory }}</small
+            >
+          </p>
+          <h5 class="card-title" id="cardTitle textCard">
+            {{ locations[18].title }}
+          </h5>
+          <p id="smallText">_______</p>
+          <p class="card-text textCard">
+            {{ locations[18].description }}
+          </p>
+          <p class="card-text"></p>
+          <p class="textCard">
+            {{ locations[18].guests }} guests -
+            {{ locations[18].bedrooms }} bedrooms -
+            {{ locations[18].beds }} beds -
+            {{ locations[18].bathrooms }} bathrooms
+          </p>
+          <p id="starShape">
+            <img
+              src="https://toppng.com/uploads/preview/lime-clipart-green-stars-green-star-clipart-11563050785l1dym4bukb.png"
+              width="21"
+              height="21"
+              id="heartShape"
+            />{{ locations[18].rating }}
+          </p>
+          <p id="starShape2">${{ locations[18].price }} / night</p>
+        </div>
+      </div>
+      <img
+        class="card-img-bottom"
+        src="{{ photos[18] }}"
+        alt="Card image cap"
+        id="cardPhoto"
+      />
+    </div>
+  </a>
+</div>
+<div class="container" id="cardsContainer">
+  <a href="/rooms/{{ locations[19].id }}">
+    <div class="card">
+      <div class="card-img-overlay">
+        <div id="cardText">
+          <p class="card-text">
+            <small class="text-muted" id="textCard"
+              >{{ locations[19].roomspace }} in {{ locations[19].city }},
+              {{ locations[19].state_territory }}</small
+            >
+          </p>
+          <h5 class="card-title" id="cardTitle textCard">
+            {{ locations[19].title }}
+          </h5>
+          <p id="smallText">_______</p>
+          <p class="card-text textCard">
+            {{ locations[19].description }}
+          </p>
+          <p class="card-text"></p>
+          <p class="textCard">
+            {{ locations[19].guests }} guests -
+            {{ locations[19].bedrooms }} bedrooms -
+            {{ locations[19].beds }} beds -
+            {{ locations[19].bathrooms }} bathrooms
+          </p>
+          <p id="starShape">
+            <img
+              src="https://toppng.com/uploads/preview/lime-clipart-green-stars-green-star-clipart-11563050785l1dym4bukb.png"
+              width="21"
+              height="21"
+              id="heartShape"
+            />{{ locations[19].rating }}
+          </p>
+          <p id="starShape2">${{ locations[19].price }} / night</p>
+        </div>
+      </div>
+      <img
+        class="card-img-bottom"
+        src="{{ photos[19] }}"
+        alt="Card image cap"
+        id="cardPhoto"
+      />
+    </div>
+  </a>
+</div>
+
+<app-footer></app-footer>

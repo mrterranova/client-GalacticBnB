@@ -1,0 +1,16 @@
+<div class="duringstay">
+    <div class="hostSubtitle">
+        During your Stay
+    </div>
+    <p *ngIf="show">
+        {{stringShortener(hostData.duringstay,stringShortLength)}}
+        <button (click)="show = !show" *ngIf="show&&hostData.duringstay.length>stringShortLength">read more</button>
+        <p *ngIf="!show">{{hostData.duringstay}} 
+        </p>
+</div>
+
+<app-hostsuperhostexplaination *ngIf="true"
+    [hostdata]="hostData"
+    [mptsdata]="mptsdata"
+
+></app-hostsuperhostexplaination>

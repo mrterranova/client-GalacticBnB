@@ -1,0 +1,9 @@
+/* sets the margin on the left to line it up with the map and splits the width of the map */
+#cityContainer {
+  margin-left: 135px;
+  width: 550px;
+}
+
+/* .more-btn {
+  background: #ffffff;
+} */

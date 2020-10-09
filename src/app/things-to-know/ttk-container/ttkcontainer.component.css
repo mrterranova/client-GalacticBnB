@@ -1,0 +1,13 @@
+.ttkmaincontainer {
+    padding-left: 80px !important;
+    padding-right: 80px !important;
+    -webkit-box-pack: start !important;
+    display: flex !important;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+    flex-wrap: wrap !important;
+    width: 100% !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+

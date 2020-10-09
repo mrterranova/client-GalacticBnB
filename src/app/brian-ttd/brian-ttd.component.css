@@ -1,0 +1,120 @@
+.ttd-container {
+  width: 100%;
+  height: auto;
+  background-color: rgb(247, 247, 247);
+  top: 0;
+}
+
+.ttd-btn-container {
+  position: absolute;
+  margin: 1% 1% 1% 80%;
+}
+
+
+#pag-ttd-clickable {
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.inner-ttd-container {
+  margin: 0 0 0 90px;
+  max-height: 500px;
+  width: 100%;
+}
+
+#card-ttd {
+  height: auto;
+  margin-top: 40px;
+  background-color: rgb(247, 247, 247);
+}
+
+#ttd-img {
+  height: 350px;
+  max-width: 300px;
+  border-radius: 20px;
+  object-fit: cover;
+  align-content: center;
+  align-self: center;
+  border: 6px solid rgb(247, 247, 247);
+}
+
+.middleCenter {
+  text-align: center;
+}
+
+.tddBWL-heart-button {
+  position: absolute;
+  right: 15px;
+  top: 0;
+  margin-top: 9px;
+  z-index: 2;
+}
+.tddBWL-heart-svg {
+  fill: rgba(0, 0, 0, 0.5);
+  height: 24px;
+  width: 24px;
+  stroke: rgb(255, 255, 255);
+  stroke-width: 2;
+  overflow: visible;
+}
+.tddBWL-heart-button:hover {
+  cursor: pointer;
+}
+.tddBWL-heart-button:active + .tddBWL-heart-svg:active {
+  height: 20px;
+  width: 20px;
+}
+
+.slideRightSome {
+  margin: 0 0 0 80px;
+}
+
+.smidgeRight {
+  margin: 10px 0 0 20px;
+}
+
+.ttd-pg-btn-left,
+.ttd-pg-btn-right {
+  border-radius: 50%;
+  padding: 4px 10px;
+  margin: 0 12px;
+  background-color: white;
+  border: 1px solid lightgray;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+@media screen and (max-width: 850px) {
+  .ttd-btn-container {
+    position: absolute;
+    margin: 1% 10% 1% 60%;
+    /* border: 3px solid green; */
+    z-index: 15;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .ttd-btn-container {
+    position: absolute;
+    margin: 9% 10% 1% 20%;
+    /* border: 3px solid red; */
+    z-index: 2;
+  }
+  .slideRightSome {
+    margin: 0 0 0 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .ttd-container {
+    width: 90%;
+    margin: 2%;
+  }
+
+  #ttd-img,
+  #card-ttd,
+  .card-body {
+    height: auto;
+    width: 70%;
+  }
+}

@@ -1,0 +1,160 @@
+<div class="brianPhotos">
+  <div class="mainPhotoBox">
+    <div class="bigPictureBox" (click)="galleryOpen()">
+      <div class="lastLine">
+        <button class="blShowAllBtn" (click)="galleryOpen()">
+          Show all photos
+        </button>
+      </div>
+      <div class="largePic">
+        <div class="overlay"></div>
+        <img
+          class="bigMainPic"
+          src="{{ photo.pic1url }}"
+          alt="{{ photo.pic1alt }}"
+        />
+      </div>
+      <div class="littlePics">
+        <div class="topLilPics">
+          <div class="lop">
+            <div class="overlay"></div>
+            <img
+              class="littleOnePic"
+              src="{{ photo.pic2url }}"
+              alt="{{ photo.pic2alt }}"
+            />
+          </div>
+          <div class="lttp">
+            <div class="overlay"></div>
+            <img
+              class="littleTwoPic"
+              src="{{ photo.pic3url }}"
+              alt="{{ photo.pic3alt }}"
+            />
+          </div>
+        </div>
+        <div class="bottomlilPics">
+          <div class="ltttp">
+            <div class="overlay"></div>
+            <img
+              class="littleThreePic"
+              src="{{ photo.pic4url }}"
+              alt="{{ photo.pic4alt }}"
+            />
+          </div>
+          <div class="lfp">
+            <div class="overlay"></div>
+            <img
+              class="littleFourPic"
+              src="{{ photo.pic5url }}"
+              alt="{{ photo.pic5alt }}"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- these buttons will scroll through photos by listing
+    hidden for live site - used in dev mode -->
+
+   <!-- <div class="scootRightSome">
+    <p #bwl>brian-photo works!</p>
+    <h5>pics from : '{{ photo.sauce }}'</h5>
+    <h3>House # {{ page }}</h3>
+    <button class="blBackBtn" (click)="clickDown()">Prev</button>
+    <button class="blBackBtn" (click)="clickUp()">Next</button>
+  </div> -->
+
+  <div class="modelGallery" id="photoGallery">
+    <div class="galHeader">
+      <button class="modalBtn" (click)="closeGallery()">X close</button>
+      <h5 class="modalGalTitle">{{ slideIndex }} / 8</h5>
+      <span class="leftTop">📩 Share</span>
+      <span class="farTopLeft">❤ Save</span>
+    </div>
+    <br />
+
+    <!-- using k instead of c so bootstrap doesn't interfere -->
+    <div class="konTent konTainer">
+      <button
+        class="modalBtn galNavBtnBack"
+        (click)="plusDivs(-1)"
+        (click)="plusWords(-1)"
+      >
+        &#60;
+      </button>
+      <img
+        style="height: 400px"
+        class="bwlSliderz"
+        src="{{ photo.pic1url }}"
+        alt="{{ photo.pic1alt }}"
+      />
+      <img
+        style="height: 400px"
+        class="bwlSliderz"
+        src="{{ photo.pic2url }}"
+        alt="{{ photo.pic2alt }}"
+      />
+      <img
+        style="height: 400px"
+        class="bwlSliderz"
+        src="{{ photo.pic3url }}"
+        alt="{{ photo.pic3alt }}"
+      />
+      <img
+        style="height: 400px"
+        class="bwlSliderz"
+        src="{{ photo.pic4url }}"
+        alt="{{ photo.pic4alt }}"
+      />
+      <img
+        style="height: 400px"
+        class="bwlSliderz"
+        src="{{ photo.pic5url }}"
+        alt="{{ photo.pic5alt }}"
+      />
+      <img
+        style="height: 400px"
+        class="bwlSliderz"
+        src="{{ photo.pic6url }}"
+        alt="{{ photo.pic6alt }}"
+      />
+      <img
+        style="height: 400px"
+        class="bwlSliderz"
+        src="{{ photo.pic7url }}"
+        alt="{{ photo.pic7alt }}"
+      />
+      <img
+        style="height: 400px"
+        class="bwlSliderz"
+        src="{{ photo.pic8url }}"
+        alt="{{ photo.pic8alt }}"
+      />
+      <button
+        class="modalBtn galNavBtnForward"
+        (click)="plusDivs(1)"
+        (click)="plusWords(1)"
+      >
+        &#62;
+      </button>
+    </div>
+
+    <br />
+    <div class="konText konTaxer">
+      <h5 class="bwlTexterz">{{ photo.pic1alt }}</h5>
+      <h5 class="bwlTexterz">{{ photo.pic2alt }}</h5>
+      <h5 class="bwlTexterz">{{ photo.pic3alt }}</h5>
+      <h5 class="bwlTexterz">{{ photo.pic4alt }}</h5>
+      <h5 class="bwlTexterz">{{ photo.pic5alt }}</h5>
+      <h5 class="bwlTexterz">{{ photo.pic6alt }}</h5>
+      <h5 class="bwlTexterz">{{ photo.pic7alt }}</h5>
+      <h5 class="bwlTexterz">{{ photo.pic8alt }}</h5>
+    </div>
+    <br />
+    <div class="galFooter"></div>
+    <br />
+  </div>
+</div>
+
+<!-- //// the code never lies but comments sometimes do -->

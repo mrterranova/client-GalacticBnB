@@ -1,0 +1,60 @@
+<div class="mpts-container">
+  <div class="mpts-header">
+    <app-title-mpts></app-title-mpts>
+    <span class="mpts-pagination-container">
+      <span class="mpts-page-count">
+        <!-- Page number logic -->
+        <span id="pgnum1">1</span>
+        / <span id="pgnum2"></span></span
+      >
+      <!-- Button to scroll left - Please see ts file for logic -->
+      <button class="mpts-pg-btn mpts-pg-btn-left" (click)="scrollLeft()">
+        <svg
+          viewBox="0 0 18 18"
+          role="presentation"
+          aria-hidden="true"
+          focusable="false"
+          style="height: 10px; width: 10px; display: block; fill: currentcolor"
+        >
+          <path
+            d="m13.7 16.29a1 1 0 1 1 -1.42 1.41l-8-8a1 1 0 0 1 0-1.41l8-8a1 1 0 1 1 1.42 1.41l-7.29 7.29z"
+          ></path>
+        </svg>
+      </button>
+      <!-- Button to scroll right - Please see ts file for logic -->
+      <button class="mpts-pg-btn mpts-pg-btn-right" (click)="scrollRight()">
+        <svg
+          viewBox="0 0 18 18"
+          role="presentation"
+          aria-hidden="true"
+          focusable="false"
+          style="height: 10px; width: 10px; display: block; fill: currentcolor"
+        >
+          <path
+            d="m4.29 1.71a1 1 0 1 1 1.42-1.41l8 8a1 1 0 0 1 0 1.41l-8 8a1 1 0 1 1 -1.42-1.41l7.29-7.29z"
+          ></path>
+        </svg>
+      </button>
+    </span>
+  </div>
+  <!-- wraps the card div -->
+  <div
+    class="locations"
+    style="overflow-x: auto; width: 87vw"
+    id="pag-mpts-clickable"
+  >
+    <!-- double forloop in order to grab data from both the location and images tables -->
+    <div *ngFor="let locate of locates">
+      <div *ngFor="let img of imges" [ngStyle]="{ width: dynamicWidth() }">
+        <!-- See card component where all information being sent -->
+        <app-card-mpts
+          [locate]="locate"
+          [img]="img"
+          [revarr]="revarr"
+          *ngIf="img.id === locate.id"
+        ></app-card-mpts>
+      </div>
+    </div>
+  </div>
+</div>
+<hr style="margin-top: 3px;"/>

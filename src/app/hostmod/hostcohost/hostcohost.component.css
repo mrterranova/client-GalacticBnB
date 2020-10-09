@@ -1,0 +1,29 @@
+.hostSubtitle{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+.hostProfilePicImage{
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    object-fit: cover;
+}
+.cohostWrapper{
+    margin: 0px -16px;
+    padding:0px;
+    display: flex;
+    flex-direction: row;
+}
+.cohostItem{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 16px;
+    margin: 0px 0px 16px 0px;
+    width: 147.45px;
+}
+p{
+    margin: 0px 0px 0px 12px;
+    align-self: center;
+}

@@ -1,0 +1,19 @@
+.listingOuterContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.listingInnerContainer{
+  display: flex;
+  flex-direction: column;
+  padding: 48px 0px;
+  border-top: 1px #dddddd solid;
+  border-bottom: 1px #dddddd solid;
+  width: 100%;
+  max-width: 1120px;
+  height: auto;
+}
