@@ -1,15 +1,30 @@
-<p id="rona"> Get the latest on our COVID-19 response here</p>
+<p id="rona" (click)="coronaOpenInfo()">
+  Get the latest on our COVID-19 response here ...
+</p>
 
 <div class="coronaInfo" id="coronaModal">
-    <button class="ronaClose">X</button>
-    <h1>COVID - 19 is serious stuff</h1>
-    <h3>as of 10/12/2020 according to google there have been 38 million cases and 1.08 deaths worldwide</h3>
-    <h2>WE TAKE CLEANING SERIOUSLY</h2>
-    <h3>Bleach, Lysol, or other virus killing cleaners are used after check-out of guests before check-in</h3>
-    <h3>Wash your hands or use sanatizer</h3>
-    <h3>Wear a mask if in public and you can not maintain constant 6 feet or more of seperation</h3>
-    <h3>Thank you for your co-operation</h3>
-    <h3>Anyone found to spread disease of any kind on purpose will be prosectued!</h3>
-    <button class="ronaClose">X</button>
-
+  <button class="ronaClose" (click)="coronaClose()">X</button>
+  <div class="spaceRONA"></div>
+  <h2 class="middle">COVID - 19 is serious stuff</h2>
+  <h2 class="middle">You rent at your own risk.</h2>
+  <h3>
+    as of 10/12/2020 according to google there have been 38 million cases and
+    1.08 deaths worldwide.
+  </h3>
+  <h2 class="middle">WE TAKE CLEANING SERIOUSLY.</h2>
+  <h3>
+    Bleach, Lysol, or other virus killing cleaners are used after check-out of
+    guests and before check-in.
+  </h3>
+  <h3 class="middle">Wash your hands or use sanitizer.</h3>
+  <h3>
+    Wear a mask if in public and you cannot maintain constant 6 feet or more of
+    seperation.
+  </h3>
+  <h3 class="middle">Thank you for your co-operation.</h3>
+  <h3 class="middle">
+    Anyone found to spread disease of any kind on purpose will be prosecuted!
+  </h3>
+  <div class="spaceRONA"></div>
+  <button class="ronaClose" (click)="coronaClose()">X</button>
 </div>

@@ -12,9 +12,13 @@ export class CovidComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  coronaInfo (){
+  coronaOpenInfo (){
     const ronaModal = document.getElementById('coronaModal');
     ronaModal.style.display = 'block';
+  }
+  coronaClose (){
+    const ronaModal = document.getElementById('coronaModal');
+    ronaModal.style.display = 'none';
   }
 
 }
