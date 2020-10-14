@@ -1,0 +1,7 @@
+.logo {
+  background-image: url("../../assets/img/galacticShort.png");
+  width: 20%;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

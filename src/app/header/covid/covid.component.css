@@ -1,0 +1,29 @@
+#rona {
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-align: center;
+  cursor: pointer;
+  color:white;
+}
+
+.coronaInfo {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 254, 249);
+  padding: 20px;
+  overflow: auto;
+}
+
+.ronaClose,
+.middle {
+  text-align: center;
+}
+
+.spaceRONA {
+  height: 10vh;
+}

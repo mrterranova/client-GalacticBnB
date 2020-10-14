@@ -1,0 +1,23 @@
+.search {
+  background-image: url("../../../assets/img/issNASAowns.jpg");
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+p {
+  color: white;
+}
+
+.barPlaceHolder {
+  width: 68%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 40px;
+  margin-left: 16%;
+  margin-right: 14%;
+  border-radius: 30px;
+}
