@@ -56,6 +56,7 @@ import { ReservationComponent } from './reservation/reservation.component';
 import { CovidComponent } from './header/covid/covid.component';
 import { SearchPageComponent } from './app/search-page/search-page.component';
 import { LogoComponent } from './logo/logo.component';
+import { SearchBarComponent } from './search-bar/search-bar.component';
 
 
 @NgModule({
@@ -102,6 +103,7 @@ import { LogoComponent } from './logo/logo.component';
     CovidComponent,
     SearchPageComponent,
     LogoComponent,
+    SearchBarComponent,
   ],
   imports: [ 
     FormsModule,  
