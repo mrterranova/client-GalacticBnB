@@ -57,6 +57,7 @@ import { CovidComponent } from './header/covid/covid.component';
 import { SearchPageComponent } from './app/search-page/search-page.component';
 import { LogoComponent } from './logo/logo.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
+import { ResultsComponent } from './results/results.component';
 
 
 @NgModule({
@@ -104,6 +105,7 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
     SearchPageComponent,
     LogoComponent,
     SearchBarComponent,
+    ResultsComponent,
   ],
   imports: [ 
     FormsModule,  
