@@ -360,12 +360,12 @@ Style Attribute {
     --dls19-brand-gradient-radial,
     radial-gradient(
       circle at center,
-      #38ff59 0%,
-      #1ee62f 27.5%,
-      #1ce32d 40%,
-      #04d720 57.5%,
-      #1ebd26 75%,
-      #1ebd26 100%
+      #be09a0 0%,
+      #be09a0 27.5%,
+      #be09a0 40%,
+      #be09a0 57.5%,
+      #be09a0 75%,
+      #be09a0 100%
     )
   ) !important;
 }
@@ -379,12 +379,12 @@ Style Attribute {
   transition: opacity 1.25s ease 0s !important;
   background-image: radial-gradient(
     circle at center center,
-    rgb(56, 255, 83) 0%,
-    rgb(30, 230, 57) 27.5%,
-    rgb(28, 227, 28) 40%,
-    rgb(4, 215, 32) 57.5%,
-    rgb(30, 189, 38) 75%,
-    rgb(30, 189, 51) 100%
+    rgb(190,9,160) 0%,
+    rgb(190,9,160) 27.5%,
+    rgb(190,9,160) 40%,
+    rgb(190,9,160) 57.5%,
+    rgb(190,9,160) 75%,
+    rgb(190,9,160) 100%
   ) !important;
 }
 ._tcp689 {
@@ -414,9 +414,9 @@ Style Attribute {
   border: none !important;
   background: linear-gradient(
     to right,
-    rgb(87, 230, 30) 0%,
-    rgb(28, 227, 28) 50%,
-    rgb(4, 215, 74) 100%
+    rgb(190,9,160) 0%,
+    rgb(190,9,160) 50%,
+    rgb(190,9,160) 100%
   ) !important;
   color: rgb(255, 255, 255) !important;
 }
@@ -454,10 +454,10 @@ Style Attribute {
   background-color: white !important;
 }
 
-.greenbubble {
+.purplebubble {
   position: relative;
   display: inline-block;
-  background: rgb(31, 214, 40);
+  background: rgb(190, 9, 160);
   border-radius: 30px;
   height: 32px;
   width: 32px;
