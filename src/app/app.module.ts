@@ -59,6 +59,8 @@ import { LogoComponent } from './logo/logo.component';
 import { MoreFiltersComponent } from './more-filters/more-filters.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { GuestsSearchbarComponent } from './guests-searchbar/guests-searchbar.component';
+import { ResultsComponent } from './results/results.component';
+
 
 
 
@@ -109,6 +111,7 @@ import { GuestsSearchbarComponent } from './guests-searchbar/guests-searchbar.co
     MoreFiltersComponent,
     SearchBarComponent,
     GuestsSearchbarComponent,
+    ResultsComponent,
   ],
   imports: [ 
     FormsModule,  
