@@ -58,6 +58,7 @@ import { SearchPageComponent } from './app/search-page/search-page.component';
 import { LogoComponent } from './logo/logo.component';
 import { MoreFiltersComponent } from './more-filters/more-filters.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
+import { GuestsSearchbarComponent } from './guests-searchbar/guests-searchbar.component';
 
 
 
@@ -107,6 +108,7 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
     LogoComponent,
     MoreFiltersComponent,
     SearchBarComponent,
+    GuestsSearchbarComponent,
   ],
   imports: [ 
     FormsModule,  
