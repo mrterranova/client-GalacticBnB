@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cancel-flex.component.css']
 })
 export class CancelFlexComponent implements OnInit {
-
+  
   constructor() { }
 
   ngOnInit(): void {
