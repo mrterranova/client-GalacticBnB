@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GuestsSearchbarComponent implements OnInit {
 
+  expand:boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
