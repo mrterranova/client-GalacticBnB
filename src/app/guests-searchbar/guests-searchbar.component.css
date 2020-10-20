@@ -16,6 +16,14 @@
       font-size: 13px;
       font-weight: bold;
   }
+
+  .search-comp:hover{
+    background-color: rgb(216, 216, 216);
+    border-radius: 30px;
+    padding-bottom: 1px;
+    border: none;
+  }
+
   #search-base{
       color: gray;
       font-size: 14px;
