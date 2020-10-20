@@ -1,0 +1,153 @@
+button{
+    font-weight: 400 ;
+    font-size: 14px ;
+    line-height: 18px ;
+    cursor: pointer ;
+    text-align: center ;
+    border: 1px solid rgb(176, 176, 176) ;
+    background-color: rgb(255, 255, 255) ;
+    outline: none ;
+    margin: 0px ;
+    border-radius: 30px ;
+    color: rgb(34, 34, 34) ;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif ;
+    position: relative ;
+    padding: 8px 16px ;
+    -webkit-writing-mode: horizontal-tb ;
+    text-rendering: auto;
+    /* color: -internal-light-dark(black, white); */
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    /* text-align: center; */
+    /* cursor: default; */
+    font: 400 13.3333px Arial;
+    display: inline-block ;
+    white-space: nowrap ;
+    background-color: #fff;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+}
+.flex-button:hover{
+    border: 1px solid rgb(0, 0, 0) ;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    width: 360px;
+    height: 178px;
+    box-shadow:  rgba(0, 0, 0, 0.15) 0px 10px 37px;
+    z-index: 10;
+    background: rgb(255, 255, 255) ;
+    border: 0.5px solid rgba(118, 118, 118, 0.28) ;
+    border-radius: 12px ;
+    margin-top: 10px;
+}
+.hold:hover .dropdown {display: block;}
+.hold{
+    margin: 50px;
+}
+.top-drop{
+    padding: 20px;
+    height: 113px;
+    width: 360px;
+    
+}
+.bottom-drop{
+    padding: 12px 14px;
+    height: 65px;
+    width: 360px;
+    border-top: 0.5px solid rgba(118, 118, 118, 0.28) ;
+    display: flex;
+    align-content: center;
+    justify-items: center;
+}
+.top-drop, .bottom-drop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.tdrholder {
+    min-width: 50px ;
+    margin-left: 12px ;
+    display: flex;
+    flex-direction: row;
+}
+.tdh{
+    padding:12px 4px 12px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.tdrbutton {
+    border-radius: 32px ;
+    border-style: solid ;
+    border-width: 1px ;
+    cursor: pointer ;
+    height: 32px ;
+    position: relative ;
+    min-width: 48px ;
+    width: 48px ;
+    outline: none ;
+    background-color: rgb(176, 176, 176) ;
+    border-color: rgb(176, 176, 176) ;
+}
+.tdrindiv {
+    -webkit-box-pack: center ;
+    -webkit-box-align: center ;
+    background-color: rgb(255, 255, 255) ;
+    border-radius: 50% ;
+    border-style: solid ;
+    border-width: 2px ;
+    height: 32px ;
+    left: -1px ;
+    position: absolute ;
+    top: -1px ;
+    transform: translate3d(0px, 0px, 0px) ;
+    width: 32px ;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    transition: -ms-transform 250ms ease-in-out 0s, -webkit-transform 250ms ease-in-out 0s, transform 250ms ease-in-out 0s ;
+    border-color: rgb(176, 176, 176) ;
+}
+.top-drop-left{
+    font-weight: 400 ;
+    font-size: 14px ;
+    width: 254px;
+    margin: 0px;
+}
+.top-drop-right{
+    width: 50px;
+}
+.save-button-dropdown{
+    cursor: pointer ;
+    display: inline-block ;
+    margin: 0px ;
+    position: relative ;
+    text-align: center ;
+    text-decoration: none ;
+    width: auto ;
+    touch-action: manipulation ;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif ;
+    font-size: 14px ;
+    line-height: 18px ;
+    font-weight: 600 ;
+    border-radius: 8px ;
+    outline: none ;
+    padding: 8px 16px ;
+    transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s ;
+    border: none ;
+    background: rgb(34, 34, 34) ;
+    color: rgb(255, 255, 255) ;
+}
+.clear-button-dropdown{
+    cursor: not-allowed !important;
+    opacity: 1 !important;
+    border: none !important;
+    background: transparent !important;
+    color: #DDDDDD !important;
+    text-decoration: underline;
+}
