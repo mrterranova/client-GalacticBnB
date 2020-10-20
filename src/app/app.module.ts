@@ -59,7 +59,12 @@ import { LogoComponent } from './logo/logo.component';
 import { MoreFiltersComponent } from './more-filters/more-filters.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { GuestsSearchbarComponent } from './guests-searchbar/guests-searchbar.component';
+<<<<<<< HEAD
 import { GuestExpandedComponent } from './guest-expanded/guest-expanded.component';
+=======
+import { ResultsComponent } from './results/results.component';
+
+>>>>>>> add3b75c9a6ad28b1efbac59dfad8648285025d4
 
 
 
@@ -110,7 +115,11 @@ import { GuestExpandedComponent } from './guest-expanded/guest-expanded.componen
     MoreFiltersComponent,
     SearchBarComponent,
     GuestsSearchbarComponent,
+<<<<<<< HEAD
     GuestExpandedComponent,
+=======
+    ResultsComponent,
+>>>>>>> add3b75c9a6ad28b1efbac59dfad8648285025d4
   ],
   imports: [ 
     FormsModule,  
