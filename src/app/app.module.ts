@@ -54,7 +54,7 @@ import { CalenderComponent } from './calender/calender.component';
 import { MainpgComponent } from './mainpg/mainpg.component';
 import { ReservationComponent } from './reservation/reservation.component';
 import { CovidComponent } from './header/covid/covid.component';
-import { SearchPageComponent } from './app/search-page/search-page.component';
+import { SearchPageComponent } from './search-page/search-page.component';
 import { LogoComponent } from './logo/logo.component';
 import { MoreFiltersComponent } from './more-filters/more-filters.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
@@ -119,9 +119,9 @@ import { TypeofPlaceComponent } from './type-of-place/type-of-place.component';
     ResultsComponent,
     TypeofPlaceComponent,
   ],
-  imports: [ 
-    FormsModule,  
-    MbscModule, 
+  imports: [
+    FormsModule,
+    MbscModule,
     BrowserModule,
     RouterModule,
     HttpClientModule,
