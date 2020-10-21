@@ -62,7 +62,7 @@ constructor(private mptsService: MptsServiceService, private route: ActivatedRou
   fillup(id){
     //works only to fill the star - does not unfill star
     // if(document.getElementById("heart"+id).dataset.toggle == "off"){
-      document.getElementById("heart"+id).style.fill = "#59ff59";
+      document.getElementById("heart"+id).style.fill = "#be09a0";
       document.getElementById("heart"+id).dataset.toggle = "on";
     // } else {
     //   document.getElementById("heart"+id).style.fill = "rgba(0, 0, 0, 0.5);";

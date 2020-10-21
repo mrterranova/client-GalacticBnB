@@ -1,8 +1,7 @@
 .search-container{
-    /* display: flex; */
+    display: flex;
     justify-content: center;
 }
-
 .barPlaceHolder {
     width: 68%;
     background-color: white;
@@ -12,18 +11,18 @@
     border-radius: 30px;
     display: grid;
     grid-template-columns: 30% 20% 20% 30%;
-    margin-left: 15%;
   }
-
   .search-comp{
       font-size: 13px;
       font-weight: bold;
   }
-.search-comp:hover{
+
+  .search-comp:hover{
     background-color: rgb(216, 216, 216);
     border-radius: 30px;
+    padding-bottom: 1px;
     border: none;
-}
+  }
 
   #search-base{
       color: gray;
@@ -37,8 +36,4 @@
   }
   .search-checkout{
       border-right: 1px solid black;
-  }
-
-  .expanded{
-    margin-top: 10px;
   }

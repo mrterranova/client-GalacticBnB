@@ -56,10 +56,14 @@ import { ReservationComponent } from './reservation/reservation.component';
 import { CovidComponent } from './header/covid/covid.component';
 import { SearchPageComponent } from './app/search-page/search-page.component';
 import { LogoComponent } from './logo/logo.component';
+import { MoreFiltersComponent } from './more-filters/more-filters.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { ResultsComponent } from './results/results.component';
 import { ResultOtherPlacesComponent } from './result-other-places/result-other-places.component';
-
+import { CancelFlexComponent } from './cancel-flex/cancel-flex.component';
+import { GuestsSearchbarComponent } from './guests-searchbar/guests-searchbar.component';
+import { GuestExpandedComponent } from './guest-expanded/guest-expanded.component';
+import { TypeofPlaceComponent } from './type-of-place/type-of-place.component';
 
 @NgModule({
   declarations: [
@@ -105,9 +109,15 @@ import { ResultOtherPlacesComponent } from './result-other-places/result-other-p
     CovidComponent,
     SearchPageComponent,
     LogoComponent,
+    MoreFiltersComponent,
     SearchBarComponent,
     ResultsComponent,
     ResultOtherPlacesComponent,
+    CancelFlexComponent,
+    GuestsSearchbarComponent,
+    GuestExpandedComponent,
+    ResultsComponent,
+    TypeofPlaceComponent,
   ],
   imports: [ 
     FormsModule,  

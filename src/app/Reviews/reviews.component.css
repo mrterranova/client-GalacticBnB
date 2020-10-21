@@ -17,8 +17,8 @@
 hr {
   border: none;
   height: 2px;
-  color: #59ff59; /* old IE */
-  background-color: #59ff59; /* Modern Browsers */
+  color: #be09a0; /* old IE */
+  background-color: #be09a0; /* Modern Browsers */
   margin-bottom: 5px !important;
 }
 
@@ -43,7 +43,7 @@ hr {
 } */
 
 .review-card {
-  border: 2px solid #59ff59;
+  border: 2px solid #be09a0;
   border-radius: 5px;
   /*   background: #e2e2e2 !important; */
   position: relative;

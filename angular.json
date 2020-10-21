@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "client-earthBnB": {
+    "client-galacticBnB": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/client-earthBnB",
+            "outputPath": "dist/client-galacticBnB",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "client-earthBnB:build"
+            "browserTarget": "client-galacticBnB:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "client-earthBnB:build:production"
+              "browserTarget": "client-galacticBnB:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "client-earthBnB:build"
+            "browserTarget": "client-galacticBnB:build"
           }
         },
         "test": {
@@ -115,18 +115,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "client-earthBnB:serve"
+            "devServerTarget": "client-galacticBnB:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "client-earthBnB:serve:production"
+              "devServerTarget": "client-galacticBnB:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "client-earthBnB",
+  "defaultProject": "client-galacticBnB",
   "cli": {
     "analytics": "55782e9f-4ba4-47e1-ac3e-0d54185b0d35"
   }
