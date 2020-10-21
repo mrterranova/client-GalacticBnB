@@ -58,6 +58,7 @@ import { SearchPageComponent } from './app/search-page/search-page.component';
 import { LogoComponent } from './logo/logo.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { ResultsComponent } from './results/results.component';
+import { ResultOtherPlacesComponent } from './result-other-places/result-other-places.component';
 
 
 @NgModule({
@@ -106,6 +107,7 @@ import { ResultsComponent } from './results/results.component';
     LogoComponent,
     SearchBarComponent,
     ResultsComponent,
+    ResultOtherPlacesComponent,
   ],
   imports: [ 
     FormsModule,  
