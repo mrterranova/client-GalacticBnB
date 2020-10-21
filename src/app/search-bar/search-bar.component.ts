@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchBarComponent implements OnInit {
 
-  expand:boolean = false;
+  guests_expand:boolean = false;
   
   constructor() { }
 

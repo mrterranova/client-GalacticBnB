@@ -9,9 +9,9 @@
         <div class="search-comp search-checkout">Check out
             <p id="search-base">Add dates</p>
         </div>
-        <app-guests-searchbar  (click)="expand = !expand"></app-guests-searchbar>
+        <app-guests-searchbar  (click)="guests_expand = !guests_expand"></app-guests-searchbar>
     </div>
-    <div *ngIf="expand" class="expanded">
+    <div *ngIf="guests_expand" class="expanded">
         <app-guest-expanded></app-guest-expanded>
     </div>
 </div>
