@@ -64,7 +64,6 @@ import { GuestExpandedComponent } from './guest-expanded/guest-expanded.componen
 import { ResultsComponent } from './results/results.component';
 import { TypeofPlaceComponent } from './type-of-place/type-of-place.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
