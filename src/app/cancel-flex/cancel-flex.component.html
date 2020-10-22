@@ -1,8 +1,9 @@
 <div class="hold">
-    <button class="flex-button">
+    <button class="flex-button" 
+        (click)="displayToggle()">
         Cancellation flexibility
     </button>
-    <div class="dropdown">
+    <div class="dropdown" *ngIf="show" id="dropdownId">
         <div class="top-drop">
             <div class="tdh">
                 <div class="top-drop-left">Only show stays that offer cancellation flexibility
@@ -31,4 +32,11 @@
             </div>
         </div>
     </div>
+    <!-- window.addEventListener('click', function(e){
+        if(document.getElementById('dropdownId').contains(e.target)){
+            this.show=true;
+        }else {
+            this.show=false;
+        })
+    }) -->
 </div>

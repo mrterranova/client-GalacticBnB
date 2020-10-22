@@ -7,7 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CancelFlexComponent implements OnInit {
   
+  show: boolean = false;
+
   constructor() { }
+
+  displayToggle():void{
+    this.show = !this.show;
+    console.log(this.show)
+  }
 
   ngOnInit(): void {
   }
