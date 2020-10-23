@@ -64,6 +64,8 @@ import { CancelFlexComponent } from './cancel-flex/cancel-flex.component';
 import { GuestsSearchbarComponent } from './guests-searchbar/guests-searchbar.component';
 import { GuestExpandedComponent } from './guest-expanded/guest-expanded.component';
 import { TypeofPlaceComponent } from './type-of-place/type-of-place.component';
+import { PricefilterComponent } from './pricefilter/pricefilter.component';
+import { ExploreNearbyComponent } from './explore-nearby/explore-nearby.component';
 
 @NgModule({
   declarations: [
@@ -118,6 +120,8 @@ import { TypeofPlaceComponent } from './type-of-place/type-of-place.component';
     GuestExpandedComponent,
     ResultsComponent,
     TypeofPlaceComponent,
+    PricefilterComponent,
+    ExploreNearbyComponent,
   ],
   imports: [
     FormsModule,
