@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchBarComponent implements OnInit {
 
+  expand:boolean = false;
+
+  showTop:boolean = false;
   adults = 0;
   children = 0;
   infants = 0;

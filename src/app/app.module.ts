@@ -64,6 +64,8 @@ import { CancelFlexComponent } from './cancel-flex/cancel-flex.component';
 import { GuestsSearchbarComponent } from './guests-searchbar/guests-searchbar.component';
 import { GuestExpandedComponent } from './guest-expanded/guest-expanded.component';
 import { TypeofPlaceComponent } from './type-of-place/type-of-place.component';
+import { TypeOfPlaceExpandedComponent } from './type-of-place-expanded/type-of-place-expanded.component';
+
 import { PricefilterComponent } from './pricefilter/pricefilter.component';
 import { ExploreNearbyComponent } from './explore-nearby/explore-nearby.component';
 import { PriceExpandComponent } from './price-expand/price-expand.component';
@@ -121,6 +123,7 @@ import { PriceExpandComponent } from './price-expand/price-expand.component';
     GuestExpandedComponent,
     ResultsComponent,
     TypeofPlaceComponent,
+    TypeOfPlaceExpandedComponent,
     PricefilterComponent,
     ExploreNearbyComponent,
     PriceExpandComponent,

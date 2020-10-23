@@ -31,5 +31,9 @@
   </div>
 </div>
 <app-cancel-flex></app-cancel-flex>
+<app-type-of-place (click)="showTop = !showTop"></app-type-of-place>
+
+<div *ngIf="showTop" class="expanded">
+    <app-type-of-place-expanded></app-type-of-place-expanded>
+</div>
 <app-explore-nearby></app-explore-nearby>
-<!-- <app-type-of-place></app-type-of-place> -->
