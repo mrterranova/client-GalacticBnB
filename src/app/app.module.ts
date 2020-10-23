@@ -66,6 +66,7 @@ import { GuestExpandedComponent } from './guest-expanded/guest-expanded.componen
 import { TypeofPlaceComponent } from './type-of-place/type-of-place.component';
 import { PricefilterComponent } from './pricefilter/pricefilter.component';
 import { ExploreNearbyComponent } from './explore-nearby/explore-nearby.component';
+import { PriceExpandComponent } from './price-expand/price-expand.component';
 
 @NgModule({
   declarations: [
@@ -122,6 +123,7 @@ import { ExploreNearbyComponent } from './explore-nearby/explore-nearby.componen
     TypeofPlaceComponent,
     PricefilterComponent,
     ExploreNearbyComponent,
+    PriceExpandComponent,
   ],
   imports: [
     FormsModule,

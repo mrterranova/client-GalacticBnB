@@ -5,19 +5,19 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-results',
   templateUrl: './results.component.html',
-  styleUrls: ['./results.component.css']
+  styleUrls: ['./results.component.css'],
 })
 export class ResultsComponent implements OnInit {
 
-  constructor() { }
+  price_expand: boolean = false;
+  
+  constructor() {}
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  hideMap() {
+    document.getElementById('scroll-section').style.width = '100vw';
+    document.getElementById('scroll-section').style.zIndex = '2';
+    document.getElementById('map-section').style.visibility = 'hidden';
   }
-
-  hideMap(){
-    document.getElementById("scroll-section").style.width = '100vw';
-    document.getElementById("scroll-section").style.zIndex = "2";
-    document.getElementById("map-section").style.visibility = "hidden";
-  }
-
 }
