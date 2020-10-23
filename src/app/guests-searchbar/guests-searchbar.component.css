@@ -37,3 +37,7 @@
   .search-checkout{
       border-right: 1px solid black;
   }
+
+  #search-req{
+      font-weight: 500;
+  }
