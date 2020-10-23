@@ -1,6 +1,7 @@
 <div>
     <div class="search-comp search-guests">Guests
-        <p id="search-base">Add guests</p>
+        <p *ngIf="getGuests()==0" id="search-base">Add guests</p>
+        <p *ngIf="getGuests()>0" id="search-req">{{this.displayGuests()}} </p>
     </div>
 </div>
 

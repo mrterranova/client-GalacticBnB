@@ -1,8 +1,7 @@
 .expanded{
-    width: 30%;
+    width: 25%;
     background-color: white;
     color: black;
-    text-align: left;
     padding: 20px;
     border-radius: 30px;
     display: inline-flexbox;
@@ -18,7 +17,7 @@
 
   .section{
       display: flex;
-      width: 220px;
+      width: auto;
       justify-content:space-between;
   }
 /* 

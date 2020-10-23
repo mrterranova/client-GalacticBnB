@@ -6,8 +6,8 @@
                 Ages 13 or above
             </div>
         </div>
-        <div class="counter">
-            <button (click)="decreaseA()">-</button>
+        <div class="counter" >
+            <button *ngIf="this.adults > 0" (click)="decreaseA()">-</button>
             {{this.adults}}
             <button (click)="increaseA()">+</button>
         </div>
@@ -21,8 +21,8 @@
             </div>
         </div>
         <div class="counter">
-            <button (click)="decreaseC()">-</button>
-            {{this.children}}
+            <button *ngIf="this.children > 0" (click)="decreaseC()">-</button>
+            {{children}}
             <button (click)="increaseC()">+</button>
         </div>
     </div>
@@ -35,8 +35,8 @@
             </div>
         </div> 
         <div class="counter">
-        <button (click)="decreaseI()">-</button>
-            {{this.infants}}
+        <button *ngIf="this.infants > 0" (click)="decreaseI()">-</button>
+            {{infants}}
             <button (click)="increaseI()">+</button>
         </div>
     </div>
