@@ -10,9 +10,11 @@
             <p id="search-base">Add dates</p>
         </div>
         <app-guests-searchbar  (click)="guests_expand = !guests_expand"></app-guests-searchbar>
+        <div class="search-comp"> <a href="results">- 🔎 - </a></div>
     </div>
     <div *ngIf="guests_expand" class="expanded">
         <app-guest-expanded></app-guest-expanded>
+        
     </div>
 </div> 
 <app-cancel-flex></app-cancel-flex>
