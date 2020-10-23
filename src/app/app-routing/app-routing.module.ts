@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DirectoryComponent } from '../directory/directory.component';
 import { MainpgComponent } from '../mainpg/mainpg.component';
-import { SearchPageComponent } from '../app/search-page/search-page.component';
+import { SearchPageComponent } from '../search-page/search-page.component';
+import { ResultsComponent } from '../results/results.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 's', pathMatch: 'full' },
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: 's',
     component: SearchPageComponent,
+  },
+  {
+    path: 'results',
+    component: ResultsComponent,
   },
 ];
 @NgModule({

@@ -320,7 +320,7 @@ Style Attribute {
     flex-shrink: 0 !important;
 }
 ._1501mvw9 {
-    background: var(--dls19-brand-gradient, linear-gradient(to right, #25e61e 0%, #44e31c 50%, #04d704 100%)) !important;
+    background: var(--dls19-brand-gradient, linear-gradient(to right, #be09a0 0%, #be09a0 50%, #be09a0 100%)) !important;
 }
 ._1501mvw9 {
     cursor: pointer !important;
@@ -340,7 +340,7 @@ Style Attribute {
     padding: 14px 24px !important;
     transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s !important;
     border: none !important;
-    background: linear-gradient(to right, rgb(53, 230, 30) 0%, rgb(28, 227, 54) 50%, rgb(4, 215, 32) 100%) !important;
+    background: linear-gradient(to right, rgb(190,9,160) 0%, rgb(190,9,160) 50%, rgb(190,9,160) 100%) !important;
     color: rgb(255, 255, 255) !important;
 }
 ._163rr5i {
@@ -361,7 +361,7 @@ Style Attribute {
     pointer-events: none !important;
 }
 ._19di23v {
-    background-image: var(--dls19-brand-gradient-radial, radial-gradient(circle at center, #38ff59 0%, #1ee62f 27.5%, #1ce32d 40%, #04d720 57.5%, #1ebd26 75%, #1ebd26 100% )) !important;
+    background-image: var(--dls19-brand-gradient-radial, radial-gradient(circle at center, #be09a0 0%, #be09a0 27.5%, #be09a0 40%, #be09a0 57.5%, #be09a0 75%, #be09a0 100% )) !important;
 }
 ._19di23v {
     display: block !important;
@@ -371,7 +371,7 @@ Style Attribute {
     background-size: 200% 200% !important;
     opacity: 0 !important;
     transition: opacity 1.25s ease 0s !important;
-    background-image: radial-gradient(circle at center center, rgb(56, 255, 83) 0%, rgb(30, 230, 57) 27.5%, rgb(28, 227, 28) 40%, rgb(4, 215, 32) 57.5%, rgb(30, 189, 38) 75%, rgb(30, 189, 51) 100%) !important;
+    background-image: radial-gradient(circle at center center, rgb(190,9,160) 0%, rgb(190,9,160) 27.5%, rgb(190,9,160) 40%, rgb(190,9,160) 57.5%, rgb(190,9,160) 75%, rgb(190,9,160) 100%) !important;
 }
 ._tcp689 {
     display: block !important;
@@ -396,6 +396,6 @@ Style Attribute {
     padding: 14px 24px !important;
     transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s !important;
     border: none !important;
-    background: linear-gradient(to right, rgb(87, 230, 30) 0%, rgb(28, 227, 28) 50%, rgb(4, 215, 74) 100%) !important;
+    background: linear-gradient(to right, rgb(190,9,160) 0%, rgb(190,9,160) 50%, rgb(190,9,160) 100%) !important;
     color: rgb(255, 255, 255) !important;
 }

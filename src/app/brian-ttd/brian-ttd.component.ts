@@ -104,7 +104,7 @@ export class BrianTtdComponent implements OnInit {
 
   fullHeart(id) {
     // console.log('clicked heart');
-    document.getElementById('heartBWL' + id).style.fill = '#59ff59';
+    document.getElementById('heartBWL' + id).style.fill = '#be09a0';
   }
 }
 
