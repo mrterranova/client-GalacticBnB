@@ -1,44 +1,49 @@
-.search-container{
-    /* display: flex; */
-    justify-content: center;
+.search-container {
+  /* display: flex; */
+  justify-content: center;
 }
 
 .barPlaceHolder {
-    width: 68%;
-    background-color: white;
-    color: black;
-    text-align: center;
-    padding: 20px;
-    border-radius: 30px;
-    display: grid;
-    grid-template-columns: 28% 20% 20% 28% 4%;
-    margin-left: 15%;
-  }
-
-  .search-comp{
-      font-size: 13px;
-      font-weight: bold;
-  }
-.search-comp:hover{
-    background-color: rgb(216, 216, 216);
-    border-radius: 30px;
-    border: none;
+  width: 68%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  border-radius: 30px;
+  display: grid;
+  grid-template-columns: 26% 18% 18% 26% 12%;
+  margin-left: 15%;
 }
 
-  #search-base{
-      color: gray;
-      font-size: 14px;
-  }
-  .search-location{
-      border-right: 1px solid black;
-  }
-  .search-checkin{
-      border-right: 1px solid black;
-  }
-  .search-checkout{
-      border-right: 1px solid black;
-  }
+.search-comp {
+  font-size: 13px;
+  font-weight: bold;
+}
+.search-comp:hover {
+  background-color: rgb(216, 216, 216);
+  border-radius: 30px;
+  border: none;
+}
 
-  .expanded{
-    margin-top: 10px;
-  }
+#search-base {
+  color: gray;
+  font-size: 14px;
+}
+.search-location {
+  border-right: 1px solid black;
+}
+.search-checkin {
+  border-right: 1px solid black;
+}
+.search-checkout {
+  border-right: 1px solid black;
+}
+
+.search-click {
+  border-left: 1px solid black;
+  padding-top: 14px;
+}
+
+.expanded {
+  margin-top: 10px;
+}
