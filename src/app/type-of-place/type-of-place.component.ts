@@ -12,4 +12,8 @@ export class TypeofPlaceComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // showTypeofPlace(){
+
+  // }
+
 }
