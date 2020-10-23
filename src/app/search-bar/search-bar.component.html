@@ -1,22 +1,39 @@
 <div class="search-container">
-    <div class="barPlaceHolder">
-        <div class="search-comp search-location">Location
-            <p id="search-base">Where are you going?</p>
-        </div>
-        <div class="search-comp search-checkin">Check in
-            <p id="search-base">Add dates</p>
-        </div>
-        <div class="search-comp search-checkout">Check out
-            <p id="search-base">Add dates</p>
-        </div>
-        <app-guests-searchbar  (click)="guests_expand = !guests_expand"></app-guests-searchbar>
-        <div class="search-comp search-click"> <a href="results">- 🔎 - </a></div>
+  <div class="barPlaceHolder">
+    <div class="search-comp search-location">
+      Location
+      <p id="search-base">Where are you going?</p>
     </div>
-    <div *ngIf="guests_expand" class="expanded">
-        <app-guest-expanded></app-guest-expanded>
-        
+    <div class="search-comp search-checkin">
+      Check in
+      <p id="search-base">Add dates</p>
     </div>
-</div> 
+    <div class="search-comp search-checkout">
+      Check out
+      <p id="search-base">Add dates</p>
+    </div>
+    <app-guests-searchbar
+      (click)="guests_expand = !guests_expand"
+      [adults]="adults"
+      [children]="children"
+      [infants]="infants"
+    ></app-guests-searchbar>
+  </div>
+  <div *ngIf="guests_expand" class="expanded">
+    <app-guest-expanded
+      [adults]="adults"
+      [children]="children"
+      [infants]="infants"
+      (adultEvent)="receiveAdults($event)"
+      (childEvent)="receiveChildren($event)"
+      (infantEvent)="receiveInfants($event)"
+    ></app-guest-expanded>
+  </div>
+</div>
 <app-cancel-flex></app-cancel-flex>
+<app-type-of-place (click)="showTop = !showTop"></app-type-of-place>
+
+<div *ngIf="showTop" class="expanded">
+    <app-type-of-place-expanded></app-type-of-place-expanded>
+</div>
 <app-explore-nearby></app-explore-nearby>
-<!-- <app-type-of-place></app-type-of-place> -->
