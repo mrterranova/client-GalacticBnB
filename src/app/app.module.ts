@@ -64,11 +64,8 @@ import { CancelFlexComponent } from './cancel-flex/cancel-flex.component';
 import { GuestsSearchbarComponent } from './guests-searchbar/guests-searchbar.component';
 import { GuestExpandedComponent } from './guest-expanded/guest-expanded.component';
 import { TypeofPlaceComponent } from './type-of-place/type-of-place.component';
-<<<<<<< HEAD
-=======
 import { PricefilterComponent } from './pricefilter/pricefilter.component';
 import { ExploreNearbyComponent } from './explore-nearby/explore-nearby.component';
->>>>>>> a1dcf26cce497a8f124049191cd54fc0450cc428
 
 @NgModule({
   declarations: [
