@@ -63,6 +63,7 @@ import { GuestsSearchbarComponent } from './guests-searchbar/guests-searchbar.co
 import { GuestExpandedComponent } from './guest-expanded/guest-expanded.component';
 import { ResultsComponent } from './results/results.component';
 import { TypeofPlaceComponent } from './type-of-place/type-of-place.component';
+import { TypeOfPlaceExpandedComponent } from './type-of-place-expanded/type-of-place-expanded.component';
 
 
 @NgModule({
@@ -116,6 +117,7 @@ import { TypeofPlaceComponent } from './type-of-place/type-of-place.component';
     GuestExpandedComponent,
     ResultsComponent,
     TypeofPlaceComponent,
+    TypeOfPlaceExpandedComponent,
   ],
   imports: [ 
     FormsModule,  

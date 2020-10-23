@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class SearchBarComponent implements OnInit {
 
   expand:boolean = false;
+
+  showTop:boolean = false;
   
   constructor() { }
 
