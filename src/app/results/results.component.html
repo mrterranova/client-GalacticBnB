@@ -1,18 +1,19 @@
 <div class="results-header">
-    <app-header></app-header>
+  <app-header></app-header>
 </div>
 <div id="scroll-section">
-    <div id="button-results">
-        <h6>#_ of results - from day to day || guests # </h6>
-        <h2> Stays in ___Search Box Value___</h2>
-    <app-pricefilter></app-pricefilter>
+  <div id="button-results">
+    <h6>#_ of results - from day to day || guests #</h6>
+    <h2>Stays in ___Search Box Value___</h2>
+    <app-pricefilter (click)="price_expand = !price_expand"></app-pricefilter>
+    <div *ngIf="price_expand" class="expanded">
+      <app-price-expand></app-price-expand>
     </div>
-    <app-result-other-places></app-result-other-places>
+  </div>
+  <app-result-other-places></app-result-other-places>
 </div>
 <div id="map-section">
-    <button id="hide-map-results" (click)="hideMap()">
-        <span id="hide-map-span">x</span>
-    </button>
+  <button id="hide-map-results" (click)="hideMap()">
+    <span id="hide-map-span">x</span>
+  </button>
 </div>
-
-

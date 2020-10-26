@@ -68,6 +68,7 @@ import { TypeOfPlaceExpandedComponent } from './type-of-place-expanded/type-of-p
 
 import { PricefilterComponent } from './pricefilter/pricefilter.component';
 import { ExploreNearbyComponent } from './explore-nearby/explore-nearby.component';
+import { PriceExpandComponent } from './price-expand/price-expand.component';
 
 @NgModule({
   declarations: [
@@ -125,6 +126,7 @@ import { ExploreNearbyComponent } from './explore-nearby/explore-nearby.componen
     TypeOfPlaceExpandedComponent,
     PricefilterComponent,
     ExploreNearbyComponent,
+    PriceExpandComponent,
   ],
   imports: [
     FormsModule,
