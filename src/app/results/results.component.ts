@@ -7,10 +7,12 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './results.component.html',
   styleUrls: ['./results.component.css'],
 })
+
 export class ResultsComponent implements OnInit {
 
+  selection: string;
   price_expand: boolean = false;
-  
+
   constructor() {}
 
   ngOnInit(): void {}
@@ -20,4 +22,9 @@ export class ResultsComponent implements OnInit {
     document.getElementById('scroll-section').style.zIndex = '2';
     document.getElementById('map-section').style.visibility = 'hidden';
   }
+
+  showAlert(variable){
+    console.log(variable);
+  }
+
 }
