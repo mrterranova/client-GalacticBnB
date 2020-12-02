@@ -34,7 +34,6 @@ button{
     border: 1px solid rgb(0, 0, 0) ;
 }
 .dropdown{
-    display: none;
     position: absolute;
     width: 360px;
     height: 178px;
@@ -45,7 +44,6 @@ button{
     border-radius: 12px ;
     margin-top: 10px;
 }
-.hold:hover .dropdown {display: block;}
 .hold{
     margin: 50px;
 }
@@ -114,9 +112,22 @@ button{
     transition: -ms-transform 250ms ease-in-out 0s, -webkit-transform 250ms ease-in-out 0s, transform 250ms ease-in-out 0s ;
     border-color: rgb(176, 176, 176) ;
 }
-.tdrindiv:hover {
+.activeCheck0 {
     transform: translate3d(16px,0px,0px)
 }
+.hiddenUnhidden{
+    display: hidden;
+}
+.activeCheck0 .hiddenUnhidden{
+    display: block;
+    fill: none; 
+    height: 12px; 
+    width: 12px; 
+    stroke: currentcolor; 
+    stroke-width: 5.33333; 
+    overflow: visible;
+}
+
 .top-drop-left{
     font-weight: 400 ;
     font-size: 14px ;

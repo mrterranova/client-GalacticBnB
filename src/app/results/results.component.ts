@@ -12,6 +12,10 @@ export class ResultsComponent implements OnInit {
 
   selection: string;
   price_expand: boolean = false;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9194ca4908f069b6876c89a7d70607868ccbd02d
   constructor() {}
 
   ngOnInit(): void {
@@ -90,7 +94,10 @@ function imageError(image) {
     document.getElementById('map-section').style.visibility = 'hidden';
   }
 
+<<<<<<< HEAD
 //individual child components for the elasticsearch here...
+=======
+>>>>>>> 9194ca4908f069b6876c89a7d70607868ccbd02d
   showAlert(variable){
     console.log(variable);
   }
