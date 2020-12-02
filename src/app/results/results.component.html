@@ -12,6 +12,10 @@
   </div>
   <!-- <app-result-other-places (afterClick)='showAlert($event)'></app-result-other-places> -->
   <app-result-other-places (afterClick)='showAlert($event)'></app-result-other-places>
+  <input id="search" autocomplete="on" placeholder="Search" />
+  <div id="results"></div>
+  <p id="noresults">No results. Try another search term.</p>
+  <p id="loading">Getting results...</p>
 </div>
 <div id="map-section">
   <button id="hide-map-results" (click)="hideMap()">
