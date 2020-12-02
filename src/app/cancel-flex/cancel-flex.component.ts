@@ -10,6 +10,7 @@ export class CancelFlexComponent implements OnInit {
   show: boolean = false;
   select: boolean = false;
   hovered: boolean = false;
+  clearHover: boolean = false;
 
   constructor() { }
 
@@ -25,17 +26,19 @@ export class CancelFlexComponent implements OnInit {
       if(!this.select){
         document.getElementById("tdrindiv").classList.remove("activeCheck0");
       }
-      
-
-
-      // document.getElementById("tdrbutton").classList.add("activeCheck1");
-      // document.getElementById("tdrindiv").classList.add("activeCheck2");
   }
   colorSelectFx():String{
     if(this.select){
       return 'rgb(0, 0, 0)'
     } if (this.hovered&&!this.select){
       return 'rgb(113, 113, 113)'
+    } else {
+      return ''
+    }
+  }
+  colorSelectFx2():String{
+    if (this.clearHover&&this.select){
+      return 'rgb(247, 247, 247)'
     } else {
       return ''
     }
