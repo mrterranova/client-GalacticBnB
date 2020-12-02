@@ -4,7 +4,7 @@
         (click)="displayToggle()">
         Cancellation flexibility
     </button>
-    <div class="dropdown" *ngIf="show" id="dropdownId">
+    <div class="dropdown" [style.visibility]="show ? 'visible':'hidden' " id="dropdownId">
         <div class="top-drop">
             <div class="tdh">
                 <div class="top-drop-left"> Only show stays that offer cancellation flexibility
@@ -14,11 +14,15 @@
                         <button  
                             id="togglecheck"
                             class="tdrbutton"
+                            (mouseover)="hovered=true"
+                            (mouseleave)="hovered=false"
                             (click)="checkToggle()"
+                            [style.background-color]="colorSelectFx()"
                         >
                             <div 
                                 class="tdrindiv"
                                 id="tdrindiv"
+                                [style.border-color]="colorSelectFx()"
                             >
                             <svg 
                                 viewBox="0 0 32 32" 

@@ -92,13 +92,6 @@ button{
     background-color: rgb(176, 176, 176) ;
     border-color: rgb(176, 176, 176) ;
 }
-.tdrbutton:hover{
-    background-color: rgb(113, 113, 113);
-    border-color: rgb(113, 113, 113);
-}
-.tdrindiv:hover {
-    border-color: rgb(113, 113, 113);
-}
 .tdrindiv {
     -webkit-box-pack: center ;
     -webkit-box-align: center ;
