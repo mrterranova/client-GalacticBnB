@@ -7,7 +7,15 @@ declare var jQuery: any;
   templateUrl: './results.component.html',
   styleUrls: ['./results.component.css'],
 })
+
 export class ResultsComponent implements OnInit {
+  expand: boolean = false;
+
+  showTop: boolean = false;
+  adults = 0;
+  children = 0;
+  infants = 0;
+  guests_expand: boolean = false;
   name = 'Angular';
   selection: string;
   price_expand: boolean = false;
@@ -61,7 +69,9 @@ export class ResultsComponent implements OnInit {
             );
             // Get the part of the JSON response that we care about
             let results = response['hits']['hits'];
+
             if (results.length > 0) {
+              console.log("Results: " + results)
               loadingdiv.hide();
               // Iterate through the results and write them to HTML
               resultdiv.append('<p>Found ' + results.length + ' results.</p>');

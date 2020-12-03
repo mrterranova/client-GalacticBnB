@@ -53,16 +53,4 @@ pass id's to results page and get info from java server -->
     ></app-guest-expanded>
   </div>
 </div>
-<app-cancel-flex></app-cancel-flex>
-<app-type-of-place (click)="showTop = !showTop"></app-type-of-place>
-
-<div *ngIf="showTop" class="expanded">
-  <app-type-of-place-expanded></app-type-of-place-expanded>
-</div>
 <app-explore-nearby></app-explore-nearby>
-
-<button id="testbutton" (click)="test()">test click me search</button>
-
-<div id="results"></div>
-<p id="noresults">No results. Try another search term.</p>
-<p id="loading">Getting results...</p>
