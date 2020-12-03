@@ -2,7 +2,18 @@
   <div class="barPlaceHolder">
     <div class="search-comp search-location">
       Location
-      <p id="search-base">Where are you going?</p>
+      <div></div>
+
+      <input
+        (keyup.enter)="update(box.value)"
+        (blur)="update(box.value)"
+        class="search-base"
+        #box
+        type="text"
+        placeholder="Where are you going?"
+      />
+
+      <!-- ^^ take value from here for elastic search ^^ -->
     </div>
     <div class="search-comp search-checkin">
       Check in
@@ -19,16 +30,17 @@
       [infants]="infants"
     ></app-guests-searchbar>
 
-<!-- click here ... start request to elastic with terms in search box 
+    <!-- click here ... start request to elastic with terms in search box 
 pass id's to results page and get info from java server -->
 
     <a href="results">
-    <div class="search-comp search-magGlass">Search
-      <p id="search-base">🔍</p>
-    </div>
-  </a>
+      <div class="search-comp search-magGlass">
+        Search
+        <p id="search-base">🔍</p>
+      </div>
+    </a>
   </div>
-  
+
   <div *ngIf="guests_expand" class="expanded">
     <app-guest-expanded
       [adults]="adults"
@@ -39,13 +51,17 @@ pass id's to results page and get info from java server -->
       (infantEvent)="receiveInfants($event)"
     ></app-guest-expanded>
   </div>
-  
-
 </div>
 <app-cancel-flex></app-cancel-flex>
 <app-type-of-place (click)="showTop = !showTop"></app-type-of-place>
 
 <div *ngIf="showTop" class="expanded">
-    <app-type-of-place-expanded></app-type-of-place-expanded>
+  <app-type-of-place-expanded></app-type-of-place-expanded>
 </div>
 <app-explore-nearby></app-explore-nearby>
+
+<button id="testbutton" (click)="test()">test click me search</button>
+
+<div id="results"></div>
+<p id="noresults">No results. Try another search term.</p>
+<p id="loading">Getting results...</p>
