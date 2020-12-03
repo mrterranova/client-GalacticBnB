@@ -1,5 +1,5 @@
 <div class="results-header">
-  <app-header></app-header>
+	<app-header></app-header>
 </div>
 <div id="scroll-section">
   <div id="button-results">
@@ -9,6 +9,7 @@
     <div *ngIf="price_expand" class="expanded">
       <app-price-expand></app-price-expand>
     </div>
+    <app-more-filters-modal></app-more-filters-modal>
   </div>
   <!-- <app-result-other-places (afterClick)='showAlert($event)'></app-result-other-places> -->
   <app-result-other-places (afterClick)='showAlert($event)'></app-result-other-places>

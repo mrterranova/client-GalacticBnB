@@ -6,10 +6,8 @@ declare var jQuery: any;
   templateUrl: './results.component.html',
   styleUrls: ['./results.component.css'],
 })
-
 export class ResultsComponent implements OnInit {
   name = 'Angular';
-
   selection: string;
   price_expand: boolean = false;
   constructor() {}
@@ -90,8 +88,7 @@ function imageError(image) {
     document.getElementById('map-section').style.visibility = 'hidden';
   }
 
-  showAlert(variable){
+  showAlert(variable) {
     console.log(variable);
   }
-
 }
