@@ -36,8 +36,8 @@ async function search() {
   loadingdiv.show();
   // Get the query from the user
   let query = searchbox.val();
-  // Only run a query if the string contains at least three characters
-  if (query.length > 1) {
+  // Only run a query if the string contains at least two characters
+  if (query.length > 2) {
     // Make the HTTP request with the query as a parameter and wait for the JSON results
     let response = await $.get(apigatewayendpoint, {
       q: `${query}*`,
