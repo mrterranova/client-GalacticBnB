@@ -5,7 +5,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 
 import { BrianPhotoComponent } from './brian-photo/brian-photo.component';
@@ -64,8 +64,13 @@ import { CancelFlexComponent } from './cancel-flex/cancel-flex.component';
 import { GuestsSearchbarComponent } from './guests-searchbar/guests-searchbar.component';
 import { GuestExpandedComponent } from './guest-expanded/guest-expanded.component';
 import { TypeofPlaceComponent } from './type-of-place/type-of-place.component';
+import { TypeOfPlaceExpandedComponent } from './type-of-place-expanded/type-of-place-expanded.component';
+
 import { PricefilterComponent } from './pricefilter/pricefilter.component';
 import { ExploreNearbyComponent } from './explore-nearby/explore-nearby.component';
+import { PriceExpandComponent } from './price-expand/price-expand.component';
+import { MoreFiltersModalComponent } from './more-filters-modal/more-filters-modal.component';
+import { MoreFiltersModalContent } from './more-filters-modal/more-filters-modal.component';
 
 @NgModule({
   declarations: [
@@ -120,8 +125,12 @@ import { ExploreNearbyComponent } from './explore-nearby/explore-nearby.componen
     GuestExpandedComponent,
     ResultsComponent,
     TypeofPlaceComponent,
+    TypeOfPlaceExpandedComponent,
     PricefilterComponent,
     ExploreNearbyComponent,
+    PriceExpandComponent,
+    MoreFiltersModalComponent,
+    MoreFiltersModalContent,
   ],
   imports: [
     FormsModule,
@@ -131,7 +140,10 @@ import { ExploreNearbyComponent } from './explore-nearby/explore-nearby.componen
     HttpClientModule,
     AppRoutingModule,
     GoogleMapsModule,
+    NgbModule,
   ],
+
+  exports: [MoreFiltersModalComponent],
 
   providers: [
     HostDataService,
@@ -142,6 +154,6 @@ import { ExploreNearbyComponent } from './explore-nearby/explore-nearby.componen
     ListingInfoService,
   ],
 
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent, MoreFiltersModalComponent, MoreFiltersComponent],
 })
 export class AppModule {}

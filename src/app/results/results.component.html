@@ -3,11 +3,25 @@
 </div>
 <div id="scroll-section">
   <div id="button-results">
+    <input id="search" autocomplete="on" placeholder="Search" />
     <h6>#_ of results - from day to day || guests #</h6>
     <h2>Stays in ___Search Box Value___</h2>
-    <app-pricefilter></app-pricefilter>
+    <app-pricefilter (click)="price_expand = !price_expand"></app-pricefilter>
+    <div *ngIf="price_expand" class="expanded">
+      <app-price-expand></app-price-expand>
+    </div>
+    <app-more-filters-modal></app-more-filters-modal>
+    <app-cancel-flex></app-cancel-flex>
+    <app-type-of-place (click)="showTop = !showTop"></app-type-of-place>
+    <div *ngIf="showTop" class="expanded">
+      <app-type-of-place-expanded></app-type-of-place-expanded>
+    </div>
   </div>
-  <app-result-other-places></app-result-other-places>
+  <!-- <app-result-other-places (afterClick)='showAlert($event)'></app-result-other-places> -->
+  <app-result-other-places
+    (afterClick)="otherPlaces($event)"
+  ></app-result-other-places>
+  <div id="results"></div>
 </div>
 <div id="map-section">
   <button id="hide-map-results" (click)="hideMap()">

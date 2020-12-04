@@ -1,17 +1,41 @@
 <div class="hold">
-    <button class="flex-button">
+    <button 
+        class="flex-button" 
+        (click)="displayToggle()">
         Cancellation flexibility
     </button>
-    <div class="dropdown">
+    <div class="dropdown" [style.visibility]="show ? 'visible':'hidden' " id="dropdownId">
         <div class="top-drop">
             <div class="tdh">
-                <div class="top-drop-left">Only show stays that offer cancellation flexibility
+                <div class="top-drop-left"> Only show stays that offer cancellation flexibility
                 </div>
                 <div class="top-drop-right">
                     <div class="tdrholder">
-                        <button  class="tdrbutton">
-                            <!-- //aria-checked="false" aria-labelledby="title-label-filterItem-flexible_cancellation-switch-flexible_cancellation-true" aria-describedby="subtitle-label-filterItem-flexible_cancellation-switch-flexible_cancellation-true" id="filterItem-flexible_cancellation-switch-flexible_cancellation-true" role="switch" type="button" -->
-                            <div class="tdrindiv">
+                        <button  
+                            id="togglecheck"
+                            class="tdrbutton"
+                            (mouseover)="hovered=true"
+                            (mouseleave)="hovered=false"
+                            (click)="checkToggle()"
+                            [style.background-color]="colorSelectFx()"
+                        >
+                            <div 
+                                class="tdrindiv"
+                                id="tdrindiv"
+                                [style.border-color]="colorSelectFx()"
+                            >
+                            <svg 
+                                viewBox="0 0 32 32" 
+                                xmlns="http://www.w3.org/2000/svg" 
+                                aria-hidden="true" role="presentation" 
+                                focusable="false" 
+                                class="hiddenUnhidden"
+                            >
+                                <path 
+                                    fill="none" 
+                                    d="m4 16.5 8 8 16-16">
+                                </path>
+                            </svg>
                             </div>
                         </button>
                     </div>
@@ -20,7 +44,9 @@
         </div>
         <div class="bottom-drop">
             <div class="bottom-drop-left">
-                <button class="clear-button-dropdown">
+                <button 
+                    class="clear-button-dropdown"
+                >
                     Clear
                 </button>
             </div>

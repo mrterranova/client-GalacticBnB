@@ -1,6 +1,20 @@
 .result-other-container{
     width: 100%;
-    height: 250px;
+    height: 300px;
+}
+.results-hidden-op{
+    width: 87%;
+    height: 260px;
+    overflow: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+}
+.results-hidden-op::-webkit-scrollbar {
+    display: none;
+  }
+.results-div-container{
+    width: 160vw;
+    background-color: lightpink;
 }
 .results-btn-location{
     height: 80px;
@@ -12,13 +26,14 @@
 .results-div{
     height: 80px;
     float: left;
-    width: 200px;
+    width: 290px;
     margin:10px;
     display: flex;
     align-content: center;
 }
 .result-loc-name{
-    padding-top: 30px;
+    padding-top: 45px;
+    font-size: large;
 }
 .results-loc1{
     background: url("/assets/img/water1.jpg");
@@ -85,3 +100,40 @@
     background-size: 160%;
     background-position-x: -10px;
 }
+.mpts-pg-btn {
+    -webkit-box-pack: center !important;
+    -webkit-box-align: center;
+    appearance: none;
+    display: inline-flex;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.08) !important;
+    outline: 0px !important;
+    color: rgb(34, 34, 34) !important;
+    background-color: rgba(255, 255, 255, 0.9);
+    cursor: pointer !important;
+    touch-action: manipulation !important;
+    align-items: center !important;
+    justify-content: center;
+    background-clip: padding-box;
+    box-shadow: transparent 0px 0px 0px 1px, transparent 0px 0px 0px 4px,
+      rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    width: 32px;
+    height: 32px;
+    transition: box-shadow 0.2s ease 0s, -ms-transform 0.25s ease 0s,
+    -webkit-transform 0.25s ease 0s, transform 0.25s ease 0s !important;
+    margin-top: 10px;
+  }
+  .mpts-pg-btn:hover {
+    box-shadow: transparent 0px 0px 0px 1px, transparent 0px 0px 0px 4px,
+      rgba(0, 0, 0, 0.12) 0px 6px 16px !important;
+    color: rgb(0, 0, 0) !important;
+    transform: scale(1.04) !important;
+  }
+  .results-btn-container{
+    float:right;
+    margin-right: 3%;
+  }
+  .results-title{
+      margin-top: 5px;
+      margin-left: 3%;
+  }

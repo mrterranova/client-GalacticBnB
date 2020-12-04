@@ -11,7 +11,7 @@
   padding: 20px;
   border-radius: 30px;
   display: grid;
-  grid-template-columns: 26% 18% 18% 26% 12%;
+  grid-template-columns: 26% 18% 18% 24% 14%;
   margin-left: 15%;
 }
 
@@ -42,6 +42,9 @@
 .search-click {
   border-left: 1px solid black;
   padding-top: 14px;
+}
+.search-magGlass {
+  border-left: 1px solid black;
 }
 
 .expanded {
