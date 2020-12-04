@@ -34,12 +34,12 @@
     <!-- click here ... start request to elastic with terms in search box 
 pass id's to results page and get info from java server -->
 
-    <a href="results">
-      <div class="search-comp search-magGlass">
+    <!-- <a href="results"> -->
+      <div class="search-comp search-magGlass" (click)="collectStr()">
         Search
         <p id="search-base">🔍</p>
       </div>
-    </a>
+    <!-- </a> -->
   </div>
 
   <div *ngIf="guests_expand" class="expanded">

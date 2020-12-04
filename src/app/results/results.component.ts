@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { SearchBarComponent } from '../search-bar/search-bar.component';
+import { SharedDataService } from '../services/shared-data.service';
 declare var jQuery: any;
+import { ActivatedRoute } from "@angular/router";
 
 @Component({
   selector: 'app-results',
@@ -12,18 +13,28 @@ export class ResultsComponent implements OnInit {
   expand: boolean = false;
 
   showTop: boolean = false;
-  adults = 0;
-  children = 0;
-  infants = 0;
-  guests_expand: boolean = false;
+
   name = 'Angular';
   selection: string;
   price_expand: boolean = false;
-  constructor() {}
+  public guests : number; 
+  public location : string;
+
+  constructor( private route: ActivatedRoute) {
+    this.route.queryParams.subscribe(params => {
+      this.guests = params["guests"]; 
+      this.location = params["location"];
+    }); 
+  }
   public place : string;
 
   ngOnInit(): void {
-   this.elasticsearch("");
+    console.log(this.location)
+    this.searchPage();
+  }
+
+  searchPage(){
+    this.elasticsearch(this.location);
   }
 
   //elasticsearch imported here...
