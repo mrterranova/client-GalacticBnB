@@ -146,6 +146,14 @@ export class ResultsComponent implements OnInit {
     document.getElementById('scroll-section').style.width = '100vw';
     document.getElementById('scroll-section').style.zIndex = '2';
     document.getElementById('map-section').style.visibility = 'hidden';
+    document.getElementById('return-map-btn').style.visibility = 'visible';
+  }
+
+  showMap(){
+    document.getElementById('scroll-section').style.width = '65vw';
+    document.getElementById('scroll-section').style.zIndex = '1';
+    document.getElementById('map-section').style.visibility = 'visible';
+    document.getElementById('return-map-btn').style.visibility = 'hidden';
   }
 
   otherPlaces(place) {
