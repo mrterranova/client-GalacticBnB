@@ -1,41 +1,57 @@
 <div class="search-container">
-	<div class="barPlaceHolder">
-		<div class="search-comp search-location">
-			Location
-			<div></div>
+  <div class="barPlaceHolder">
+    <div class="search-comp search-location">
+      Location
+      <div></div>
 
-			<input (keyup.enter)="update(box.value)" (blur)="update(box.value)" class="search-base" #box type="text"
-				placeholder="Where are you going?" id="search" />
+      <input
+        (keyup.enter)="update(box.value)"
+        (blur)="update(box.value)"
+        class="search-base"
+        #box
+        type="text"
+        placeholder="Where are you going?"
+        id="search"
+      />
 
-			<!-- ^^ take value from here for elastic search ^^ -->
-		</div>
-		<div class="search-comp search-checkin">
-			Check in
-			<p id="search-base">Add dates</p>
-		</div>
-		<div class="search-comp search-checkout">
-			Check out
-			<p id="search-base">Add dates</p>
-		</div>
-		<app-guests-searchbar (click)="guests_expand = !guests_expand" [adults]="adults" [children]="children"
-			[infants]="infants"></app-guests-searchbar>
+      <!-- ^^ take value from here for elastic search ^^ -->
+    </div>
+    <div class="search-comp search-checkin">
+      Check in
+      <p id="search-base">Add dates</p>
+    </div>
+    <div class="search-comp search-checkout">
+      Check out
+      <p id="search-base">Add dates</p>
+    </div>
+    <app-guests-searchbar
+      (click)="guests_expand = !guests_expand"
+      [adults]="adults"
+      [children]="children"
+      [infants]="infants"
+    ></app-guests-searchbar>
 
-		<!-- click here ... start request to elastic with terms in search box 
+    <!-- click here ... start request to elastic with terms in search box 
 pass id's to results page and get info from java server -->
 
-		<!-- <a href="results"> -->
-		<div class="search-comp search-magGlass" (click)="collectStr()">
-			Search
-			<p id="search-base">🔍</p>
-		</div>
-		<!-- </a> -->
-	</div>
+    <!-- <a href="results"> -->
+    <div class="search-comp search-magGlass" (click)="collectStr()">
+      Search
+      <p id="search-base">🔍</p>
+    </div>
+    <!-- </a> -->
+  </div>
 
-	<div *ngIf="guests_expand" class="expanded">
-		<app-guest-expanded [adults]="adults" [children]="children" [infants]="infants"
-			(adultEvent)="receiveAdults($event)" (childEvent)="receiveChildren($event)"
-			(infantEvent)="receiveInfants($event)"></app-guest-expanded>
-	</div>
+  <div *ngIf="guests_expand" class="expanded">
+    <app-guest-expanded
+      [adults]="adults"
+      [children]="children"
+      [infants]="infants"
+      (adultEvent)="receiveAdults($event)"
+      (childEvent)="receiveChildren($event)"
+      (infantEvent)="receiveInfants($event)"
+    ></app-guest-expanded>
+  </div>
 </div>
 
 <app-explore-nearby></app-explore-nearby>
