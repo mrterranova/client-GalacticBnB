@@ -1,30 +1,17 @@
-/* .container{
-    margin: 50px;
-    display: block;
-}
-
-.tOp-btn{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
 button{
     font-weight: 400 ;
     font-size: 14px ;
     line-height: 18px ;
     cursor: pointer ;
     text-align: center ;
-    border: 1px solid rgb(176, 176, 176) ;
+    border: 2px solid rgb(0, 0, 0) ;
     background-color: rgb(255, 255, 255) ;
     outline: none ;
-    margin: 0px ;
-    border-radius: 30px ;
+    border-radius: 10px ;
     color: rgb(34, 34, 34) ;
     font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif ;
     position: relative ;
-    padding: 8px 16px ;
-    -webkit-writing-mode: horizontal-tb ;
+    padding: 12px 18px ;
     text-rendering: auto;
     letter-spacing: normal;
     word-spacing: normal;
@@ -35,7 +22,6 @@ button{
     display: inline-block ;
     white-space: nowrap ;
     background-color: #fff;
-    margin: 0;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -123,7 +109,8 @@ input {
 }
 
 div {
-    display: block;
+    display: inline-grid;
+    justify-content: center;
 }
 
 .bottom-footer{
@@ -167,4 +154,4 @@ div {
     border: none ;
     background: rgb(34, 34, 34) ;
     color: rgb(255, 255, 255) ;
-} */
+}
