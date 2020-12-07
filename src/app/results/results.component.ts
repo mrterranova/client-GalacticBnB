@@ -17,7 +17,7 @@ export class ResultsComponent implements OnInit {
   selection: string;
   price_expand: boolean = false;
   public guests : number; 
-  public location : string;
+  public location: string;
 
   constructor( private route: ActivatedRoute) {
     this.route.queryParams.subscribe(params => {
@@ -38,7 +38,8 @@ export class ResultsComponent implements OnInit {
   }
 
   //elasticsearch imported here...
-  elasticsearch(variable){
+  elasticsearch(variable) {
+    var guestsFromPage = this.guests;
     (function ($) {
       $(document).ready(function () {
         var parameters = variable;
@@ -49,6 +50,8 @@ export class ResultsComponent implements OnInit {
         var noresults = $('#noresults');
         var resultdiv = $('#results');
         var searchbox = $('input#search');
+        var numResultsH6 = $('#num-results');
+        var staysH2 = $('#stays-prompt');
         var timer = 0;
 
         // Executes the search function 250 milliseconds after user stops typing
@@ -63,6 +66,8 @@ export class ResultsComponent implements OnInit {
           // Clear results before searching
           noresults.hide();
           resultdiv.empty();
+          numResultsH6.empty();
+          staysH2.empty();
           loadingdiv.show();
           // Get the query from the user
           let query = parameters + searchbox.val();
@@ -80,11 +85,12 @@ export class ResultsComponent implements OnInit {
             );
             // Get the part of the JSON response that we care about
             let results = response['hits']['hits'];
-
+            staysH2.append(`Stays in ${parameters}`)
             if (results.length > 0) {
               console.log("Results: " + results)
               loadingdiv.hide();
               // Iterate through the results and write them to HTML
+              numResultsH6.append(`${results.length} of results &#10038; ${guestsFromPage} guests`);
               resultdiv.append(`<h3>Explore all ${results.length} stays.</h3>`);
               console.log(results);
               for (var item in results) {

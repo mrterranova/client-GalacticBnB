@@ -4,15 +4,8 @@
       Location
       <div></div>
 
-      <input
-        (keyup.enter)="update(box.value)"
-        (blur)="update(box.value)"
-        class="search-base"
-        #box
-        type="text"
-        placeholder="Where are you going?"
-        id="search"
-      />
+      <input (keyup.enter)="update(box.value)" (blur)="update(box.value)" class="search-base" #box type="text"
+        placeholder="Where are you going?" id="search" />
 
       <!-- ^^ take value from here for elastic search ^^ -->
     </div>
@@ -24,12 +17,8 @@
       Check out
       <p id="search-base">Add dates</p>
     </div>
-    <app-guests-searchbar
-      (click)="guests_expand = !guests_expand"
-      [adults]="adults"
-      [children]="children"
-      [infants]="infants"
-    ></app-guests-searchbar>
+    <app-guests-searchbar (click)="guests_expand = !guests_expand" [adults]="adults" [children]="children"
+      [infants]="infants"></app-guests-searchbar>
 
     <!-- click here ... start request to elastic with terms in search box 
 pass id's to results page and get info from java server -->
@@ -43,14 +32,8 @@ pass id's to results page and get info from java server -->
   </div>
 
   <div *ngIf="guests_expand" class="expanded">
-    <app-guest-expanded
-      [adults]="adults"
-      [children]="children"
-      [infants]="infants"
-      (adultEvent)="receiveAdults($event)"
-      (childEvent)="receiveChildren($event)"
-      (infantEvent)="receiveInfants($event)"
-    ></app-guest-expanded>
+    <app-guest-expanded [adults]="adults" [children]="children" [infants]="infants" (adultEvent)="receiveAdults($event)"
+      (childEvent)="receiveChildren($event)" (infantEvent)="receiveInfants($event)"></app-guest-expanded>
   </div>
 </div>
 
@@ -67,4 +50,3 @@ pass id's to results page and get info from java server -->
 
 
 <app-explore-nearby></app-explore-nearby>
-
