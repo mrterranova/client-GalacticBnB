@@ -1,31 +1,41 @@
 <div class="results-header">
-  <app-header></app-header>
+	<app-header></app-header>
 </div>
 <div id="scroll-section">
-  <div id="button-results">
-    <input id="search" autocomplete="on" placeholder="Search" />
-    <h6>#_ of results - from day to day || guests #</h6>
-    <h2>Stays in ___Search Box Value___</h2>
-    <app-pricefilter (click)="price_expand = !price_expand"></app-pricefilter>
-    <div *ngIf="price_expand" class="expanded">
-      <app-price-expand></app-price-expand>
-    </div>
-    <app-more-filters-modal></app-more-filters-modal>
-    <app-cancel-flex></app-cancel-flex>
-    <app-type-of-place (click)="showTop = !showTop"></app-type-of-place>
-    <div *ngIf="showTop" class="expanded">
-      <app-type-of-place-expanded></app-type-of-place-expanded>
-    </div>
-  </div>
-  <!-- <app-result-other-places (afterClick)='showAlert($event)'></app-result-other-places> -->
-  <app-result-other-places
-    (afterClick)="otherPlaces($event)"
-  ></app-result-other-places>
-  <div id="results"></div>
+	<div id="button-results">
+		<!-- // <input id="search" autocomplete="on" placeholder="Search" /> -->
+		<h6>|| #_ of results || from day to day || guests {{this.guests}} __ ||</h6>
+		<h2>Stays in {{this.location}}</h2>
+		<div class="button-results-btns">
+			<app-cancel-flex style="display: inline-grid;justify-content: center;"></app-cancel-flex>
+			<app-type-of-place (click)="showTop = !showTop" style="display: inline-grid;justify-content: center;">
+			</app-type-of-place>
+
+			<div *ngIf="showTop" class="expanded">
+				<app-type-of-place-expanded></app-type-of-place-expanded>
+			</div>
+			<app-pricefilter (click)="price_expand = !price_expand"
+				style="display: inline-grid;justify-content: center;"></app-pricefilter>
+			<div *ngIf="price_expand" class="expanded">
+				<app-price-expand></app-price-expand>
+			</div>
+			<app-more-filters-modal style="display: inline-grid;justify-content: center;"></app-more-filters-modal>
+		</div>
+	</div>
+	<hr />
+	<!-- <app-result-other-places (afterClick)='showAlert($event)'></app-result-other-places> -->
+	<app-result-other-places (afterClick)='otherPlaces($event)'></app-result-other-places>
+	<div id="results" style="display: grid; 
+	grid-template-columns: 1fr; 
+	grid-template-rows: auto; 
+	gap: .5em 0px;
+	padding-left: 2%;">
+	</div>
 </div>
 <div id="map-section">
-  <button id="hide-map-results" (click)="hideMap()">
-    <span id="hide-map-span">x</span>
-  </button>
+	<button id="hide-map-results" (click)="hideMap()">
+		<span id="hide-map-span">x</span>
+	</button>
   <img src="assets/img/map_filler.png" id="mapFiller" />
 </div>
+<button id="return-map-btn" (click)="showMap()">Return Map</button>

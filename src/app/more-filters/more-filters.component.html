@@ -14,190 +14,175 @@
 	<div class="morefilters-body">
 		<!-- layout sections using a grid, each section will be grid as well -->
 		<div class="filter-section popular-filters">
-			<span style="font-size: large; font-weight: bold;"
-				>{{moreFiltersSections.popularFilters.name | uppercase}}</span
-			>
-			<div
-				class="filter-content"
-				*ngFor="let item of moreFiltersSections.popularFilters.filters | keyvalue"
-			>
-				<label>
-					{{item.key}}
-				</label>
-				<input type="checkbox" [(ngModel)]="item.value" />{{item.value}}
+			<span
+				style="font-size: large; font-weight: bold;">{{moreFiltersSections.popularFilters.name | uppercase}}</span>
+			<div class="filter-content-wrapper">
+				<div class="filter-content" *ngFor="let item of moreFiltersSections.popularFilters.filters | keyvalue">
+					<input type="checkbox" [(ngModel)]="item.value" />
+					<label>
+						{{item.key}}
+					</label>
+				</div>
 			</div>
 		</div>
+		<hr>
 		<div class="filter-section rooms-and-beds">
-			<span style="font-size: large; font-weight: bold;"
-				>{{moreFiltersSections.roomsAndBeds.name | uppercase}}</span
-			>
-			<div
-				class="filter-content"
-				*ngFor="let item of moreFiltersSections.roomsAndBeds.filters | keyvalue"
-			>
-				<label>
-					{{item.key}}
-				</label>
-				<button
-					type="button"
-					class="btn btn-success btn-circle btn-sm"
-					(click)="item.value = item.value + 1"
-				>
-					&#xFF0B;</button
-				><span style="width: 100%; text-align: center;">
-					{{item.value}}
-				</span>
+			<span
+				style="font-size: large; font-weight: bold;">{{moreFiltersSections.roomsAndBeds.name | uppercase}}</span>
+			<div class="filter-content-randb-wrapper">
+				<div class="filter-content" *ngFor="let item of moreFiltersSections.roomsAndBeds.filters | keyvalue">
+					<label>
+						{{item.key}}
+					</label>
 
-				<ng-container
-					*ngIf="item.value <= 0; then thenTemplate; else elseTemplate"
-				></ng-container>
-				<ng-template #thenTemplate>
-					<button
-						type="button"
-						class="btn btn-danger btn-circle btn-sm"
-						(click)="item.value = 0"
-					>
-						&#xFF0D;
-					</button>
-				</ng-template>
-				<ng-template #elseTemplate>
-					<button
-						type="button"
-						class="btn btn-danger btn-circle btn-sm"
-						(click)="item.value = item.value - 1"
-					>
-						&#xFF0D;
-					</button>
-				</ng-template>
+					<div class="filter-content-button-wrapper">
+						<ng-container *ngIf="item.value <= 0; then thenTemplate; else elseTemplate"></ng-container>
+						<ng-template #thenTemplate>
+							<button type="button" class="btn btn-danger btn-circle btn-sm" [disabled]="item.value === 0"
+								(click)="item.value = 0">
+								&#xFF0D;
+							</button>
+						</ng-template>
+						<ng-template #elseTemplate>
+							<button type="button" class="btn btn-danger btn-circle btn-sm"
+								(click)="item.value = item.value - 1">
+								&#xFF0D;
+							</button>
+						</ng-template>
+
+						<span style="width: 100%; text-align: center;">
+							{{item.value}}
+						</span>
+
+						<button type="button" class="btn btn-success btn-circle btn-sm"
+							(click)="item.value = item.value + 1">
+							&#xFF0B;
+						</button>
+					</div>
+				</div>
 			</div>
 		</div>
+		<hr>
 		<div class="filter-section verified-places">
-			<span style="font-size: large; font-weight: bold;"
-				>{{moreFiltersSections.verifiedPlaces.name | uppercase}}</span
-			>
-			<div
-				class="filter-content"
-				*ngFor="let item of moreFiltersSections.verifiedPlaces.filters | keyvalue"
-			>
-				<label>
-					{{item.key}}
-				</label>
-				<input type="checkbox" [(ngModel)]="item.value" />{{item.value}}
+			<span
+				style="font-size: large; font-weight: bold;">{{moreFiltersSections.verifiedPlaces.name | uppercase}}</span>
+			<div class="filter-content-verified-wrapper">
+				<div class="filter-content" *ngFor="let item of moreFiltersSections.verifiedPlaces.filters | keyvalue">
+					<label>
+						{{item.key}}
+					</label>
+					<label class="switch">
+						<input type="checkbox" [(ngModel)]="item.value" />
+						<span class="slider round"></span>
+					</label>
+				</div>
 			</div>
 		</div>
+		<hr>
 		<div class="filter-section more-options">
-			<span style="font-size: large; font-weight: bold;"
-				>{{moreFiltersSections.moreOptions.name | uppercase}}</span
-			>
-			<div
-				class="filter-content"
-				*ngFor="let item of moreFiltersSections.moreOptions.filters | keyvalue"
-			>
-				<label>
-					{{item.key}}
-				</label>
-				<input type="checkbox" [(ngModel)]="item.value" />{{item.value}}
+			<span
+				style="font-size: large; font-weight: bold;">{{moreFiltersSections.moreOptions.name | uppercase}}</span>
+			<div class="filter-content-wrapper">
+				<div class="filter-content" *ngFor="let item of moreFiltersSections.moreOptions.filters | keyvalue">
+					<input type="checkbox" [(ngModel)]="item.value" />
+					<label>
+						{{item.key}}
+					</label>
+				</div>
 			</div>
 		</div>
+		<hr>
 		<div class="filter-section amenities">
-			<span style="font-size: large; font-weight: bold;"
-				>{{moreFiltersSections.amenities.name | uppercase}}</span
-			>
-			<div
-				class="filter-content"
-				*ngFor="let item of moreFiltersSections.amenities.filters | keyvalue"
-			>
-				<label>
-					{{item.key}}
-				</label>
-				<input type="checkbox" [(ngModel)]="item.value" />{{item.value}}
+			<span style="font-size: large; font-weight: bold;">{{moreFiltersSections.amenities.name | uppercase}}</span>
+			<div class="filter-content-wrapper">
+				<div class="filter-content" *ngFor="let item of moreFiltersSections.amenities.filters | keyvalue">
+					<input type="checkbox" [(ngModel)]="item.value" />
+					<label>
+						{{item.key}}
+					</label>
+				</div>
 			</div>
 		</div>
+		<hr>
 		<div class="filter-section facilities">
-			<span style="font-size: large; font-weight: bold;"
-				>{{moreFiltersSections.facilities.name | uppercase}}</span
-			>
-			<div
-				class="filter-content"
-				*ngFor="let item of moreFiltersSections.facilities.filters | keyvalue"
-			>
-				<label>
-					{{item.key}}
-				</label>
-				<input type="checkbox" [(ngModel)]="item.value" />{{item.value}}
+			<span
+				style="font-size: large; font-weight: bold;">{{moreFiltersSections.facilities.name | uppercase}}</span>
+			<div class="filter-content-wrapper">
+				<div class="filter-content" *ngFor="let item of moreFiltersSections.facilities.filters | keyvalue">
+					<input type="checkbox" [(ngModel)]="item.value" />
+					<label>
+						{{item.key}}
+					</label>
+				</div>
 			</div>
 		</div>
+		<hr>
 		<div class="filter-section property-type">
-			<span style="font-size: large; font-weight: bold;"
-				>{{moreFiltersSections.propertyType.name | uppercase}}</span
-			>
-			<div
-				class="filter-content"
-				*ngFor="let item of moreFiltersSections.propertyType.filters | keyvalue"
-			>
-				<label>
-					{{item.key}}
-				</label>
-				<input type="checkbox" [(ngModel)]="item.value" />{{item.value}}
+			<span
+				style="font-size: large; font-weight: bold;">{{moreFiltersSections.propertyType.name | uppercase}}</span>
+			<div class="filter-content-wrapper">
+				<div class="filter-content" *ngFor="let item of moreFiltersSections.propertyType.filters | keyvalue">
+					<input type="checkbox" [(ngModel)]="item.value" />
+					<label>
+						{{item.key}}
+					</label>
+				</div>
 			</div>
 		</div>
+		<hr>
 		<div class="filter-section unique-stays">
-			<span style="font-size: large; font-weight: bold;"
-				>{{moreFiltersSections.uniqueStays.name | uppercase}}</span
-			>
-			<div
-				class="filter-content"
-				*ngFor="let item of moreFiltersSections.uniqueStays.filters | keyvalue"
-			>
-				<label>
-					{{item.key}}
-				</label>
-				<input type="checkbox" [(ngModel)]="item.value" />{{item.value}}
+			<span
+				style="font-size: large; font-weight: bold;">{{moreFiltersSections.uniqueStays.name | uppercase}}</span>
+			<div class="filter-content-wrapper">
+				<div class="filter-content" *ngFor="let item of moreFiltersSections.uniqueStays.filters | keyvalue">
+					<input type="checkbox" [(ngModel)]="item.value" />
+					<label>
+						{{item.key}}
+					</label>
+				</div>
 			</div>
 		</div>
+		<hr>
 		<div class="filter-section house-rules">
-			<span style="font-size: large; font-weight: bold;"
-				>{{moreFiltersSections.houseRules.name | uppercase}}</span
-			>
-			<div
-				class="filter-content"
-				*ngFor="let item of moreFiltersSections.houseRules.filters | keyvalue"
-			>
-				<label>
-					{{item.key}}
-				</label>
-				<input type="checkbox" [(ngModel)]="item.value" />{{item.value}}
+			<span
+				style="font-size: large; font-weight: bold;">{{moreFiltersSections.houseRules.name | uppercase}}</span>
+			<div class="filter-content-wrapper">
+				<div class="filter-content" *ngFor="let item of moreFiltersSections.houseRules.filters | keyvalue">
+					<input type="checkbox" [(ngModel)]="item.value" />
+					<label>
+						{{item.key}}
+					</label>
+				</div>
 			</div>
 		</div>
+		<hr>
 		<div class="filter-section neighborhoods">
-			<span style="font-size: large; font-weight: bold;"
-				>{{moreFiltersSections.neighborhoods.name | uppercase}}</span
-			>
-			<div
-				class="filter-content"
-				*ngFor="let item of moreFiltersSections.neighborhoods.filters | keyvalue"
-			>
-				<label>
-					{{item.key}}
-				</label>
-				<input type="checkbox" [(ngModel)]="item.value" />{{item.value}}
+			<span
+				style="font-size: large; font-weight: bold;">{{moreFiltersSections.neighborhoods.name | uppercase}}</span>
+			<div class="filter-content-wrapper">
+				<div class="filter-content" *ngFor="let item of moreFiltersSections.neighborhoods.filters | keyvalue">
+					<input type="checkbox" [(ngModel)]="item.value" />
+					<label>
+						{{item.key}}
+					</label>
+				</div>
 			</div>
 		</div>
+		<hr>
 		<div class="filter-section host-language">
-			<span style="font-size: large; font-weight: bold;"
-				>{{moreFiltersSections.hostLanguage.name | uppercase}}</span
-			>
-			<div
-				class="filter-content"
-				*ngFor="let item of moreFiltersSections.hostLanguage.filters | keyvalue"
-			>
-				<label>
-					{{item.key}}
-				</label>
-				<input type="checkbox" [(ngModel)]="item.value" />{{item.value}}
+			<span
+				style="font-size: large; font-weight: bold;">{{moreFiltersSections.hostLanguage.name | uppercase}}</span>
+			<div class="filter-content-wrapper">
+				<div class="filter-content" *ngFor="let item of moreFiltersSections.hostLanguage.filters | keyvalue">
+					<input type="checkbox" [(ngModel)]="item.value" />
+					<label>
+						{{item.key}}
+					</label>
+				</div>
 			</div>
 		</div>
 	</div>
+	<br>
 	<div class="morefilters-footer">
 		<a> clear all </a>
 		<!--left side of footer-->

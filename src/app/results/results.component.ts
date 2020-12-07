@@ -1,29 +1,40 @@
 import { Component, OnInit } from '@angular/core';
-import { SearchBarComponent } from '../search-bar/search-bar.component';
+import { SharedDataService } from '../services/shared-data.service';
 declare var jQuery: any;
+import { ActivatedRoute } from "@angular/router";
 
 @Component({
   selector: 'app-results',
   templateUrl: './results.component.html',
   styleUrls: ['./results.component.css'],
 })
-
 export class ResultsComponent implements OnInit {
   expand: boolean = false;
 
   showTop: boolean = false;
-  adults = 0;
-  children = 0;
-  infants = 0;
-  guests_expand: boolean = false;
+
   name = 'Angular';
   selection: string;
   price_expand: boolean = false;
-  constructor() {}
+  public guests : number; 
+  public location : string;
+
+  constructor( private route: ActivatedRoute) {
+    this.route.queryParams.subscribe(params => {
+      this.guests = params["guests"]; 
+      this.location = params["location"];
+    }); 
+  }
+
   public place : string;
 
   ngOnInit(): void {
-   this.elasticsearch("");
+    console.log(this.location)
+    this.searchPage();
+  }
+
+  searchPage(){
+    this.elasticsearch(this.location);
   }
 
   //elasticsearch imported here...
@@ -74,7 +85,7 @@ export class ResultsComponent implements OnInit {
               console.log("Results: " + results)
               loadingdiv.hide();
               // Iterate through the results and write them to HTML
-              resultdiv.append('<p>Found ' + results.length + ' results.</p>');
+              resultdiv.append(`<h3>Explore all ${results.length} stays.</h3>`);
               console.log(results);
               for (var item in results) {
                 let name = results[item]._source.title;
@@ -85,23 +96,34 @@ export class ResultsComponent implements OnInit {
                 let bedrooms = results[item]._source.bedrooms;
                 // Construct the full HTML string that we want to append to the div
                 resultdiv.append(
-                  '<div class="result">' +
-                    '<div><h2>' +
-                    name +
-                    '</h2><p>' +
-                    'Price: $' +
-                    price +
-                    ' beds: ' +
-                    beds +
-                    ' &mdash;' +
-                    '  bedrooms: ' +
-                    bedrooms +
-                    '  &mdash; bathrooms: ' +
-                    bathrooms +
-                    ' </p>' +
-                    '<img src="' +
-                    pic +
-                    '"> </div></div>'
+                  $('<div></div>').addClass("result").css({
+                    "display": "grid",
+                    "grid-template-columns": "auto 1fr",
+                    "height": "200px",
+                  })
+                    .append(
+                      `<img class="result-img" src="${pic}" 
+                      style="height: 100%;
+                      width: 300px;
+                      float: left;
+                      display: block;
+                      border-radius: 25px;">`)
+                    .append(
+                      $('<div></div>').addClass("result-info").css({
+                        "justify-content": "start",
+                        "display": "grid",
+                        "grid-auto-rows": "max-content",
+                        "margin-left": "1em",
+                        "margin-top": "0px"
+                      })
+                        .append(
+                        `<h2>${name}</h2>
+                      <p style="margin-bottom: 0">
+                        Price: $${price} 
+                        beds: ${beds} &mdash;  
+                        bedrooms: ${bedrooms}  &mdash; 
+                        bathrooms: ${bathrooms} 
+                      </p>`))
                 );
               }
             } else {
@@ -124,6 +146,14 @@ export class ResultsComponent implements OnInit {
     document.getElementById('scroll-section').style.width = '100vw';
     document.getElementById('scroll-section').style.zIndex = '2';
     document.getElementById('map-section').style.visibility = 'hidden';
+    document.getElementById('return-map-btn').style.visibility = 'visible';
+  }
+
+  showMap(){
+    document.getElementById('scroll-section').style.width = '65vw';
+    document.getElementById('scroll-section').style.zIndex = '1';
+    document.getElementById('map-section').style.visibility = 'visible';
+    document.getElementById('return-map-btn').style.visibility = 'hidden';
   }
 
   otherPlaces(place) {

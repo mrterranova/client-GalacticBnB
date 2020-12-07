@@ -31,10 +31,7 @@
                   Start your search
                 </div>
                 <div class="purplebubble">
-                  <div
-                    class="_i8zuk7"
-                    data-testid="little-search-icon"
-                  ></div>
+                  <div class="_i8zuk7" data-testid="little-search-icon"></div>
                 </div>
               </button>
             </div>
@@ -114,7 +111,17 @@
                             >
                               <div class="_seuyf">
                                 <div class="_wtz1co">Location</div>
-                                <div class="_uh2dzp">Where are you going?</div>
+                                <div class="_uh2dzp">
+                                  <input
+                                    (keyup.enter)="update(box.value)"
+                                    (blur)="update(box.value)"
+                                    class="search-base"
+                                    #box
+                                    type="text"
+                                    placeholder="Where are you going?"
+                                    id="search"
+                                  />
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -258,7 +265,7 @@
                   aria-label="Language and currency"
                 >
                   <div class="_iglww7">
-                    <div class="_z5mecy" >
+                    <div class="_z5mecy">
                       <div class="_xpkakx">
                         <svg
                           viewBox="0 0 16 16"

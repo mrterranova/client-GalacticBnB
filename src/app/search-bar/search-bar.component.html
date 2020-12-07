@@ -11,7 +11,7 @@
         #box
         type="text"
         placeholder="Where are you going?"
-        id = "search"
+        id="search"
       />
 
       <!-- ^^ take value from here for elastic search ^^ -->
@@ -34,12 +34,12 @@
     <!-- click here ... start request to elastic with terms in search box 
 pass id's to results page and get info from java server -->
 
-    <a href="results">
-      <div class="search-comp search-magGlass">
-        Search
-        <p id="search-base">🔍</p>
-      </div>
-    </a>
+    <!-- <a href="results"> -->
+    <div class="search-comp search-magGlass" (click)="collectStr()">
+      Search
+      <p id="search-base">🔍</p>
+    </div>
+    <!-- </a> -->
   </div>
 
   <div *ngIf="guests_expand" class="expanded">
@@ -53,4 +53,18 @@ pass id's to results page and get info from java server -->
     ></app-guest-expanded>
   </div>
 </div>
+
+
 <app-explore-nearby></app-explore-nearby>
+
+<!-- below is/was for testing   
+
+  <button id="testbutton" (click)="test()">test click me search</button>
+
+<div id="results"></div>
+<p id="noresults">No results. Try another search term.</p>
+<p id="loading">Getting results...</p> -->
+
+
+<app-explore-nearby></app-explore-nearby>
+

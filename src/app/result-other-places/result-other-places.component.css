@@ -3,7 +3,7 @@
     height: 300px;
 }
 .results-hidden-op{
-    width: 87%;
+    width: 100%;
     height: 260px;
     overflow: auto;
     -ms-overflow-style: none;  /* IE and Edge */
@@ -11,9 +11,9 @@
 }
 .results-hidden-op::-webkit-scrollbar {
     display: none;
-  }
+}
 .results-div-container{
-    width: 160vw;
+    width: 175vw;
     background-color: lightpink;
 }
 .results-btn-location{
