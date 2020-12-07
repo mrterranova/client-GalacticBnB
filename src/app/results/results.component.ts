@@ -8,7 +8,6 @@ import { ActivatedRoute } from "@angular/router";
   templateUrl: './results.component.html',
   styleUrls: ['./results.component.css'],
 })
-
 export class ResultsComponent implements OnInit {
   expand: boolean = false;
 
@@ -26,6 +25,7 @@ export class ResultsComponent implements OnInit {
       this.location = params["location"];
     }); 
   }
+
   public place : string;
 
   ngOnInit(): void {
@@ -85,7 +85,7 @@ export class ResultsComponent implements OnInit {
               console.log("Results: " + results)
               loadingdiv.hide();
               // Iterate through the results and write them to HTML
-              resultdiv.append('<p>Found ' + results.length + ' results.</p>');
+              resultdiv.append(`<h3>Explore all ${results.length} stays.</h3>`);
               console.log(results);
               for (var item in results) {
                 let name = results[item]._source.title;
@@ -96,23 +96,34 @@ export class ResultsComponent implements OnInit {
                 let bedrooms = results[item]._source.bedrooms;
                 // Construct the full HTML string that we want to append to the div
                 resultdiv.append(
-                  '<div class="result">' +
-                    '<div><h2>' +
-                    name +
-                    '</h2><p>' +
-                    'Price: $' +
-                    price +
-                    ' beds: ' +
-                    beds +
-                    ' &mdash;' +
-                    '  bedrooms: ' +
-                    bedrooms +
-                    '  &mdash; bathrooms: ' +
-                    bathrooms +
-                    ' </p>' +
-                    '<img src="' +
-                    pic +
-                    '"> </div></div>'
+                  $('<div></div>').addClass("result").css({
+                    "display": "grid",
+                    "grid-template-columns": "auto 1fr",
+                    "height": "200px",
+                  })
+                    .append(
+                      `<img class="result-img" src="${pic}" 
+                      style="height: 100%;
+                      width: 300px;
+                      float: left;
+                      display: block;
+                      border-radius: 25px;">`)
+                    .append(
+                      $('<div></div>').addClass("result-info").css({
+                        "justify-content": "start",
+                        "display": "grid",
+                        "grid-auto-rows": "max-content",
+                        "margin-left": "1em",
+                        "margin-top": "0px"
+                      })
+                        .append(
+                        `<h2>${name}</h2>
+                      <p style="margin-bottom: 0">
+                        Price: $${price} 
+                        beds: ${beds} &mdash;  
+                        bedrooms: ${bedrooms}  &mdash; 
+                        bathrooms: ${bathrooms} 
+                      </p>`))
                 );
               }
             } else {
