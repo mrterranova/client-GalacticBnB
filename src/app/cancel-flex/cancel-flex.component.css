@@ -153,10 +153,28 @@ button{
     color: rgb(255, 255, 255) ;
 }
 .clear-button-dropdown{
-    cursor: not-allowed !important;
-    opacity: 1 !important;
-    border: none !important;
-    background: transparent !important;
-    color: #DDDDDD !important;
+    opacity: 1;
+    border: none;
+    background: transparent;
+    color: #DDDDDD;
     text-decoration: underline;
+    
+    display: inline-block !important;
+    margin: 0px -10px !important;
+    position: relative !important;
+    text-align: center !important;
+    width: auto !important;
+    touch-action: manipulation !important;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    font-weight: 600 !important;
+    border-radius: 8px !important;
+    outline: none !important;
+    padding: 10px !important;
+    transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s !important;
+    border: none !important;
+
 }
+
+

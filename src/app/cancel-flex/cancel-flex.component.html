@@ -1,7 +1,8 @@
 <div class="hold">
     <button 
         class="flex-button" 
-        (click)="displayToggle()">
+        (click)="displayToggle()"
+    >
         Cancellation flexibility
     </button>
     <div class="dropdown" [style.visibility]="show ? 'visible':'hidden' " id="dropdownId">
@@ -46,12 +47,20 @@
             <div class="bottom-drop-left">
                 <button 
                     class="clear-button-dropdown"
+                    [style.cursor]="select ? 'pointer':'not-allowed'"
+                    [style.color]="select ? 'rgb(0, 0, 0)' : '#DDDDDD'"
+                    (mouseover)="clearHover=true"
+                    (mouseleave)="clearHover=false"
+                    (click)="select ? checkToggle(): ''"
+                    [style.background-color]="colorSelectFx2()"
                 >
-                    Clear
+                        Clear
                 </button>
             </div>
             <div class="bottom-drop-right">
-                <button class="save-button-dropdown">
+                <button class="save-button-dropdown"
+                    (click)="displayToggle()"
+                >
                     Save
                 </button>
             </div>
