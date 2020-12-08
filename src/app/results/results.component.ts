@@ -94,6 +94,7 @@ export class ResultsComponent implements OnInit {
               resultdiv.append(`<h3>Explore all ${results.length} stays.</h3>`);
               console.log(results);
               for (var item in results) {
+                let url = results[item]._source.id;
                 let name = results[item]._source.title;
                 let price = results[item]._source.price;
                 let beds = results[item]._source.beds;
@@ -123,13 +124,14 @@ export class ResultsComponent implements OnInit {
                         "margin-top": "0px"
                       })
                         .append(
-                        `<h2>${name}</h2>
+
+                        `<a href="/rooms/${url}"><h2>${name}</h2>
                       <p style="margin-bottom: 0">
                         Price: $${price} 
                         beds: ${beds} &mdash;  
                         bedrooms: ${bedrooms}  &mdash; 
                         bathrooms: ${bathrooms} 
-                      </p>`))
+                      </p></a>`))
                 );
               }
             } else {
