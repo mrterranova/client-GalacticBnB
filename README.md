@@ -1,4 +1,4 @@
-
+![alt text](../img/Capture.PNG)
 
 # client-GalacticBnB
 This project is based off of popular Bed and Breakfast online applications and an extension on EarthBnB. This application has all major components for being able to view a particular location, popular sites surrounding that location, viewing amenities, rooms available and more. The extension includes a search that operates between client and AWS elastic search
